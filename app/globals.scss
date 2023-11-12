@@ -1,0 +1,194 @@
+@import "./variables";
+@import "./mixins";
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+body {
+  background: var(--clr-background);
+  color: var(--clr-text);
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+  min-height: 100vh;
+  padding: 6rem 1rem 1rem;
+  max-width: 1080px;
+  margin: auto;
+
+  @include smallScreen() {
+    display:flex;
+    flex-direction: column;
+  }
+
+}
+
+nav {
+  padding-top: 1rem;
+}
+
+
+a {
+  color: var(--clr-link);
+  // border-bottom:1px dotted white;
+  // text-decoration: none;
+}
+
+p {
+  padding-top: 1rem;
+}
+
+h1 {
+  color: var(--clr-heading);
+}
+
+h2 {
+  color: var(--clr-heading-muted);
+  // padding-bottom:0.5rem;
+}
+section h2 {
+  visibility: hidden;
+  font-weight:700;
+  height: 0px;
+  @include smallScreen() {
+    visibility: visible;
+    height: auto;
+  }
+}
+
+ul {
+  padding-bottom: 1rem;
+  list-style-type: none;
+}
+
+section {
+  padding-bottom: 1rem;
+}
+
+@media (prefers-color-scheme: dark) {
+  html {
+    color-scheme: dark;
+  }
+}
+
+.flex {
+  display:flex;
+  flex-direction: column;
+}
+
+.p-50 {
+  padding: 0.5rem;
+}
+.p-100 {
+  padding: 1rem;
+}
+.p-200 {
+  padding: 2rem;
+}
+.p-300 {
+  padding: 3rem;
+}
+.p-400 {
+  padding: 4rem;
+}
+.p-500 {
+  padding: 5rem;
+}
+.p-600 {
+  padding: 6rem;
+}
+
+.pr-50 {
+  padding-right: 0.5rem;
+}
+.pr-100 {
+  padding-right: 1rem;
+}
+.pr-200 {
+  padding-right: 2rem;
+}
+.pr-300 {
+  padding-right: 3rem;
+}
+.pr-400 {
+  padding-right: 4rem;
+}
+.pr-500 {
+  padding-right: 5rem;
+}
+.pr-600 {
+  padding-right: 6rem;
+}
+
+.pl-50 {
+  padding-left: 0.5rem;
+}
+.pl-100 {
+  padding-left: 1rem;
+}
+.pl-200 {
+  padding-left: 2rem;
+}
+.pl-300 {
+  padding-left: 3rem;
+}
+.pl-400 {
+  padding-left: 4rem;
+}
+.pl-500 {
+  padding-left: 5rem;
+}
+.pl-600 {
+  padding-left: 6rem;
+}
+
+.pt-50 {
+  padding-top: 0.5rem;
+}
+.pt-100 {
+  padding-top: 1rem;
+}
+.pt-200 {
+  padding-top: 2rem;
+}
+.pt-300 {
+  padding-top: 3rem;
+}
+.pt-400 {
+  padding-top: 4rem;
+}
+.pt-500 {
+  padding-top: 5rem;
+}
+.pt-600 {
+  padding-top: 6rem;
+}
+
+.pb-50 {
+  padding-bottom: 0.5rem;
+}
+.pb-100 {
+  padding-bottom: 1rem;
+}
+.pb-200 {
+  padding-bottom: 2rem;
+}
+.pb-300 {
+  padding-bottom: 3rem;
+}
+.pb-400 {
+  padding-bottom: 4rem;
+}
+.pb-500 {
+  padding-bottom: 5rem;
+}
+.pb-600 {
+  padding-bottom: 6rem;
+}

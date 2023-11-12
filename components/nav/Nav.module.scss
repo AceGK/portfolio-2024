@@ -1,0 +1,29 @@
+@import "../../app/mixins";
+.nav {
+  display:flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.primary {
+
+  @include smallScreen(){
+   display:none;
+  }
+ }
+ 
+.social {
+  display:flex;
+  font-size:2rem;
+  gap:1rem;
+  margin-top:auto;
+  svg {
+    color:var(--clr-text);
+    &:hover{
+      color:var(--clr-link);
+    }
+  }
+  &svg:hover{
+    color: #000;
+  }
+}
