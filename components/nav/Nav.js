@@ -6,6 +6,7 @@ import LinkedIn from '../../public/linkedin.svg';
 import Email from '../../public/envelope.svg';
 import Link from 'next/link';
 import Instagram from '../../public/instagram.svg';
+import CV from '@/public/cv.svg';
 
 export default function Nav() {
 
@@ -13,28 +14,29 @@ export default function Nav() {
   const [activeSection, setActiveSection] = useState('about');
 
   const handleScroll = () => {
-      const scrollPosition = window.scrollY;
-      const selectedSection = sections.find(sectionID => {
-          const el = document.getElementById(sectionID);
-          return el && (el.offsetTop - 100) <= scrollPosition && (el.offsetTop + el.offsetHeight) > scrollPosition;
-      });
-      setActiveSection(selectedSection || 'about');
+    const scrollPosition = window.scrollY;
+    const selectedSection = sections.find(sectionID => {
+      const el = document.getElementById(sectionID);
+      return el && (el.offsetTop - 200) <= scrollPosition && (el.offsetTop + el.offsetHeight) > scrollPosition;
+    });
+    setActiveSection(selectedSection || 'about');
   };
 
   useEffect(() => {
-      const checkHash = () => {
-          const hash = window.location.hash.replace('#', '');
-          if (sections.includes(hash)) {
-              setActiveSection(hash);
-          }
-      };
+    const checkHash = () => {
+      const hash = window.location.hash.replace('#', '');
+      if (sections.includes(hash)) {
+        setActiveSection(hash);
+      }
+    };
 
-      checkHash();
-      window.addEventListener('scroll', handleScroll);
-      return () => {
-          window.removeEventListener('scroll', handleScroll);
-      };
-  }, [sections]);
+    checkHash();
+    window.addEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
 
 
   return (
@@ -69,7 +71,7 @@ export default function Nav() {
         </li>
         <li>
           <Link href="#" passHref>
-            <Instagram />
+            <CV />
           </Link>
         </li>
       </ul>

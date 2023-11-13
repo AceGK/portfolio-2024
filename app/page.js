@@ -1,16 +1,16 @@
 import Nav from "@/components/nav/Nav";
 import Card from "@/components/card/Card";
 import Link from "next/link";
+import Next from "@/public/next.svg"
 
 export default function Home() {
   return (
     <>
       <header>
-        <div>
-          <Link href="#"><h1 className="fw-700 fs-800 pb-50">Ace Kisch</h1></Link>
-          <h2 className="fw-600 fs-500">Software Engineer</h2>
-          {/* <p style={{ maxWidth: "300px" }}>I build functional, user-friendly & accessible web applications</p> */}
-        </div>
+
+        <Link href="#"><h1 className="fw-700 fs-800 pb-50">Ace Kisch</h1></Link>
+        <h2 className="fw-600 fs-500 pb-50">Software Engineer</h2>
+ 
         <Nav />
       </header>
 
@@ -98,7 +98,7 @@ export default function Home() {
                 tags={["HTML", "CSS", "JavaScript"]}
               />
             </li>
-          
+
           </ul>
         </section>
 
