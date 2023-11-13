@@ -33,13 +33,23 @@
   min-width:200px;
 }
 
+.header {
+  display:flex;
+  flex-direction: column;
+  gap:0.5rem;
+}
+
 .title {
   font-weight: 700;
   color: var(--clr-heading);
 }
 
 .subtitle {
-  color:var(--clr-heading-muted)
+  color:var(--clr-heading-muted);
+}
+
+.caption {
+  color:var(--clr-text);
 }
 
 .body {
@@ -55,7 +65,7 @@
 }
 
 .tag {
-  font-size:var(--fs-300);
+  font-size:var(--fs-200);
   padding: 5px 10px;
   border-radius: 3px;
   background-color: var(--clr-primary-muted);

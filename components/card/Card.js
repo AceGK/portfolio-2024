@@ -12,14 +12,16 @@ export default function Card({ href, title, body, tags, children, img, caption, 
   return (
     <Wrapper {...wrapperProps} className={styles.card}>
 
-        <div className={styles.image}>
-          {img && <img src={img} alt={title} fill />}
-          {caption && <span className={styles.caption}>{caption}</span>}
-        </div>
+      <div className={styles.image}>
+        {img && <img src={img} alt={title} fill />}
+        {caption && <span className={styles.caption}>{caption}</span>}
+      </div>
 
       <div className={styles.content}>
-        {title && <span className={styles.title}>{title}</span>}
-        {subtitle && <span className={styles.subtitle}>{subtitle}</span>}
+        <div className={styles.header}>
+          {title && <span className={styles.title}>{title}</span>}
+          {subtitle && <span className={styles.subtitle}>{subtitle}</span>}
+        </div>
         {body && <span className={styles.body}>{body}</span>}
         {children}
         {tags && (

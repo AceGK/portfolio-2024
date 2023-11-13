@@ -8,7 +8,7 @@ export default function Home() {
         <div>
           <h1 className="fw-700 fs-800 pb-50">Ace Kisch</h1>
           <h2 className="fw-700 fs-500">Software Engineer</h2>
-          <p style={{ maxWidth: "300px" }}>I build functional, user-friendly & accessible web applications</p>
+          {/* <p style={{ maxWidth: "300px" }}>I build functional, user-friendly & accessible web applications</p> */}
         </div>
         <Nav />
       </header>
@@ -29,7 +29,7 @@ export default function Home() {
           <ul>
             <li>
               <Card
-                caption="2022 - Present"
+                caption="2022 — Present"
                 title="Purple Lotus"
                 subtitle="Senior Software Engineer"
                 href="https://purplelotus.vercel.app/"
@@ -39,7 +39,7 @@ export default function Home() {
             </li>
             <li>
               <Card
-                caption="2019 - 2022"
+                caption="2019 — 2022"
                 title="Purple Lotus"
                 subtitle="Contracted Web Developer"
                 href="https://plpcsanjose.com"
@@ -49,16 +49,7 @@ export default function Home() {
             </li>
             <li>
               <Card
-                caption="... - ..."
-                title="..."
-                subtitle="Software Engineer"
-                body="Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat laboriosam quaerat dolore omnis aspernatur unde inventore nisi dolores eos necessitatibus."
-                tags={["React", "Next.js", "JavaScript", "Algolia", "SCSS", "Sanity"]}
-              />
-            </li>
-            <li>
-              <Card
-                caption="2014 - 2022"
+                caption="2014 — 2022"
                 title="Oaksterdam University"
                 subtitle="Software Engineer"
                 href="https://oaksterdamuniversity.com"
@@ -115,7 +106,7 @@ export default function Home() {
           </ul>
         </section>
 
-        <footer>
+        <footer className="pb-600 mb-600">
           <p>Built with <a href="#">Next.js</a> & hosted on <a href="#">Vercel</a>. View this site on <a href="#">Github</a></p>
         </footer>
 

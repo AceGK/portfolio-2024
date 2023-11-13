@@ -7,15 +7,37 @@
 }
 
 .primary {
-  margin-top:1rem;
+  margin-top:2rem;
   li {
     padding-bottom:2rem;
   }
   a {
+    display:flex;
+    align-items: center;
+    gap:5px;
+    color:var(--clr-neutral-700);
     text-transform: uppercase;
     text-decoration: none;
     font-weight:600;
     font-size:0.875rem;
+    transition:all 0.3s;
+    &:before {
+      transition:all 0.3s;
+      content:"";
+      background:var(--clr-neutral-700);
+      height:1px;
+      width:2rem;
+      display: inline-block;
+    }
+  }
+  .active {
+    color:var(--clr-heading);
+    transition:all 0.3s;
+    &:before {
+      transition:all 0.3s;
+      width:4rem;
+      background:var(--clr-primary);
+    }
   }
   @include smallScreen(){
    display:none;
