@@ -32,8 +32,8 @@ export default function Home() {
                 title="Purple Lotus"
                 subtitle="Senior Software Engineer"
                 href="https://purplelotus.vercel.app/"
-                body="Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat laboriosam quaerat dolore omnis aspernatur unde inventore nisi dolores eos necessitatibus."
-                tags={["React", "Next.js", "JavaScript", "Algolia", "SCSS", "Sanity"]}
+                body="Built the Purple Lotus cannabis dispensary web app using Next.js, Algolia Instant Search, and Sanity CMS. Improved SEO, performance & user experience."
+                tags={["React", "Next.js", "JavaScript", "Algolia", "Sanity", "SCSS"]}
               />
             </li>
             <li>
@@ -42,7 +42,7 @@ export default function Home() {
                 title="Purple Lotus"
                 subtitle="Contracted Web Developer"
                 href="https://plpcsanjose.com"
-                body="Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat laboriosam quaerat dolore omnis aspernatur unde inventore nisi dolores eos necessitatibus."
+                body="Rebuilt, redesigned & helped maintain a cannabis dispensary WordPress site. Developed a custom theme, plugins & integrations with third-party services. Improved hosting platform & PageSpeed Insights score."
                 tags={["WordPress", "PHP", "JavaScript", "HTML", "CSS"]}
               />
             </li>
@@ -52,7 +52,7 @@ export default function Home() {
                 title="Oaksterdam University"
                 subtitle="Software Engineer"
                 href="https://oaksterdamuniversity.com"
-                body="Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat laboriosam quaerat dolore omnis aspernatur unde inventore nisi dolores eos necessitatibus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat laboriosam quaerat dolore omnis aspernatur unde inventore nisi dolores eos necessitatibus."
+                body="Developed & implemented a suite of websites & software including a CMS, LMS, eCommerce, marketing & support automation, user authentication & SSO, SEO tracking & tools, voip, live chat, team communication & project management services, an improved hosting platform & site version control."
                 tags={["WordPress", "PHP", "JavaScript", "HTML", "CSS"]}
               />
             </li>
@@ -68,7 +68,7 @@ export default function Home() {
                 href="https://purplelotus.vercel.app/"
                 title="Purple Lotus"
                 body="Cannabis dispensary web app that uses the Jane Roots headless e-commerce platform and Algolia Instant Search to provide a fast, user-friendly shopping experience."
-                tags={["React", "Next.js", "JavaScript", "Algolia", "SCSS", "Sanity"]}
+                tags={["React", "Next.js", "JavaScript", "Algolia", "Sanity", "SCSS"]}
               />
             </li>
             <li>
