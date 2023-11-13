@@ -1,8 +1,8 @@
   :root {
-    --clr-text: hsl(0, 0%, 70%);
+    --clr-text: hsl(0, 0%, 66%);
 
     --clr-heading: hsl(0, 0%, 95%);
-    --clr-heading-muted: hsl(0, 0%, 80%);
+    --clr-heading-muted: hsl(0, 0%, 75%);
 
     --clr-link: hsl(0, 0%, 95%);
 
@@ -10,7 +10,9 @@
     --clr-primary-muted:#122B39;
 
     --clr-background: #0D1117;
-
+    --clr-background-muted: #181e28;
+    
+    --border-radius: 0.25rem;
   }
 
 // @media (prefers-color-scheme: dark) {

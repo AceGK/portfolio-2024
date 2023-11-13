@@ -1,8 +1,9 @@
 import styles from './Nav.module.scss';
-import Github from  '../../public/github.svg';
-import LinkedIn from  '../../public/linkedin.svg';
-import Email from  '../../public/envelope.svg';
+import Github from '../../public/github.svg';
+import LinkedIn from '../../public/linkedin.svg';
+import Email from '../../public/envelope.svg';
 import Link from 'next/link';
+import Instagram from '../../public/instagram.svg';
 
 export default function Nav() {
   return (
@@ -24,17 +25,22 @@ export default function Nav() {
           <Link href="https://github.com/aceGK/" passHref>
             <Github />
           </Link>
-          </li>
+        </li>
         <li>
-        <Link href="https://www.linkedin.com/in/acekisch/" passHref>
-          <LinkedIn />
+          <Link href="https://www.linkedin.com/in/acekisch/" passHref>
+            <LinkedIn />
           </Link>
-          </li>
+        </li>
         <li>
-        <Link href="#" passHref>
-          <Email />
+          <Link href="#" passHref>
+            <Email />
           </Link>
-          </li>
+        </li>
+        <li>
+          <Link href="#" passHref>
+            <Instagram />
+          </Link>
+        </li>
       </ul>
     </nav>
   );
