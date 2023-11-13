@@ -16,16 +16,16 @@ export default function Home() {
       <main >
 
         <section id="about">
-          <h2>About</h2>
+          <h2 className="full-bleed">About</h2>
           <p>Hello, world!</p>
           
-          <p>I am a full-stack software engineer with a focus on front-end web development. I currently live in San Jose, California <a href="#">adipisicing elit.</a> Dolores molestias dolor a asperiores! Quos rerum laudantium exercitationem repellat veniam reprehenderit.</p>
+          <p>I am a full-stack software engineer with a focus on front-end web development. I currently live in San Jose, California. Dolores molestias dolor a asperiores <a href="#">adipisicing elit.</a> Quos rerum laudantium exercitationem repellat veniam reprehenderit.</p>
 
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio rerum ad vel explicabo quisquam vero. Harum nemo distinctio impedit nobis dignissimos mollitia adipisci alias veritatis eius facilis? Laborum exercitationem maxime consequatur velit dicta voluptas fugit nobis. Quisquam cum earum, a necessitatibus aspernatur facilis aliquid iste molestiae pariatur saepe enim officia.</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio rerum ad vel explicabo quisquam vero. Harum nemo distinctio impedit nobis <a href="#">dignissimos mollitia</a> adipisci <a href="#">alias veritatis</a> eius facilis Laborum exercitationem velit dicta voluptas <a href="#">maxime consequatur</a>. Quisquam cum earum, a necessitatibus aspernatur facilis aliquid iste molestiae pariatur saepe enim officia.</p>
         </section>
 
         <section id="experience">
-          <h2>Experience</h2>
+          <h2 className="full-bleed">Experience</h2>
           <ul>
             <li>
               <Card
@@ -61,7 +61,7 @@ export default function Home() {
         </section>
 
         <section id="projects">
-          <h2>Projects</h2>
+          <h2 className="full-bleed">Projects</h2>
           <ul>
             <li>
               <Card

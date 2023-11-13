@@ -14,13 +14,15 @@
   a {
     display:flex;
     align-items: center;
-    gap:5px;
+    gap:1rem;
     color:var(--clr-neutral-700);
     text-transform: uppercase;
     text-decoration: none;
-    font-weight:600;
+    font-weight:700;
     font-size:0.875rem;
+    letter-spacing: .1em;
     transition:all 0.3s;
+    
     &:before {
       transition:all 0.3s;
       content:"";
@@ -52,7 +54,7 @@
   svg {
     color:var(--clr-text);
     &:hover{
-      color:var(--clr-link);
+      color:var(--clr-primary);
     }
   }
   &svg:hover{
