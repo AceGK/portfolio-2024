@@ -98,6 +98,15 @@ export default function Home() {
                 tags={["HTML", "CSS", "JavaScript"]}
               />
             </li>
+            <li>
+              <Card
+                img="https://dummyimage.com/600x400/000/fff"
+                title="Lorem ipsum"
+                href="https://acegk.github.io/"
+                body="Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio rerum ad vel explicabo quisquam vero. Harum nemo distinctio. Dolores molestias dolor a asperiores"
+                tags={["HTML", "CSS", "JavaScript"]}
+              />
+            </li>
 
           </ul>
         </section>
