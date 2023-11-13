@@ -32,7 +32,7 @@ export default function Home() {
                 title="Purple Lotus"
                 subtitle="Senior Software Engineer"
                 href="https://purplelotus.vercel.app/"
-                body="Built a cannabis dispensary web app using Next.js, Algolia Instant Search, Sanity CMS, Google Maps API, . Improved SEO, performance & UI/UX."
+                body="Built a cannabis dispensary web app using Next.js, Algolia Instant Search, Sanity CMS, and the Google Maps API. Improved SEO, performance & UI/UX."
                 tags={["React", "Next.js", "JavaScript", "Algolia", "Sanity", "SCSS"]}
               />
             </li>
@@ -92,9 +92,9 @@ export default function Home() {
             <li>
               <Card
                 img="https://dummyimage.com/600x400/000/fff"
-                title="Tip Calculator"
-                href="https://acegk.github.io/tip-calculator/"
-                body="A vanilla JS tip calculator that evaluates cost per person based on bill amount and tip %"
+                title="Lorem ipsum"
+                href="https://acegk.github.io/"
+                body="Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio rerum ad vel explicabo quisquam vero. Harum nemo distinctio. Dolores molestias dolor a asperiores"
                 tags={["HTML", "CSS", "JavaScript"]}
               />
             </li>
