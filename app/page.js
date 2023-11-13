@@ -67,7 +67,7 @@ export default function Home() {
                 img="https://dummyimage.com/600x400/000/fff"
                 href="https://purplelotus.vercel.app/"
                 title="Purple Lotus"
-                body="Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat laboriosam quaerat dolore omnis aspernatur unde inventore nisi dolores eos necessitatibus."
+                body="Cannabis dispensary web app that uses the Jane Roots headless e-commerce platform and Algolia Instant Search to provide a fast, user-friendly shopping experience."
                 tags={["React", "Next.js", "JavaScript", "Algolia", "SCSS", "Sanity"]}
               />
             </li>
