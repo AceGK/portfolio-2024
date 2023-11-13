@@ -1,25 +1,24 @@
 import Nav from "@/components/nav/Nav";
 import Card from "@/components/card/Card";
+import Link from "next/link";
 
 export default function Home() {
   return (
     <>
       <header>
         <div>
-          <h1 className="fw-700 fs-800 pb-50">Ace Kisch</h1>
-          <h2 className="fw-700 fs-500">Software Engineer</h2>
+          <Link href="#"><h1 className="fw-700 fs-800 pb-50">Ace Kisch</h1></Link>
+          <h2 className="fw-600 fs-500">Software Engineer</h2>
           {/* <p style={{ maxWidth: "300px" }}>I build functional, user-friendly & accessible web applications</p> */}
         </div>
         <Nav />
       </header>
 
-      <main >
+      <main className="bottom-fade" >
 
-        <section id="about">
+        <section id="about" className="about">
           <h2 className="full-bleed">About</h2>
-          <p>Hello, world!</p>
-          
-          <p>I am a full-stack software engineer with a focus on front-end web development. I currently live in San Jose, California. Dolores molestias dolor a asperiores <a href="#">adipisicing elit.</a> Quos rerum laudantium exercitationem repellat veniam reprehenderit.</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio rerum ad vel explicabo quisquam vero. Harum nemo distinctio. Dolores molestias dolor a asperiores <a href="#">adipisicing elit.</a> Quos rerum laudantium exercitationem repellat veniam reprehenderit.</p>
 
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio rerum ad vel explicabo quisquam vero. Harum nemo distinctio impedit nobis <a href="#">dignissimos mollitia</a> adipisci <a href="#">alias veritatis</a> eius facilis Laborum exercitationem velit dicta voluptas <a href="#">maxime consequatur</a>. Quisquam cum earum, a necessitatibus aspernatur facilis aliquid iste molestiae pariatur saepe enim officia.</p>
         </section>
@@ -66,6 +65,7 @@ export default function Home() {
             <li>
               <Card
                 img="https://dummyimage.com/600x400/000/fff"
+                href="https://purplelotus.vercel.app/"
                 title="Purple Lotus"
                 body="Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat laboriosam quaerat dolore omnis aspernatur unde inventore nisi dolores eos necessitatibus."
                 tags={["React", "Next.js", "JavaScript", "Algolia", "SCSS", "Sanity"]}
@@ -75,34 +75,30 @@ export default function Home() {
               <Card
                 img="https://dummyimage.com/600x400/000/fff"
                 title="Tip Calculator"
+                href="https://acegk.github.io/tip-calculator/"
                 body="A vanilla JS tip calculator that evaluates cost per person based on bill amount and tip %"
-                tags={["HTML", "CSS", "JS"]}
+                tags={["HTML", "CSS", "JavaScript"]}
               />
             </li>
             <li>
               <Card
                 img="https://dummyimage.com/600x400/000/fff"
                 title="Tip Calculator"
+                href="https://acegk.github.io/tip-calculator/"
                 body="A vanilla JS tip calculator that evaluates cost per person based on bill amount and tip %"
-                tags={["HTML", "CSS", "JS"]}
+                tags={["HTML", "CSS", "JavaScript"]}
               />
             </li>
             <li>
               <Card
                 img="https://dummyimage.com/600x400/000/fff"
                 title="Tip Calculator"
+                href="https://acegk.github.io/tip-calculator/"
                 body="A vanilla JS tip calculator that evaluates cost per person based on bill amount and tip %"
-                tags={["HTML", "CSS", "JS"]}
+                tags={["HTML", "CSS", "JavaScript"]}
               />
             </li>
-            <li>
-              <Card
-                img="https://dummyimage.com/600x400/000/fff"
-                title="Tip Calculator"
-                body="A vanilla JS tip calculator that evaluates cost per person based on bill amount and tip %"
-                tags={["HTML", "CSS", "JS"]}
-              />
-            </li>
+          
           </ul>
         </section>
 

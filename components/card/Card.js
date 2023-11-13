@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import styles from './Card.module.scss';
+import Arrow from '../../public/up-right-arrow.svg';
 
 export default function Card({ href, title, body, tags, children, img, caption, subtitle }) {
   // Wrapper component conditionally set to either Link or div
@@ -19,7 +20,7 @@ export default function Card({ href, title, body, tags, children, img, caption, 
 
       <div className={styles.content}>
         <div className={styles.header}>
-          {title && <span className={styles.title}>{title}</span>}
+          <div className={styles.title}>{title}<Arrow /></div>
           {subtitle && <span className={styles.subtitle}>{subtitle}</span>}
         </div>
         {body && <span className={styles.body}>{body}</span>}
@@ -27,7 +28,7 @@ export default function Card({ href, title, body, tags, children, img, caption, 
         {tags && (
           <div className={styles.tags}>
             {tags.map(tag => (
-              <span key={tag} className={styles.tag}>
+              <span key={tag} className={styles.tag} data-type={tag}>
                 {tag}
               </span>
             ))}

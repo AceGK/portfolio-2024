@@ -12,6 +12,10 @@ body {
   max-width: 100vw;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background: var(--clr-background);
   color: var(--clr-text);
@@ -19,10 +23,11 @@ body {
   grid-template-columns: 1fr 1fr;
   min-height: 100vh;
   max-width: 1080px;
-  padding-inline: 1.5rem;
+  padding-inline: 4rem;
   margin: auto;
 
   @include smallScreen() {
+    padding-inline: 1.5rem;
     display: flex;
     flex-direction: column;
   }
@@ -42,10 +47,25 @@ header {
     padding:6rem 0rem 0rem;
   }
 }
-
-main {
-  padding: 6rem 0rem;
+.about {
+  padding-top:6rem;
+  @include tablet() {
+    padding-top:2rem;
+  }
 }
+.bottom-fade {
+  position: relative;
+  &::after {
+    content:"";
+    background:linear-gradient(180deg, transparent 0%, var(--clr-background) 90%);
+    display:block;
+    position:fixed;
+    bottom:0px;
+    width:100%;
+    height:150px;
+  }
+}
+
 nav {
   padding-top: 1rem;
 }
@@ -60,7 +80,7 @@ a {
 }
 
 p {
-  padding-top: 1rem;
+  padding-bottom: 1rem;
   line-height: 1.625;
 }
 
@@ -96,11 +116,11 @@ section {
 
 section h2 {
   visibility: hidden;
+  height:0px;
   --bg-color:var(--clr-background-transparent);
   background-color: var(--bg-color);
   backdrop-filter: blur(5px);
   text-transform: uppercase;
-  padding:1.25rem 0rem;
   position:sticky;
   top:0;
   color:var(--clr-heading);
@@ -110,6 +130,8 @@ section h2 {
   height: 0px;
   z-index: 2;
   @include smallScreen() {
+    padding:1.25rem 0rem;
+    height:auto;
     visibility: visible;
     height: auto;
   }
@@ -129,6 +151,13 @@ section {
   }
 }
 
+footer {
+  max-width:250px;
+  text-wrap: balance;
+}
+
+
+// utility
 .flex {
   display: flex;
   flex-direction: column;

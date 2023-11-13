@@ -14,6 +14,9 @@
     background-color: var(--clr-background-muted);
     .title {
       color:var(--clr-primary);
+      svg {
+        transform: translate(2px, -2px); 
+      }
     }
   }
 }
@@ -46,7 +49,16 @@
 
 .title {
   font-weight: 700;
+  width:fit-content;
   color: var(--clr-heading);
+  position: relative;
+  display:flex;
+  gap:4px;
+  svg {
+    position: relative;
+    transition: transform 0.3s ease;
+    transform: translate(-1px, 1px); 
+  }
 }
 
 .subtitle {
@@ -79,4 +91,44 @@
   border-radius: 3px;
   background-color: var(--clr-primary-muted);
   color: var(--clr-primary);
+  &[data-type="React"] {
+    color: var(--clr-react);
+    background-color:var(--clr-react-bg);
+  }
+  &[data-type="Next.js"] {
+    color: var(--clr-next);
+    background-color:var(--clr-next-bg);
+  }
+  &[data-type="Algolia"] {
+    color: var(--clr-algolia);
+    background-color:var(--clr-algolia-bg);
+  }
+  &[data-type="SCSS"] {
+    color: var(--clr-scss);
+    background-color:var(--clr-scss-bg);
+  }
+  &[data-type="Sanity"] {
+    color: var(--clr-sanity);
+    background-color:var(--clr-sanity-bg);
+  }
+  &[data-type="CSS"] {
+    color: var(--clr-css);
+    background-color:var(--clr-css-bg);
+  }
+  &[data-type="HTML"] {
+    color: var(--clr-html);
+    background-color:var(--clr-html-bg);
+  }
+  &[data-type="PHP"] {
+    color: var(--clr-php);
+    background-color:var(--clr-php-bg);
+  }
+  &[data-type="WordPress"] {
+    color: var(--clr-wp);
+    background-color:var(--clr-wp-bg);
+  }
+}
+
+.React {
+  color:red!important;
 }

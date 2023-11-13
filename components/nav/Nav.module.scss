@@ -1,9 +1,9 @@
 @import "../../app/mixins";
+
 .nav {
   display:flex;
   flex-direction: column;
   flex: 1;
-  
 }
 
 .primary {
@@ -22,7 +22,6 @@
     font-size:0.875rem;
     letter-spacing: .1em;
     transition:all 0.3s;
-    
     &:before {
       transition:all 0.3s;
       content:"";
@@ -30,6 +29,13 @@
       height:1px;
       width:2rem;
       display: inline-block;
+    }
+    &:hover {
+      color:var(--clr-heading);
+      &:before {
+        width:4rem;
+        background:var(--clr-heading);
+      }
     }
   }
   .active {
@@ -40,11 +46,16 @@
       width:4rem;
       background:var(--clr-primary);
     }
-  }
-  @include smallScreen(){
-   display:none;
+    &:hover {
+      &:before {
+        background:var(--clr-primary);
+      }
   }
  }
+ @include smallScreen(){
+  display:none;
+ }
+}
  
 .social {
   display:flex;
