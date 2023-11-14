@@ -32,7 +32,7 @@ export default function Home() {
                 title="Purple Lotus"
                 subtitle="Senior Software Engineer"
                 href="https://purplelotus.vercel.app/"
-                body="Built a cannabis dispensary eCommerce web app using Next.js, Algolia Instant Search, Sanity CMS, and several third party APIs. Improved SEO, performance & UI/UX."
+                body="Built a cannabis dispensary eCommerce web app using Next.js, Algolia Instant Search, Sanity CMS & several third party APIs. Improved SEO, performance & UI/UX."
                 tags={["React", "Next.js", "JavaScript", "Algolia", "Sanity", "SCSS"]}
               />
             </li>
@@ -50,9 +50,9 @@ export default function Home() {
               <Card
                 caption="2014 — 2022"
                 title="Oaksterdam University"
-                subtitle="Software Engineer"
+                subtitle="Software Engineer & IT Manager"
                 href="https://oaksterdamuniversity.com"
-                body="Developed & implemented a suite of websites & services which included a CMS, LMS, eCommerce, marketing & support automation, user authentication & SSO, SEO tracking & tools, voip, live chat, team communication & project management services, an improved hosting platform & site version control."
+                body="Developed a suite of web services including a CMS, LMS, eCommerce, user authentication & SSO, marketing & support automation, SEO tracking & tools, voip, live chat, team communication & project management services, an improved hosting platform & site version control. I also managed the IT department & provided technical support for staff & students."
                 tags={["WordPress", "PHP", "JavaScript", "HTML", "CSS"]}
               />
             </li>
@@ -67,7 +67,7 @@ export default function Home() {
                 img="https://dummyimage.com/600x400/000/fff"
                 href="https://purplelotus.vercel.app/"
                 title="Purple Lotus"
-                body="Cannabis dispensary web app that uses the Jane Roots headless e-commerce platform and Algolia Instant Search to provide a fast, user-friendly shopping experience."
+                body="Cannabis dispensary web app that uses the Jane Roots headless e-commerce platform & Algolia Instant Search to provide a fast, user-friendly shopping experience."
                 tags={["React", "Next.js", "JavaScript", "Algolia", "Sanity", "SCSS"]}
               />
             </li>
@@ -85,7 +85,7 @@ export default function Home() {
                 img="https://dummyimage.com/600x400/000/fff"
                 title="Tip Calculator"
                 href="https://acegk.github.io/tip-calculator/"
-                body="A vanilla JS tip calculator that evaluates cost per person based on bill amount and tip %"
+                body="A vanilla JS tip calculator that evaluates cost per person based on bill amount & tip %"
                 tags={["HTML", "CSS", "JavaScript"]}
               />
             </li>
