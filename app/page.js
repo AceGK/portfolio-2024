@@ -32,7 +32,7 @@ export default function Home() {
                 title="Purple Lotus"
                 subtitle="Senior Software Engineer"
                 href="https://purplelotus.vercel.app/"
-                body="Built a cannabis dispensary web app using Next.js, Algolia Instant Search, Sanity CMS, and the Google Maps API. Improved SEO, performance & UI/UX."
+                body="Built a cannabis dispensary eCommerce web app using Next.js, Algolia Instant Search, Sanity CMS, and several third party APIs. Improved SEO, performance & UI/UX."
                 tags={["React", "Next.js", "JavaScript", "Algolia", "Sanity", "SCSS"]}
               />
             </li>
