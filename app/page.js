@@ -77,7 +77,7 @@ export default function Home() {
                 title="Leaflet.js Zipcode Map"
                 href="https://acegk.github.io/"
                 body="Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio rerum ad vel explicabo quisquam vero. Harum nemo distinctio. Dolores molestias dolor a asperiores"
-                tags={["HTML", "CSS", "JavaScript", "Leaflet.js"]}
+                tags={["React", "Next.js", "JavaScript", "SCSS"]}
               />
             </li>
             <li>
