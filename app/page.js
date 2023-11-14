@@ -83,19 +83,19 @@ export default function Home() {
             <li>
               <Card
                 img="https://dummyimage.com/600x400/000/fff"
-                title="Tip Calculator"
-                href="https://acegk.github.io/tip-calculator/"
-                body="A vanilla JS tip calculator that evaluates cost per person based on bill amount and tip %"
-                tags={["HTML", "CSS", "JavaScript"]}
+                title="Periodic Table"
+                href="https://ace-periodic-table.vercel.app/"
+                body="Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio rerum ad vel explicabo quisquam vero. Harum nemo distinctio. Dolores molestias dolor a asperiores"
+                tags={["React", "Next.js", "JavaScript", "SCSS"]}
               />
             </li>
             <li>
               <Card
                 img="https://dummyimage.com/600x400/000/fff"
-                title="Periodic Table"
-                href="https://ace-periodic-table.vercel.app/"
-                body="Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio rerum ad vel explicabo quisquam vero. Harum nemo distinctio. Dolores molestias dolor a asperiores"
-                tags={["React", "Next.js", "JavaScript", "SCSS"]}
+                title="Tip Calculator"
+                href="https://acegk.github.io/tip-calculator/"
+                body="A vanilla JS tip calculator that evaluates cost per person based on bill amount and tip %"
+                tags={["HTML", "CSS", "JavaScript"]}
               />
             </li>
             <li>
