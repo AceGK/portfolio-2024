@@ -52,7 +52,7 @@ header {
 }
 .about {
   padding-top:6rem;
-  @include tablet() {
+  @include smallScreen() {
     padding-top:2rem;
   }
 }
@@ -110,6 +110,9 @@ section {
     transition:all 0.3s;
     opacity: initial;
   }
+  @include mobile() {
+    margin-bottom: 3rem;
+  }
 }
 
 .full-bleed {
@@ -142,10 +145,6 @@ section h2 {
 
 ul {
   list-style-type: none;
-}
-
-section {
-  padding-bottom: 1rem;
 }
 
 @media (prefers-color-scheme: dark) {
