@@ -18,9 +18,10 @@ export default function Home() {
 
         <section id="about" className="about">
           <h2 className="full-bleed">About</h2>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio rerum ad vel explicabo quisquam vero. Harum nemo distinctio. Dolores molestias dolor a asperiores <a href="#">adipisicing elit.</a> Quos rerum laudantium exercitationem repellat veniam reprehenderit.</p>
+          <p>My name is Ace and I am an experienced front-end software engineer. My journey began in 2013 learning to build custom WordPress themes and plugins. Since then, I’ve had the privilege of building software for a <a href="#">cannabis university</a> and a <a href="#">dispensary</a>.
+</p>
 
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio rerum ad vel explicabo quisquam vero. Harum nemo distinctio impedit nobis <a href="#">dignissimos mollitia</a> adipisci <a href="#">alias veritatis</a> eius facilis Laborum exercitationem velit dicta voluptas <a href="#">maxime consequatur</a>. Quisquam cum earum, a necessitatibus aspernatur facilis aliquid iste molestiae pariatur saepe enim officia.</p>
+          <p>I'm currently focused on building accessible full-stack React applications </p>
         </section>
 
         <section id="experience">
@@ -74,15 +75,6 @@ export default function Home() {
             <li>
               <Card
                 img="https://dummyimage.com/600x400/000/fff"
-                title="Leaflet.js Zipcode Map"
-                href="https://acegk.github.io/"
-                body="Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio rerum ad vel explicabo quisquam vero. Harum nemo distinctio. Dolores molestias dolor a asperiores"
-                tags={["React", "Next.js", "JavaScript", "SCSS"]}
-              />
-            </li>
-            <li>
-              <Card
-                img="https://dummyimage.com/600x400/000/fff"
                 title="Periodic Table"
                 href="https://ace-periodic-table.vercel.app/"
                 body="Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio rerum ad vel explicabo quisquam vero. Harum nemo distinctio. Dolores molestias dolor a asperiores"
@@ -96,6 +88,15 @@ export default function Home() {
                 href="https://acegk.github.io/tip-calculator/"
                 body="A vanilla JS tip calculator that evaluates cost per person based on bill amount and tip %"
                 tags={["HTML", "CSS", "JavaScript"]}
+              />
+            </li>
+            <li>
+              <Card
+                img="https://dummyimage.com/600x400/000/fff"
+                title="Leaflet.js Zipcode Map"
+                href="https://acegk.github.io/"
+                body="Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio rerum ad vel explicabo quisquam vero. Harum nemo distinctio. Dolores molestias dolor a asperiores"
+                tags={["React", "Next.js", "JavaScript", "SCSS"]}
               />
             </li>
             <li>

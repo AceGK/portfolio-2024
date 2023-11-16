@@ -32,26 +32,20 @@
 
     --clr-link: hsl(0, 0%, 95%);
 
-    --clr-primary:#5eead4;
-    --clr-primary-muted:#122B39;
-
-    --clr-background: #0D1117;
-    --clr-background-muted: #181e28;
-
-
     // new
     --clr-background: rgb(17, 23, 31);
-    --clr-background-transparent: #11171fd7;
+    --clr-background-transparent: #11171f9a;
     --clr-background-muted: #181e28;
 
-        
-    --clr-primary-base:rgb(33, 212, 161);
-    --clr-primary-base: 33, 212, 161;
     --clr-primary-base: 255, 203, 66;
     --clr-primary: rgb(var(--clr-primary-base));
     --clr-primary-muted: rgba(var(--clr-primary-base), 0.16);
     
     --border-radius: 0.25rem;
+
+    --clr-js-base: 255, 203, 66;
+    --clr-js: rgb(var(--clr-js-base));
+    --clr-js-bg: rgba(var(--clr-js-base), 0.1);
 
     --clr-react-base: 94, 211, 243;
     --clr-react: rgb(var(--clr-react-base));
@@ -88,11 +82,82 @@
     --clr-wp-base:129,169,249;
     --clr-wp: rgb(var(--clr-wp-base));
     --clr-wp-bg: rgba(var(--clr-wp-base), 0.1);
+
+    body.matrix {
+      --clr-text:gree;
+      --clr-text: green;
+
+      --clr-heading: green;
+      --clr-heading-muted: green;
+  
+      --clr-neutral-100: green;
+      --clr-neutral-150: green;
+      --clr-neutral-200: green;
+      --clr-neutral-300: green;
+      --clr-neutral-400: green;
+      --clr-neutral-500: green;
+      --clr-neutral-600: green;
+      --clr-neutral-700: green;
+      --clr-neutral-800: green;
+      --clr-neutral-900: green;
+      --clr-neutral-950: green;
+      --clr-neutral-975: green;
+      --clr-neutral-990: green;
+      --clr-neutral-995: green;
+      --clr-neutral-1000: green;
+  
+      --clr-link: green;
+  
+      // new
+      --clr-background: rgb(0, 0, 0);
+      --clr-background-transparent: #0000009a;
+      --clr-background-muted: #000000;
+  
+      --clr-primary-base: green;
+      --clr-primary: green;
+      --clr-primary-muted: green;
+      
+      --border-radius: 0.25rem;
+  
+      --clr-js-base: green;
+      --clr-js: #000000;
+      --clr-js-bg: green;
+
+      --clr-react-base: green;
+      --clr-react: #000000;
+      --clr-react-bg: green;
+
+      --clr-next-base: green;
+      --clr-next: #000000;
+      --clr-next-bg: green;
+  
+      --clr-algolia-base: green;
+      --clr-algolia: #000000;
+      --clr-algolia-bg: green;
+  
+      --clr-scss-base: green;
+      --clr-scss: #000000;
+      --clr-scss-bg: green;
+  
+      --clr-sanity-base:green;
+      --clr-sanity: #000000;
+      --clr-sanity-bg: green;
+      
+      --clr-css-base:green;
+      --clr-css: #000000;
+      --clr-css-bg: green;
+      
+      --clr-html-base:green;
+      --clr-html: #000000;
+      --clr-html-bg: green;
+      
+      --clr-php-base:green;
+      --clr-php: #000000;
+      --clr-php-bg: green;
+      
+      --clr-wp-base:green;
+      --clr-wp: #000000;
+      --clr-wp-bg: green;
+    }
     
   }
-
-// @media (prefers-color-scheme: dark) {
-//   :root {
-//     --background-color: #0D1117;
-//   }
-// }

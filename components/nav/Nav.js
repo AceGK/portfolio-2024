@@ -51,6 +51,9 @@ export default function Nav() {
         <li>
           <a href="#projects" className={activeSection === 'projects' ? styles.active : ''}>projects</a>
         </li>
+        <li>
+          <button onClick={() => document.body.classList.toggle('matrix')}>Wake up</button>
+        </li>
       </ul>
 
       <ul className={styles.social}>
@@ -65,15 +68,15 @@ export default function Nav() {
           </Link>
         </li>
         <li>
-          <Link href="#" passHref>
+          <Link href="mailto:acekisch@gmail.com" passHref>
             <Email />
           </Link>
         </li>
-        <li>
+        {/* <li>
           <Link href="#" passHref>
             <CV />
           </Link>
-        </li>
+        </li> */}
       </ul>
     </nav>
   );

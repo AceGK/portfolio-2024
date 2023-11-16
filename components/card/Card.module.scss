@@ -127,6 +127,10 @@
     color: var(--clr-wp);
     background-color:var(--clr-wp-bg);
   }
+  &[data-type="JavaScript"] {
+    color: var(--clr-js);
+    background-color:var(--clr-js-bg);
+  }
 }
 
 .React {
