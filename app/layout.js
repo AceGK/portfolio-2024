@@ -1,9 +1,16 @@
-import { Inter } from 'next/font/google'
+import { Inter, VT323 } from 'next/font/google'
 import './reset.scss'
-import './globals.scss'
 import './matrix.scss'
+import './globals.scss'
 
 const inter = Inter({ subsets: ['latin'] })
+const vt323 = VT323({
+  weight: ['400'],
+  style: ['normal'],
+  subsets: ['latin'],
+  display: 'swap',
+})
+
 
 export const metadata = {
   title: 'Ace Kisch',

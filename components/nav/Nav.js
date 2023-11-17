@@ -82,6 +82,7 @@ export default function Nav() {
         onClick={() => document.body.classList.toggle('matrix')}>
         <span className="visually-hidden">Wake up</span>
         <Rabbit />
+        {/* 🐇 */}
       </button>
     </nav>
   );
