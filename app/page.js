@@ -17,10 +17,10 @@ export default function Home() {
 
         <section id="about" className="about">
           <h2 className="full-bleed">About</h2>
-          <p>My name is Ace and I am an experienced front-end software engineer. My journey began in 2013 learning to build custom WordPress themes and plugins. Since then, I’ve had the privilege of building software for a <a href="#">cannabis university</a> and a <a href="#">dispensary</a>.
+          <p>My name is Ace and I am an experienced front-end software engineer. My journey began in 2013 learning to build custom WordPress themes and plugins. Since then, I&apos;ve had the privilege of building software for a <a href="#">cannabis university</a> and a <a href="#">dispensary</a>.
 </p>
 
-          <p>I'm currently focused on building accessible full-stack React applications... </p>
+          <p>I&apos;m currently focused on building accessible full-stack React applications... </p>
         </section>
 
         <section id="experience">
