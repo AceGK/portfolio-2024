@@ -1,6 +1,7 @@
 import Nav from "@/components/nav/Nav";
 import Card from "@/components/card/Card";
 import Link from "next/link";
+import Matrix from "@/components/matrix/Matrix";
 
 export default function Home() {
   return (
@@ -114,6 +115,8 @@ export default function Home() {
         <footer className="pb-600 mb-600">
           <p>Built with <a href="#">Next.js</a> & hosted on <a href="#">Vercel</a>. View this site on <a href="#">Github</a></p>
         </footer>
+        
+        <Matrix />
 
       </main>
 

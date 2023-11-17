@@ -7,7 +7,6 @@ import Email from '../../public/envelope.svg';
 import Link from 'next/link';
 import Instagram from '../../public/instagram.svg';
 import CV from '@/public/cv.svg';
-import Rabbit from '../../public/rabbit.svg';
 
 export default function Nav() {
 
@@ -76,14 +75,6 @@ export default function Nav() {
           </Link>
         </li> */}
       </ul>
-
-      <button
-        className="wake-up"
-        onClick={() => document.body.classList.toggle('matrix')}>
-        <span className="visually-hidden">Wake up</span>
-        <Rabbit />
-        {/* 🐇 */}
-      </button>
     </nav>
   );
 }
