@@ -1,7 +1,6 @@
 import Nav from "@/components/nav/Nav";
 import Card from "@/components/card/Card";
 import Link from "next/link";
-import Next from "@/public/next.svg"
 
 export default function Home() {
   return (
@@ -21,7 +20,7 @@ export default function Home() {
           <p>My name is Ace and I am an experienced front-end software engineer. My journey began in 2013 learning to build custom WordPress themes and plugins. Since then, I’ve had the privilege of building software for a <a href="#">cannabis university</a> and a <a href="#">dispensary</a>.
 </p>
 
-          <p>I'm currently focused on building accessible full-stack React applications </p>
+          <p>I'm currently focused on building accessible full-stack React applications... </p>
         </section>
 
         <section id="experience">

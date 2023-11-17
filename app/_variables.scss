@@ -32,7 +32,7 @@
 
     --clr-link: hsl(0, 0%, 95%);
 
-    // new
+    --background: none;
     --clr-background: rgb(17, 23, 31);
     --clr-background-transparent: #11171f9a;
     --clr-background-muted: #181e28;
@@ -84,80 +84,81 @@
     --clr-wp-bg: rgba(var(--clr-wp-base), 0.1);
 
     body.matrix {
-      --clr-text:gree;
-      --clr-text: green;
+      --clr-text:#4af526;
+      --clr-text: #4af526;
 
-      --clr-heading: green;
-      --clr-heading-muted: green;
+      --clr-heading: #4af526;
+      --clr-heading-muted: #4af526;
   
-      --clr-neutral-100: green;
-      --clr-neutral-150: green;
-      --clr-neutral-200: green;
-      --clr-neutral-300: green;
-      --clr-neutral-400: green;
-      --clr-neutral-500: green;
-      --clr-neutral-600: green;
-      --clr-neutral-700: green;
-      --clr-neutral-800: green;
-      --clr-neutral-900: green;
-      --clr-neutral-950: green;
-      --clr-neutral-975: green;
-      --clr-neutral-990: green;
-      --clr-neutral-995: green;
-      --clr-neutral-1000: green;
+      --clr-neutral-100: #4af526;
+      --clr-neutral-150: #4af526;
+      --clr-neutral-200: #4af526;
+      --clr-neutral-300: #4af526;
+      --clr-neutral-400: #4af526;
+      --clr-neutral-500: #4af526;
+      --clr-neutral-600: #4af526;
+      --clr-neutral-700: #4af526;
+      --clr-neutral-800: #4af526;
+      --clr-neutral-900: #4af526;
+      --clr-neutral-950: #4af526;
+      --clr-neutral-975: #4af526;
+      --clr-neutral-990: #4af526;
+      --clr-neutral-995: #4af526;
+      --clr-neutral-1000: #4af526;
   
-      --clr-link: green;
+      --clr-link: #4af526;
   
       // new
-      --clr-background: rgb(0, 0, 0);
-      --clr-background-transparent: #0000009a;
-      --clr-background-muted: #000000;
+      --background:radial-gradient(rgba(44, 56, 44, 0.267), black 120%);
+      --clr-background: rgb(10, 10, 10);
+      --clr-background-transparent: transparent;
+      --clr-background-muted: transparent;
   
-      --clr-primary-base: green;
-      --clr-primary: green;
-      --clr-primary-muted: green;
+      --clr-primary-base: #4af526;
+      --clr-primary: #4af526;
+      --clr-primary-muted: #4af526;
       
       --border-radius: 0.25rem;
   
-      --clr-js-base: green;
+      --clr-js-base: #4af526;
       --clr-js: #000000;
-      --clr-js-bg: green;
+      --clr-js-bg: #4af526;
 
-      --clr-react-base: green;
+      --clr-react-base: #4af526;
       --clr-react: #000000;
-      --clr-react-bg: green;
+      --clr-react-bg: #4af526;
 
-      --clr-next-base: green;
+      --clr-next-base: #4af526;
       --clr-next: #000000;
-      --clr-next-bg: green;
+      --clr-next-bg: #4af526;
   
-      --clr-algolia-base: green;
+      --clr-algolia-base: #4af526;
       --clr-algolia: #000000;
-      --clr-algolia-bg: green;
+      --clr-algolia-bg: #4af526;
   
-      --clr-scss-base: green;
+      --clr-scss-base: #4af526;
       --clr-scss: #000000;
-      --clr-scss-bg: green;
+      --clr-scss-bg: #4af526;
   
-      --clr-sanity-base:green;
+      --clr-sanity-base:#4af526;
       --clr-sanity: #000000;
-      --clr-sanity-bg: green;
+      --clr-sanity-bg: #4af526;
       
-      --clr-css-base:green;
+      --clr-css-base:#4af526;
       --clr-css: #000000;
-      --clr-css-bg: green;
+      --clr-css-bg: #4af526;
       
-      --clr-html-base:green;
+      --clr-html-base:#4af526;
       --clr-html: #000000;
-      --clr-html-bg: green;
+      --clr-html-bg: #4af526;
       
-      --clr-php-base:green;
+      --clr-php-base:#4af526;
       --clr-php: #000000;
-      --clr-php-bg: green;
+      --clr-php-bg: #4af526;
       
-      --clr-wp-base:green;
+      --clr-wp-base:#4af526;
       --clr-wp: #000000;
-      --clr-wp-bg: green;
+      --clr-wp-bg: #4af526;
     }
     
   }
