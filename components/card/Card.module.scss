@@ -105,7 +105,8 @@
     "HTML": html,
     "PHP": php,
     "WordPress": wp,
-    "JavaScript": js
+    "JavaScript": js,
+    "Leaflet.js": leaflet,
   );
   @each $type, $color-name in $data-types {
     &[data-type="#{$type}"] {

@@ -17,10 +17,10 @@ export default function Home() {
 
         <section id="about" className="about">
           <h2 className="full-bleed">About</h2>
-          <p>My name is Ace and I am an experienced front-end software engineer. My journey began in 2013 learning to build custom website themes and plugins. Since then, I&apos;ve had the privilege of building software for a <a href="#">cannabis university</a> and a <a href="#">dispensary</a>.
+          <p>My name is Ace and I am an experienced front-end software engineer. My journey began in 2013 learning to create custom plugins and websites for myself and local businesses. Since then, I&apos;ve had the privilege of building software for several startups, a <a href="#">university</a>, and a <a href="#">cannabis dispensary</a>.
           </p>
 
-          <p>I&apos;m currently focused on building accessible full-stack React applications... </p>
+          <p>I&apos;m currently focused on building accessible and performant full-stack React/Next.js applications. </p>
         </section>
 
         <section id="experience">
@@ -32,7 +32,7 @@ export default function Home() {
                 title="Purple Lotus"
                 subtitle="Senior Software Engineer"
                 href="https://purplelotus.vercel.app/"
-                body="Built a cannabis dispensary eCommerce web app using Next.js, Algolia Instant Search, Sanity CMS and several third party APIs. Improved SEO, performance and UI/UX."
+                body="Built a cannabis dispensary eCommerce web app using Next.js, Algolia Instant Search, Sanity CMS and several third party APIs. Improved SEO, performance, PageSpeed Insight scores, and UI/UX."
                 tags={["React", "Next.js", "JavaScript", "Algolia", "Sanity", "SCSS"]}
               />
             </li>
@@ -42,7 +42,7 @@ export default function Home() {
                 title="Purple Lotus"
                 subtitle="Contracted Web Developer"
                 href="https://plpcsanjose.com"
-                body="Rebuilt, redesigned and helped maintain a cannabis dispensary WordPress site. Developed a custom theme, plugins and integrations with third-party services. Improved hosting platform and PageSpeed Insights score."
+                body="Rebuilt, redesigned and helped maintain a cannabis dispensary WordPress site. Developed a custom theme, plugins and integrations with third-party services."
                 tags={["WordPress", "PHP", "JavaScript", "HTML", "CSS"]}
               />
             </li>
@@ -76,7 +76,7 @@ export default function Home() {
                 img="https://dummyimage.com/600x400/000/fff"
                 title="Periodic Table"
                 href="https://ace-periodic-table.vercel.app/"
-                body="Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio rerum ad vel explicabo quisquam vero. Harum nemo distinctio. Dolores molestias dolor a asperiores"
+                body="An interactive periodic table with detailed information on each element."
                 tags={["React", "Next.js", "JavaScript", "SCSS"]}
               />
             </li>
@@ -85,19 +85,19 @@ export default function Home() {
                 img="https://dummyimage.com/600x400/000/fff"
                 title="Tip Calculator"
                 href="https://acegk.github.io/tip-calculator/"
-                body="A vanilla JS tip calculator that evaluates cost per person based on bill amount and tip %"
+                body="A tip calculator that evaluates the tip and total per person based on the bill amount, tip percentage and number of people."
                 tags={["HTML", "CSS", "JavaScript"]}
               />
             </li>
-            <li>
+            {/* <li>
               <Card
                 img="https://dummyimage.com/600x400/000/fff"
-                title="Leaflet.js Zipcode Map"
+                title="Delivery Zipcode Map"
                 href="https://acegk.github.io/"
-                body="Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio rerum ad vel explicabo quisquam vero. Harum nemo distinctio. Dolores molestias dolor a asperiores"
-                tags={["React", "Next.js", "JavaScript", "SCSS"]}
+                body="An interactive map that highlights Bay Area zipcodes for displaying delivery zones."
+                tags={["React", "Next.js", "JavaScript", "Leaflet.js", "SCSS"]}
               />
-            </li>
+            </li> */}
             <li>
               <Card
                 img="https://dummyimage.com/600x400/000/fff"
