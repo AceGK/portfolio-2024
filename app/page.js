@@ -9,7 +9,7 @@ export default function Home() {
 
         <Link href="#"><h1 className="fw-700 fs-800 pb-50">Ace Kisch</h1></Link>
         <h2 className="fw-600 fs-500 pb-50">Software Engineer</h2>
- 
+
         <Nav />
       </header>
 
@@ -17,8 +17,8 @@ export default function Home() {
 
         <section id="about" className="about">
           <h2 className="full-bleed">About</h2>
-          <p>My name is Ace and I am an experienced front-end software engineer. My journey began in 2013 learning to build custom WordPress themes and plugins. Since then, I&apos;ve had the privilege of building software for a <a href="#">cannabis university</a> and a <a href="#">dispensary</a>.
-</p>
+          <p>My name is Ace and I am an experienced front-end software engineer. My journey began in 2013 learning to build custom website themes and plugins. Since then, I&apos;ve had the privilege of building software for a <a href="#">cannabis university</a> and a <a href="#">dispensary</a>.
+          </p>
 
           <p>I&apos;m currently focused on building accessible full-stack React applications... </p>
         </section>

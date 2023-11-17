@@ -1,7 +1,7 @@
 import { Inter, VT323 } from 'next/font/google'
-import './reset.scss'
-import './matrix.scss'
-import './globals.scss'
+import '../app/styles/reset.scss'
+import '../app/styles/matrix.scss'
+import '../app/styles/globals.scss'
 
 const inter = Inter({ subsets: ['latin'] })
 const vt323 = VT323({

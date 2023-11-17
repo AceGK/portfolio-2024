@@ -1,0 +1,108 @@
+$colors: (
+  primary: rgb(255, 87, 51),
+  js: rgb(255, 203, 66),
+  react: rgb(94, 211, 243),
+  next: rgb(255, 255, 255),
+  algolia: rgb(20, 147, 255),
+  scss: rgb(209, 111, 160),
+  sanity: rgb(243, 100, 88),
+  css: rgb(88, 134, 241),
+  html: rgb(233, 98, 40),
+  php: rgb(123, 135, 193),
+  wp: rgb(129, 169, 249)
+);
+
+:root {
+  @each $name, $color in $colors {
+    --clr-#{$name}: #{$color};
+    --clr-#{$name}-muted: #{rgba($color, 0.2)}; 
+    --clr-#{$name}-bg: #{rgba($color, 0.2)}; 
+  }
+
+  --clr-text: hsl(0, 0%, 60%);
+
+  --clr-heading: hsl(0, 0%, 95%);
+  --clr-heading-muted: hsl(0, 0%, 70%);
+
+  --clr-neutral-100: hsl(0, 0%, 100%);
+  --clr-neutral-150: hsl(0, 0%, 95%);
+  --clr-neutral-200: hsl(0, 0%, 90%);
+  --clr-neutral-300: hsl(0, 0%, 80%);
+  --clr-neutral-400: hsl(0, 0%, 70%);
+  --clr-neutral-500: hsl(0, 0%, 60%);
+  --clr-neutral-600: hsl(0, 0%, 50%);
+  --clr-neutral-700: hsl(0, 0%, 40%);
+  --clr-neutral-800: hsl(0, 0%, 30%);
+  --clr-neutral-900: hsl(0, 0%, 20%);
+  --clr-neutral-950: hsl(0, 0%, 10%);
+  --clr-neutral-975: hsl(0, 0%, 5%);
+  --clr-neutral-990: hsl(0, 0%, 2.5%);
+  --clr-neutral-995: hsl(0, 0%, 1.25%);
+  --clr-neutral-1000: hsl(0, 0%, 0%);
+
+  --fs-200: 0.75rem;
+  --fs-300: 0.875rem;
+  --fs-400: 1rem;
+  --fs-500: 1.5rem;
+  --fs-600: 2rem;
+  --fs-700: 2.5rem;
+  --fs-800: 3rem;
+  --fs-900: 3.5rem;
+
+  --clr-link: hsl(0, 0%, 95%);
+
+  --background: none;
+  --clr-background: rgb(17, 23, 31);
+  --clr-background-transparent: #11171f9a;
+  --clr-background-muted: #181e28;
+
+  --clr-primary-base: 255, 203, 66;
+  --clr-primary: rgb(var(--clr-primary-base));
+  --clr-primary-muted: rgba(var(--clr-primary-base), 0.16);
+
+  --border-radius: 0.25rem;
+
+  body.matrix {
+    --clr-text: #4af526;
+    --clr-text: #4af526;
+
+    --clr-heading: #4af526;
+    --clr-heading-muted: #4af526;
+
+    --clr-neutral-100: #4af526;
+    --clr-neutral-150: #4af526;
+    --clr-neutral-200: #4af526;
+    --clr-neutral-300: #4af526;
+    --clr-neutral-400: #4af526;
+    --clr-neutral-500: #4af526;
+    --clr-neutral-600: #4af526;
+    --clr-neutral-700: #4af526;
+    --clr-neutral-800: #4af526;
+    --clr-neutral-900: #4af526;
+    --clr-neutral-950: #4af526;
+    --clr-neutral-975: #4af526;
+    --clr-neutral-990: #4af526;
+    --clr-neutral-995: #4af526;
+    --clr-neutral-1000: #4af526;
+
+    --clr-link: #4af526;
+
+    // new
+    --background: radial-gradient(rgba(44, 56, 44, 0.267), black 120%);
+    --clr-background: rgb(10, 10, 10);
+    --clr-background-transparent: transparent;
+    --clr-background-muted: transparent;
+
+    --clr-primary-base: #4af526;
+    --clr-primary: #4af526;
+    --clr-primary-muted: #4af526;
+
+    --border-radius: 0.25rem;
+
+    @each $name, $color in $colors {
+      --clr-#{$name}: #4af526;
+      --clr-#{$name}-muted: #48f5264a;
+      --clr-#{$name}-bg: transparent;
+    }
+  }
+}
