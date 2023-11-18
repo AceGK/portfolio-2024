@@ -20,12 +20,11 @@ export default function Matrix() {
 
   useEffect(() => {
     if (modal) {
-      document.body.style.overflow = 'hidden'; // Prevent scrolling
+      document.body.style.overflow = 'hidden';
     } else {
-      document.body.style.overflow = ''; // Re-enable scrolling
+      document.body.style.overflow = '';
     }
   }, [modal]);
-
 
 
   return (
