@@ -20,8 +20,19 @@ export default function Home() {
         <section id="about" className="about">
           <h2>About</h2>
           <div className="bio">
-            <p>My name is Ace and I am an experienced front-end software engineer. My journey began in 2013 learning to create custom plugins and websites for myself and local businesses. Since then, I&apos;ve had the privilege of building software for several startups, a <a href="#">university</a>, and a <a href="#">cannabis dispensary</a>.
+   
+            <p>My name is Ace and I&apos;m an experienced front-end software engineer. My journey began in 2014 building custom website themes and plugins at <a href="https://oaksterdamuniversity.com">Oaksterdam University</a>. I&apos;m currently building software solutions at <a href="https://plpcsanjose.com">Purple Lotus</a>, a cannabis dispensary in San Jose, CA.
             </p>
+
+            <p>I am focused on building accessible and performant full-stack web applications. In my free time I am often working on side projects or improving my skills.  </p>
+              
+              {/* When I&apos;m not coding I spend my time learning about motorcycle mechanics,  </p> */}
+
+            {/* <p>My name is Ace and I am an experienced front-end software engineer. My journey began in 2013 learning to create custom plugins and websites for myself and local businesses. Since then, I&apos;ve had the privilege of building software for several startups, a <a href="https://oaksterdamuniversity.com">university</a>, and a <a href="https://plpcsanjose.com">cannabis dispensary</a>.
+            </p> 
+
+            <p>Currently, I&apos;m building software solutions at <a href="https://plpcsanjose.com">Purple Lotus</a>, a dispensary in San Jose, CA. I am focused on building accessible and performant full-stack web applications.</p>*/}
+
           </div>
         </section>
 
