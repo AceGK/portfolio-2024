@@ -3,6 +3,7 @@
 import { useState, useEffect, useRef } from 'react';
 import Rabbit from '../../public/rabbit.svg';
 import Cards from '../../public/cards.svg';
+import Card from '../../public/card-spade.svg';
 
 export default function Matrix() {
   const [matrix, setMatrix] = useState(false);
@@ -31,7 +32,7 @@ export default function Matrix() {
     <>
       <button className="wake-up">
         <span className="visually-hidden">Wake up</span>
-        {matrix ? <Cards onClick={() => setMatrix(false)} /> : <Rabbit onClick={() => setModal(true)} />}
+        {matrix ? <Card onClick={() => setMatrix(false)} /> : <Rabbit onClick={() => setModal(true)} />}
       </button>
 
       {modal &&

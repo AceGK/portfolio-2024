@@ -3,8 +3,8 @@
   outline: none;
   border: none;
   position: fixed;
-  bottom: 10px;
-  right: 10px;
+  bottom: 12px;
+  right: 12px;
   z-index: 5;
   font-size: 1.5rem;
   svg {
@@ -13,10 +13,6 @@
   &:hover {
     cursor: pointer;
   }
-}
-
-.matrix .wake-up {
-  font-size: 2rem;
 }
 
 //#region CRT effect
