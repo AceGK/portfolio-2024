@@ -169,7 +169,7 @@
   }
 }
 
-body.matrix::after {
+html.matrix::after {
   content: " ";
   display: block;
   position: fixed;
@@ -184,7 +184,7 @@ body.matrix::after {
   animation: flicker 2s infinite;
   height: 100vh;
 }
-body.matrix::before {
+html.matrix::before {
   content: "";
   height: 100vh;
   background-attachment: fixed;
@@ -206,18 +206,18 @@ body.matrix::before {
   background-size: 100% 2px, 3px 100%;
   pointer-events: none;
 }
-body.matrix {
+html.matrix {
   animation: textShadow 15s infinite;
 }
 
-body.matrix i:before {
+html.matrix i:before {
   color: var(--clr-text);
 }
-body.matrix .btn i:before {
+html.matrix .btn i:before {
   color: unset;
 }
 
-body.matrix svg {
+html.matrix svg {
   fill: var(--clr-text);
   color: var(--clr-text);
 }

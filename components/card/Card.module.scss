@@ -1,7 +1,7 @@
 @import "@/app/styles/_mixins.scss";
 
 .card {
-  padding: 1rem;
+  padding: 1.25rem;
   border: 1px solid transparent;
   margin-bottom: 2rem;
   display: flex;
@@ -11,7 +11,8 @@
   transition:all 0.3s;
   &:hover {
     transition:all 0.3s;
-    background-color: var(--clr-background-muted);
+    background-color: var(--clr-background-transparent);
+    backdrop-filter: blur(3px);
     .title {
       color:var(--clr-primary);
       svg {
@@ -64,6 +65,7 @@
 .subtitle {
   color:var(--clr-heading-muted);
   font-size:0.875rem;
+  font-weight:600;
 }
 
 .caption {
@@ -76,7 +78,7 @@
 
 .body {
   font-size:0.875rem;
-  line-height:1.325rem;
+  line-height:1.438rem;
   color:var(--clr-text);
 }
 

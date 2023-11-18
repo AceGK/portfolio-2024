@@ -36,15 +36,60 @@ $colors: (
   --fs-900: 3.5rem;
 
   --clr-background: rgb(17, 23, 31);
-  --clr-background-transparent: #11171f9a;
-  --clr-background-muted: #181e28;
-
+  --clr-background-transparent: rgba(0, 0, 0, 0.1);
+  --background:radial-gradient(ellipse at bottom, #1B2735 0%, #090A0F 100%);
   --border-radius: 0.25rem;
 
 
+}
 
 
-  body.matrix {
+$colors: (
+  primary: rgb(255, 203, 66),
+  js: rgb(255, 203, 66),
+  react: rgb(94, 211, 243),
+  next: rgb(255, 255, 255),
+  algolia: rgb(20, 147, 255),
+  scss: rgb(209, 111, 160),
+  sanity: rgb(243, 100, 88),
+  css: rgb(88, 134, 241),
+  html: rgb(233, 98, 40),
+  php: rgb(123, 135, 193),
+  wp: rgb(129, 169, 249),
+  leaflet:rgb(175, 220, 89),
+);
+
+:root {
+  @each $name, $color in $colors {
+    --clr-#{$name}: #{$color};
+    --clr-#{$name}-muted: #{rgba($color, 0.2)}; 
+    --clr-#{$name}-bg: #{rgba($color, 0.2)}; 
+  }
+
+  --clr-text: hsl(0, 0%, 65%);
+  --clr-heading: hsl(0, 0%, 97%);
+  --clr-heading-muted: hsl(0, 0%, 70%);
+  --clr-neutral-700: hsl(0, 0%, 50%);
+  --clr-link: hsl(0, 0%, 97%);
+
+  --fs-200: 0.75rem;
+  --fs-300: 0.875rem;
+  --fs-400: 1rem;
+  --fs-500: 1.5rem;
+  --fs-600: 2rem;
+  --fs-700: 2.5rem;
+  --fs-800: 3rem;
+  --fs-900: 3.5rem;
+
+  --clr-background: rgb(17, 23, 31);
+  --clr-background-transparent: rgba(0, 0, 0, 0.1);
+  --background:radial-gradient(ellipse at bottom, #1B2735 0%, #090A0F 100%);
+  --border-radius: 0.25rem;
+
+}
+
+
+  html.matrix {
     --clr-text: #4af526;
     --clr-text: #4af526;
 
@@ -59,7 +104,6 @@ $colors: (
     --background: radial-gradient(rgba(44, 56, 44, 0.267), black 120%);
     --clr-background: rgb(10, 10, 10);
     --clr-background-transparent: transparent;
-    --clr-background-muted: transparent;
 
     --clr-primary-base: #4af526;
     --clr-primary: #4af526;
@@ -73,4 +117,4 @@ $colors: (
       --clr-#{$name}-bg: #48f5260f;
     }
   }
-}
+

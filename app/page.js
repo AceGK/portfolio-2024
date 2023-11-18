@@ -6,7 +6,7 @@ import Matrix from "@/components/matrix/Matrix";
 export default function Home() {
   return (
     <>
-      <header className="container">
+      <header>
 
         <Link href="#"><h1 className="fw-700 fs-800 pb-50">Ace Kisch</h1></Link>
         <h2 className="fw-600 fs-500 pb-50">Software Engineer</h2>
@@ -17,9 +17,9 @@ export default function Home() {
       <main
       // className="bottom-fade" //broken w stars bg
       >
-        <section id="about">
-          <h2 className="full-bleed">About</h2>
-          <div className="container">
+        <section id="about" className="about">
+          <h2>About</h2>
+          <div>
             <p>My name is Ace and I am an experienced front-end software engineer. My journey began in 2013 learning to create custom plugins and websites for myself and local businesses. Since then, I&apos;ve had the privilege of building software for several startups, a <a href="#">university</a>, and a <a href="#">cannabis dispensary</a>.
             </p>
 
@@ -28,8 +28,8 @@ export default function Home() {
         </section>
 
         <section id="experience">
-          <h2 className="full-bleed">Experience</h2>
-          <ul className="container">
+          <h2>Experience</h2>
+          <ul>
             <li>
               <Card
                 caption="2022 — Present"
@@ -37,7 +37,7 @@ export default function Home() {
                 subtitle="Senior Software Engineer"
                 href="https://purplelotus.vercel.app/"
                 body="Built a cannabis dispensary eCommerce web app using Next.js, Algolia Instant Search, Sanity CMS and several third party APIs. Improved SEO, performance, PageSpeed Insight scores, and UI/UX."
-                tags={["React", "Next.js", "JavaScript", "Algolia", "Sanity", "SCSS"]}
+                tags={["Next.js", "Algolia", "Sanity", "SCSS"]}
               />
             </li>
             <li>
@@ -64,15 +64,15 @@ export default function Home() {
         </section>
 
         <section id="projects">
-          <h2 className="full-bleed">Projects</h2>
-          <ul className="container">
+          <h2>Projects</h2>
+          <ul>
             <li>
               <Card
                 img="https://dummyimage.com/600x400/000/fff"
                 href="https://purplelotus.vercel.app/"
                 title="Purple Lotus"
                 body="Cannabis dispensary web app that uses the Jane Roots headless e-commerce platform and Algolia Instant Search to provide a fast, user-friendly shopping experience."
-                tags={["React", "Next.js", "JavaScript", "Algolia", "Sanity", "SCSS"]}
+                tags={["Next.js", "Algolia", "Sanity", "SCSS"]}
               />
             </li>
             <li>
@@ -81,7 +81,7 @@ export default function Home() {
                 title="Periodic Table"
                 href="https://ace-periodic-table.vercel.app/"
                 body="An interactive periodic table with detailed information on each element."
-                tags={["React", "Next.js", "JavaScript", "SCSS"]}
+                tags={["Next.js", "SCSS"]}
               />
             </li>
             <li>
@@ -115,7 +115,7 @@ export default function Home() {
           </ul>
         </section>
 
-        <footer className="p-300">
+        <footer className="pl-100 pr-200 pt-300 pb-600">
           <p>Built with <a href="#">Next.js</a> & hosted on <a href="#">Vercel</a>. View this site on <a href="#">Github</a></p>
         </footer>
 

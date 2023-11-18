@@ -9,17 +9,17 @@ export default function Matrix() {
   const [matrix, setMatrix] = useState(false);
   const [modal, setModal] = useState(false);
 
-  // 
+  
   useEffect(() => {
     if (matrix) {
-      document.body.classList.add('matrix');
-      scroll(0, 0);
+      document.documentElement.classList.add('matrix');
+      window.scrollTo(0, 0); // Corrected to use window.scrollTo
       setModal(false);
     } else {
-      document.body.classList.remove('matrix');
+      document.documentElement.classList.remove('matrix');
     }
   }, [matrix]);
-
+  
   useEffect(() => {
     if (modal) {
       document.body.style.overflow = 'hidden';
