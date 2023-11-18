@@ -6,35 +6,45 @@ import Cards from '../../public/cards.svg';
 
 export default function Matrix() {
   const [matrix, setMatrix] = useState(false);
+  const [modal, setModal] = useState(false);
 
-  const handleUserChoice = (choice) => {
-    setMatrix(choice);
-    modalRef.current?.close();
-  };
-
+  // 
   useEffect(() => {
     if (matrix) {
       document.body.classList.add('matrix');
+      setModal(false);
     } else {
       document.body.classList.remove('matrix');
     }
   }, [matrix]);
 
+  useEffect(() => {
+    if (modal) {
+      document.body.style.overflow = 'hidden'; // Prevent scrolling
+    } else {
+      document.body.style.overflow = ''; // Re-enable scrolling
+    }
+  }, [modal]);
+
+
+
   return (
     <>
       <button className="wake-up">
         <span className="visually-hidden">Wake up</span>
-        {matrix ? <Cards onClick={()=>setMatrix(false)}/> : <Rabbit onClick={()=>setMatrix(true)}/>}
+        {matrix ? <Cards onClick={() => setMatrix(false)} /> : <Rabbit onClick={() => setModal(true)} />}
       </button>
 
-      {/* <dialog ref={modalRef} className="matrix-dialog">
-        <button onClick={() => handleUserChoice(true)}>
-          <span className="visually-hidden">Red pill</span>
-        </button>
-        <button onClick={() => handleUserChoice(false)}>
-          <span className="visually-hidden">Blue pill</span>
-        </button>
-      </dialog> */}
+      {modal &&
+        <dialog className="matrix-dialog">
+          <button onClick={() => setMatrix(true)}>
+            <span className="visually-hidden">Red pill</span>
+          </button>
+          <button onClick={() => setModal(false)}>
+            <span className="visually-hidden">Blue pill</span>
+          </button>
+        </dialog>
+      }
     </>
   );
 }
