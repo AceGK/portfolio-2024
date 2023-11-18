@@ -32,17 +32,18 @@ export default function Matrix() {
   return (
     <>
       <button className="wake-up">
-        <span className="visually-hidden">Wake up</span>
+        <span className="visually-hidden">Follow the White Rabbit</span>
         {matrix ? <Card onClick={() => setMatrix(false)} /> : <Rabbit onClick={() => setModal(true)} />}
       </button>
 
       {modal &&
         <dialog className="matrix-dialog">
+          <span className="visually-hidden">You take the blue pill... the story ends, you wake up in your bed and believe whatever you want to believe. You take the red pill... you stay in Wonderland, and I show you how deep the rabbit hole goes.</span>
           <button onClick={() => setMatrix(true)}>
-            <span className="visually-hidden">Red pill</span>
+            <span className="visually-hidden">Down the rabbit hole</span>
           </button>
           <button onClick={() => setModal(false)}>
-            <span className="visually-hidden">Blue pill</span>
+            <span className="visually-hidden">Wake up</span>
           </button>
         </dialog>
       }

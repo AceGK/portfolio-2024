@@ -99,7 +99,7 @@ export default function Home() {
                 title="Delivery Zipcode Map"
                 href="https://acegk.github.io/"
                 body="An interactive map that highlights Bay Area zipcodes for displaying delivery zones."
-                tags={["React", "Next.js", "JavaScript", "Leaflet.js", "SCSS"]}
+                tags={["Next.js", "Leaflet.js", "SCSS"]}
               />
             </li>
             <li>
@@ -115,12 +115,12 @@ export default function Home() {
           </ul>
         </section>
 
-        <footer className="pl-100 pr-200 pt-300 pb-600">
-          <p>Built with <a href="#">Next.js</a> & hosted on <a href="#">Vercel</a>. View this site on <a href="#">Github</a></p>
-        </footer>
-
+        <footer>
+          <span>Built with <a href="#">Next.js</a> & hosted on <a href="#">Vercel</a>. View this site on <a href="#">Github</a></span>
+          
         <Matrix />
 
+        </footer>
       </main>
       <div className="stars">
         <div id="stars" />

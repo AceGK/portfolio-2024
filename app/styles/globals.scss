@@ -180,8 +180,14 @@ ul {
 }
 
 footer {
-  max-width: 450px;
   text-wrap: balance;
+  position: relative;
+  padding:3rem 1rem;
+  span {
+    display:inline-block;
+    line-height:1.5rem;
+    max-width:250px;
+  }
 }
 
 // utility

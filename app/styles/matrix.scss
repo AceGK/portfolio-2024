@@ -1,3 +1,6 @@
+@import "@/app/styles/_mixins.scss";
+
+
 .wake-up {
   background: none;
   outline: none;
@@ -12,6 +15,11 @@
   }
   &:hover {
     cursor: pointer;
+  }
+  @include tablet(450px) {
+    position:absolute;
+    right:12px;
+    bottom:12px;
   }
 }
 
