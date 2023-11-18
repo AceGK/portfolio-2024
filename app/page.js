@@ -37,7 +37,7 @@ export default function Home() {
                 subtitle="Senior Software Engineer"
                 href="https://purplelotus.vercel.app/"
                 body="Built a cannabis dispensary eCommerce web app using Next.js, Algolia Instant Search, Sanity CMS and several third party APIs. Improved SEO, performance, PageSpeed Insight scores, and UI/UX."
-                tags={["Next.js", "Algolia", "Sanity", "SCSS"]}
+                tags={["React", "Next.js", "Algolia", "Sanity", "SCSS"]}
               />
             </li>
             <li>
@@ -56,7 +56,7 @@ export default function Home() {
                 title="Oaksterdam University"
                 subtitle="Software Engineer & IT Manager"
                 href="https://oaksterdamuniversity.com"
-                body="Developed a suite of web services including a CMS, LMS, eCommerce, user authentication and SSO, marketing and support automation, SEO tracking and tools, VoIP, live chat, team communication and project management, an improved hosting platform and site version control. I also managed the IT department and provided technical support for staff and students."
+                body="Developed a suite of web services including a CMS, LMS, eCommerce, user authentication and SSO, marketing and support automation, SEO tracking and tools, VoIP, live chat, an improved hosting platform and site version control. I also managed the IT department and provided technical support for staff and students."
                 tags={["WordPress", "PHP", "JavaScript", "HTML", "CSS"]}
               />
             </li>
