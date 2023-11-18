@@ -1,4 +1,3 @@
-$smallScreenValue: 1024px;
 $tabletValue: 768px;
 $mobileValue: 480px;
 
@@ -13,12 +12,6 @@ $mobileValue: 480px;
 
 @mixin tablet($offset: 0px) {
     @media (max-width: calc(#{$tabletValue} + #{$offset})) {
-        @content;
-    }
-}
-
-@mixin smallScreen($offset: 0px) {
-    @media (max-width: calc(#{$smallScreenValue} + #{$offset})) {
         @content;
     }
 }

@@ -25,7 +25,7 @@ body {
   // background: var(--clr-background);
   color: var(--clr-text);
   display: grid;
-  grid-template-columns: 1fr 1.25fr;
+  grid-template-columns: 1fr 1.3125fr;
   min-height: 100vh;
   max-width: 950px;
   margin-inline:auto;
@@ -35,7 +35,7 @@ body {
   overflow-y: auto;
   scrollbar-gutter: stable;
 
-  @include smallScreen() {
+  @include tablet() {
     display: flex;
     flex-direction: column;
   }
@@ -44,7 +44,7 @@ body {
 .container {
   padding-inline: 2rem;
   // margin-inline: auto;
-  @include smallScreen() {
+  @include tablet() {
     padding-inline: 1.5rem;
   }
   @include mobile() {
@@ -60,15 +60,17 @@ header {
   position: sticky;
   top: 0;
   z-index: 1;
-  @include smallScreen() {
+  padding-left:1rem;
+  @include tablet() {
     position: relative;
     display: flex;
     flex-direction: column;
-    padding: 3rem 0rem 0rem;
+    padding: 2.5rem 1rem;
   }
-  @include mobile() {
-    padding: 2rem 0rem 0rem;
-  }
+}
+
+.bio {
+  padding-inline:1rem;
 }
 
 .bottom-fade {
@@ -139,8 +141,8 @@ section {
 
 .about {
   padding-top:6rem;
-  @include smallScreen() {
-    padding-top:2rem;
+  @include tablet() {
+    padding-top:1rem;
   }
 }
 
@@ -156,7 +158,7 @@ section h2 {
   font-size: var(fs-300);
   letter-spacing: 0.1em;
   z-index: 2;
-  @include smallScreen() {
+  @include tablet() {
     height: auto;
     visibility: visible;
     height: auto;

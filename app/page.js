@@ -19,7 +19,7 @@ export default function Home() {
       >
         <section id="about" className="about">
           <h2>About</h2>
-          <div>
+          <div className="bio">
             <p>My name is Ace and I am an experienced front-end software engineer. My journey began in 2013 learning to create custom plugins and websites for myself and local businesses. Since then, I&apos;ve had the privilege of building software for several startups, a <a href="#">university</a>, and a <a href="#">cannabis dispensary</a>.
             </p>
 
@@ -70,7 +70,7 @@ export default function Home() {
               <Card
                 img="https://dummyimage.com/600x400/000/fff"
                 href="https://purplelotus.vercel.app/"
-                title="Purple Lotus"
+                title="Dispensary eCommerce"
                 body="Cannabis dispensary web app that uses the Jane Roots headless e-commerce platform and Algolia Instant Search to provide a fast, user-friendly shopping experience."
                 tags={["Next.js", "Algolia", "Sanity", "SCSS"]}
               />
@@ -93,7 +93,7 @@ export default function Home() {
                 tags={["HTML", "CSS", "JavaScript"]}
               />
             </li>
-            {/* <li>
+            <li>
               <Card
                 img="https://dummyimage.com/600x400/000/fff"
                 title="Delivery Zipcode Map"
@@ -101,7 +101,7 @@ export default function Home() {
                 body="An interactive map that highlights Bay Area zipcodes for displaying delivery zones."
                 tags={["React", "Next.js", "JavaScript", "Leaflet.js", "SCSS"]}
               />
-            </li> */}
+            </li>
             <li>
               <Card
                 img="https://dummyimage.com/600x400/000/fff"
