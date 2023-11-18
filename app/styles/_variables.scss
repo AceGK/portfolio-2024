@@ -20,11 +20,11 @@ $colors: (
     --clr-#{$name}-bg: #{rgba($color, 0.2)}; 
   }
 
-  --clr-text: hsl(0, 0%, 60%);
-  --clr-heading: hsl(0, 0%, 95%);
+  --clr-text: hsl(0, 0%, 65%);
+  --clr-heading: hsl(0, 0%, 97%);
   --clr-heading-muted: hsl(0, 0%, 70%);
-  --clr-neutral-700: hsl(0, 0%, 40%);
-  --clr-link: hsl(0, 0%, 95%);
+  --clr-neutral-700: hsl(0, 0%, 50%);
+  --clr-link: hsl(0, 0%, 97%);
 
   --fs-200: 0.75rem;
   --fs-300: 0.875rem;

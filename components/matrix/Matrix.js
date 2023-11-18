@@ -13,6 +13,7 @@ export default function Matrix() {
   useEffect(() => {
     if (matrix) {
       document.body.classList.add('matrix');
+      scroll(0, 0);
       setModal(false);
     } else {
       document.body.classList.remove('matrix');
