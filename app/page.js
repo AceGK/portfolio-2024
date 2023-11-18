@@ -22,8 +22,6 @@ export default function Home() {
           <div className="bio">
             <p>My name is Ace and I am an experienced front-end software engineer. My journey began in 2013 learning to create custom plugins and websites for myself and local businesses. Since then, I&apos;ve had the privilege of building software for several startups, a <a href="#">university</a>, and a <a href="#">cannabis dispensary</a>.
             </p>
-
-            <p>I&apos;m currently focused on building accessible and performant full-stack React/Next.js applications. </p>
           </div>
         </section>
 
@@ -36,7 +34,7 @@ export default function Home() {
                 title="Purple Lotus"
                 subtitle="Senior Software Engineer"
                 href="https://purplelotus.vercel.app/"
-                body="Built a cannabis dispensary eCommerce web app using Next.js, Algolia Instant Search, Sanity CMS and several third party APIs. Improved SEO, performance, PageSpeed Insight scores, and UI/UX."
+                body="Built a cannabis dispensary e-commerce web app using Next.js, Algolia Instant Search, Sanity CMS and several third party APIs. Improved SEO, performance, PageSpeed Insight scores, and UI/UX."
                 tags={["React", "Next.js", "Algolia", "Sanity", "SCSS"]}
               />
             </li>
@@ -56,7 +54,7 @@ export default function Home() {
                 title="Oaksterdam University"
                 subtitle="Software Engineer & IT Manager"
                 href="https://oaksterdamuniversity.com"
-                body="Developed a suite of web services including a CMS, LMS, eCommerce, user authentication and SSO, marketing and support automation, SEO tracking and tools, VoIP, live chat, an improved hosting platform and site version control. I also managed the IT department and provided technical support for staff and students."
+                body="Developed a suite of web services including a CMS, LMS, e-commerce, user authentication and SSO, marketing and support automation, SEO tracking and tools, VoIP, live chat, an improved hosting platform and site version control. I also managed the IT department and provided technical support for staff and students."
                 tags={["WordPress", "PHP", "JavaScript", "HTML", "CSS"]}
               />
             </li>
@@ -70,8 +68,8 @@ export default function Home() {
               <Card
                 img="https://dummyimage.com/600x400/000/fff"
                 href="https://purplelotus.vercel.app/"
-                title="Dispensary eCommerce"
-                body="Cannabis dispensary web app that uses the Jane Roots headless e-commerce platform and Algolia Instant Search to provide a fast, user-friendly shopping experience."
+                title="Dispensary e-commerce"
+                body="A cannabis dispensary web app that uses the Jane Roots headless e-commerce platform and Algolia Instant Search to provide a fast, user-friendly shopping experience."
                 tags={["Next.js", "Algolia", "Sanity", "SCSS"]}
               />
             </li>
@@ -116,7 +114,7 @@ export default function Home() {
         </section>
 
         <footer>
-          <span>Built with <a href="#">Next.js</a> & hosted on <a href="#">Vercel</a>. View this site on <a href="#">Github</a></span>
+          <span>Built with <a href="https://nextjs.org/">Next.js</a> & hosted on <a href="https://vercel.com/">Vercel</a>. View this site on <a href="https://github.com/AceGK/portfolio-2024">Github</a></span>
           
         <Matrix />
 
