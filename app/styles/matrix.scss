@@ -11,7 +11,10 @@
   z-index: 5;
   font-size: 1.5rem;
   svg {
-    fill: var(--clr-heading);
+    fill: var(--clr-text);
+    &:hover {
+      fill: var(--clr-heading);
+    }
   }
   &:hover {
     cursor: pointer;

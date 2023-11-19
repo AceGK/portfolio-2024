@@ -10,14 +10,14 @@ $colors: (
   html: rgb(233, 98, 40),
   php: rgb(123, 135, 193),
   wp: rgb(129, 169, 249),
-  leaflet:rgb(175, 220, 89),
+  leaflet: rgb(175, 220, 89),
 );
 
 :root {
   @each $name, $color in $colors {
     --clr-#{$name}: #{$color};
-    --clr-#{$name}-muted: #{rgba($color, 0.2)}; 
-    --clr-#{$name}-bg: #{rgba($color, 0.2)}; 
+    --clr-#{$name}-muted: #{rgba($color, 0.2)};
+    --clr-#{$name}-bg: #{rgba($color, 0.2)};
   }
 
   --clr-text: hsl(0, 0%, 73%);
@@ -25,6 +25,9 @@ $colors: (
   --clr-heading-muted: hsl(0, 0%, 80%);
   --clr-neutral-700: hsl(0, 0%, 50%);
   --clr-link: hsl(0, 0%, 97%);
+
+  --clr-matrix: rgb(0, 255, 65);
+  --clr-matrix-muted: rgb(1, 212, 54);
 
   --fs-200: 0.75rem;
   --fs-300: 0.875rem;
@@ -37,12 +40,9 @@ $colors: (
 
   --clr-background: rgb(17, 23, 31);
   --clr-background-transparent: rgba(0, 0, 0, 0.1);
-  --background:radial-gradient(ellipse at bottom, #1B2735 0%, #090A0F 100%);
+  --background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
   --border-radius: 0.25rem;
-
-
 }
-
 
 $colors: (
   primary: rgb(255, 203, 66),
@@ -56,14 +56,14 @@ $colors: (
   html: rgb(233, 98, 40),
   php: rgb(123, 135, 193),
   wp: rgb(129, 169, 249),
-  leaflet:rgb(175, 220, 89),
+  leaflet: rgb(175, 220, 89),
 );
 
 :root {
   @each $name, $color in $colors {
     --clr-#{$name}: #{$color};
-    --clr-#{$name}-muted: #{rgba($color, 0.2)}; 
-    --clr-#{$name}-bg: #{rgba($color, 0.2)}; 
+    --clr-#{$name}-muted: #{rgba($color, 0.2)};
+    --clr-#{$name}-bg: #{rgba($color, 0.2)};
   }
 
   --clr-text: hsl(0, 0%, 65%);
@@ -83,38 +83,34 @@ $colors: (
 
   --clr-background: rgb(17, 23, 31);
   --clr-background-transparent: rgba(0, 0, 0, 0.1);
-  --background:radial-gradient(ellipse at bottom, #1B2735 0%, #090A0F 100%);
+  --background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
   --border-radius: 0.25rem;
-
 }
 
+html.matrix {
+  --clr-text: var(--clr-matrix-muted);
 
-  html.matrix {
-    --clr-text: #00FF41;
-    --clr-text: #00FF41;
+  --clr-heading: var(--clr-matrix);
+  --clr-heading-muted: var(--clr-matrix);
 
-    --clr-heading: #00FF41;
-    --clr-heading-muted: #00FF41;
+  --clr-neutral-700: var(--clr-matrix);
 
-    --clr-neutral-700: #00FF41;
+  --clr-link: var(--clr-matrix);
 
-    --clr-link: #00FF41;
+  // new
+  --background: radial-gradient(rgb(19 26 19 / 27%), black 100%);
+  --clr-background: rgb(10, 10, 10);
+  --clr-background-transparent: transparent;
 
-    // new
-    --background: radial-gradient(rgb(19 26 19 / 27%), black 100%);
-    --clr-background: rgb(10, 10, 10);
-    --clr-background-transparent: transparent;
+  --clr-primary-base: var(--clr-matrix);
+  --clr-primary: var(--clr-matrix);
+  --clr-primary-muted: var(--clr-matrix);
 
-    --clr-primary-base: #00FF41;
-    --clr-primary: #00FF41;
-    --clr-primary-muted: #00FF41;
+  --border-radius: 0.25rem;
 
-    --border-radius: 0.25rem;
-
-    @each $name, $color in $colors {
-      --clr-#{$name}: #00FF41;
-      --clr-#{$name}-muted: #48f5264a;
-      --clr-#{$name}-bg: #48f5260f;
-    }
+  @each $name, $color in $colors {
+    --clr-#{$name}: var(--clr-matrix);
+    --clr-#{$name}-muted: #48f5264a;
+    --clr-#{$name}-bg: #48f5260f;
   }
-
+}

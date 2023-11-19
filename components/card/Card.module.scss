@@ -22,17 +22,6 @@
   }
 }
 
-.image {
-  flex-basis:25%;
-  min-width:100px;
-  img {
-    width:100%;
-  }
-  @include mobile() {
-    flex-basis:100%;
-  }
-}
-
 .content {
   flex: 1;
   width:100%;
@@ -118,3 +107,4 @@
     }
   }
 }
+

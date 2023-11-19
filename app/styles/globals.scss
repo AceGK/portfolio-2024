@@ -491,3 +491,25 @@ footer {
 
 
 
+
+.image {
+  flex-basis:25%;
+  min-width:100px;
+  height: fit-content;
+  img {
+    width:100%;
+  }
+  @include mobile() {
+    flex-basis:100%;
+  }
+}
+
+.matrix .image:has(img) {
+  background-color: var(--clr-matrix);
+
+  img {
+    filter: grayscale(1) contrast(1) brightness(0.8);
+    mix-blend-mode:multiply;
+    image-rendering: pixelated;
+  }
+}
