@@ -24,12 +24,7 @@ export default function Home() {
             <p>My name is Ace and I&apos;m an experienced front-end software engineer. My journey began in 2014 building custom website themes and plugins for a <a href="https://oaksterdamuniversity.com">university</a>. I&apos;m currently building software solutions for a <a href="https://plpcsanjose.com">cannabis dispensary</a> in San Jose, CA.
             </p>
 
-            <p>I'm focused on building accessible and performant full-stack web applications. In my free time I&apos;m often working on side projects, improving my skills, or experimenting with new or unfamiliar technologies. When I&apos;m not coding I usually spend my time playing guitar, video games, or learning vintage motorcycle mechanics.</p>
-
-            {/* <p>My name is Ace and I am an experienced front-end software engineer. My journey began in 2013 learning to create custom plugins and websites for myself and local businesses. Since then, I&apos;ve had the privilege of building software for several startups, a <a href="https://oaksterdamuniversity.com">university</a>, and a <a href="https://plpcsanjose.com">cannabis dispensary</a>.
-            </p> 
-
-            <p>Currently, I&apos;m building software solutions at <a href="https://plpcsanjose.com">Purple Lotus</a>, a dispensary in San Jose, CA. I am focused on building accessible and performant full-stack web applications.</p>*/}
+            <p>I'm focused on building accessible and performant full-stack web applications. In my free time I&apos;m often working on side projects, improving my skills, or experimenting with new or unfamiliar technologies. When I&apos;m not coding, I usually spend my time playing guitar, video games, or learning vintage motorcycle mechanics.</p>
 
           </div>
         </section>
@@ -43,7 +38,7 @@ export default function Home() {
                 title="Purple Lotus"
                 subtitle="Senior Software Engineer"
                 href="https://purplelotus.vercel.app/"
-                body="Built a cannabis dispensary e-commerce web app using Next.js, Algolia Instant Search, Sanity CMS and several third party APIs. Improved SEO, performance, PageSpeed Insight scores, and UI/UX."
+                body="Built a cannabis dispensary e-commerce web app using Next.js, Algolia Instant Search, Sanity CMS, and several third party APIs. Improved SEO, performance, PageSpeed Insight scores, and UI/UX."
                 tags={["React", "Next.js", "Algolia", "Sanity", "SCSS"]}
               />
             </li>
@@ -53,7 +48,7 @@ export default function Home() {
                 title="Purple Lotus"
                 subtitle="Contracted Web Developer"
                 href="https://plpcsanjose.com"
-                body="Rebuilt, redesigned and helped maintain a cannabis dispensary WordPress site. Developed a custom theme, plugins and integrations with third-party services."
+                body="Rebuilt, redesigned, and helped maintain a cannabis dispensary WordPress site. Developed a custom theme, plugins and integrations with third-party services."
                 tags={["WordPress", "PHP", "JavaScript", "HTML", "CSS"]}
               />
             </li>
