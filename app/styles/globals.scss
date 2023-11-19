@@ -78,6 +78,9 @@ header {
       -webkit-text-fill-color: transparent;
     }
 }
+.matrix header a, .matrix header h1, .matrix  header h2 {
+  -webkit-text-fill-color: unset; 
+}
 
 .bio {
   padding-inline:1rem;
