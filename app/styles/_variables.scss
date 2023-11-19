@@ -20,7 +20,7 @@ $colors: (
     --clr-#{$name}-bg: #{rgba($color, 0.2)};
   }
 
-  // --clr-text: #afb7c2;
+  --clr-text: #afb7c2;
   --clr-heading: hsl(0, 0%, 97%);
   --clr-heading-muted: hsl(0, 0%, 80%);
   --clr-neutral-700: hsl(0, 0%, 50%);
