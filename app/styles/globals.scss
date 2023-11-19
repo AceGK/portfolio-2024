@@ -67,6 +67,16 @@ header {
     flex-direction: column;
     padding: 2.5rem 1rem;
   }
+    h1, h2 {
+      background: -webkit-linear-gradient(white, #6b7a8a);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    a {
+      background: -webkit-linear-gradient(white, #8d9dae);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
 }
 
 .bio {

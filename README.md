@@ -1,1 +1,2 @@
-This design was heavily inspired by Brittany Chiang's portfolio site
+- This design was heavily inspired by/taken from [Brittany Chiang's portfolio site](https://brittanychiang.com/)
+- [Stars](https://codepen.io/sarazond/pen/LYGbwj)
