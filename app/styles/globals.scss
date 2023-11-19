@@ -119,6 +119,9 @@ a {
 p {
   padding-bottom: 1rem;
   line-height: 1.625;
+  &:hover {
+    cursor: default;
+  }
 }
 
 h1 {

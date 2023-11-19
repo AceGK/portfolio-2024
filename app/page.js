@@ -8,9 +8,9 @@ export default function Home() {
     <>
       <header>
 
-        <Link href="#"><h1 className="fw-700 fs-800 pb-50">Ace Kisch</h1></Link>
+        <Link href="#"><h1 className="fw-700 fs-800 pb-50">Ace Kisch</h1>
         <h2 className="fw-600 fs-500 pb-50">Software Engineer</h2>
-
+        </Link>
         <Nav />
       </header>
 
