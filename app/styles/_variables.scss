@@ -20,11 +20,15 @@ $colors: (
     --clr-#{$name}-bg: #{rgba($color, 0.2)};
   }
 
-  --clr-text: #afb7c2;
+  // --clr-text: #afb7c2;
   --clr-heading: hsl(0, 0%, 97%);
   --clr-heading-muted: hsl(0, 0%, 80%);
   --clr-neutral-700: hsl(0, 0%, 50%);
   --clr-link: #dde0e4;
+
+  
+  --clr-matrix: rgb(0, 255, 65);
+  --clr-matrix-muted: rgb(1, 212, 54);
 
   --fs-200: 0.75rem;
   --fs-300: 0.875rem;
@@ -42,7 +46,7 @@ $colors: (
 }
 
 html.matrix {
-  --clr-text: var(--clr-matrix-muted);
+  --clr-text: var(--clr-matrix);
 
   --clr-heading: var(--clr-matrix);
   --clr-heading-muted: var(--clr-matrix);
