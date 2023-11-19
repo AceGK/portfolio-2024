@@ -314,3 +314,10 @@ html.matrix svg {
     }
   }
 }
+
+
+.matrix h1, .matrix h2 {
+  background:unset;
+  -webkit-background-clip: unset;
+  -webkit-text-fill-color: unset;
+}
