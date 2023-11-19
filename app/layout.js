@@ -4,6 +4,8 @@ import '../app/styles/matrix.scss'
 import '../app/styles/stars.scss'
 import '../app/styles/globals.scss'
 
+import CursorGlow from '../components/cursor';
+
 const inter = Inter({ subsets: ['latin'] })
 const vt323 = VT323({
   weight: ['400'],
@@ -23,6 +25,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={inter.className}>
         {children}
+        <CursorGlow />
         </body>
     </html>
   )

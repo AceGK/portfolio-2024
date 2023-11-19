@@ -130,7 +130,7 @@ h2 {
 }
 
 section {
-  margin-bottom: 4rem;
+  margin-bottom: 5rem;
   // transition:all 0.3s;
   ul li {
     transition: all 0.3s;
@@ -527,5 +527,19 @@ footer {
     filter: grayscale(1) contrast(1) brightness(0.8);
     mix-blend-mode:multiply;
     image-rendering: pixelated;
+  }
+}
+
+.cursor-glow {
+  position: fixed;
+  pointer-events: none;
+  width: 600px;
+  height: 600px;
+  border-radius: 50%;
+  background-image: radial-gradient( hsla(215, 59%, 35%, 0.08), transparent 75%);
+  transform: translate(-50%, -50%);
+  z-index: 5;
+  @include smallScreen() {
+    display:none;
   }
 }
