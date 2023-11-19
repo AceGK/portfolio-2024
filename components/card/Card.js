@@ -13,7 +13,7 @@ export default function Card({ href, title, body, tags, children, img, caption, 
     <Wrapper {...wrapperProps} className={styles.card}>
 
       <div className={styles.image}>
-        {img && <img src={img} alt={title} fill />}
+        {img && <img src={img} alt={title} />}
         {caption && <span className={styles.caption}>{caption}</span>}
       </div>
 

@@ -24,7 +24,7 @@ export default function Home() {
             <p>My name is Ace and I&apos;m an experienced front-end software engineer. My journey began in 2014 building custom website themes and plugins for a <a href="https://oaksterdamuniversity.com">university</a>. I&apos;m currently building software solutions for a <a href="https://plpcsanjose.com">cannabis dispensary</a> in San Jose, CA.
             </p>
 
-            <p>I am focused on building accessible and performant full-stack web applications. In my free time I am often working on side projects, improving my skills, or experimenting with new or unfamiliar technologies. When I&apos;m not coding I usually spend my time building PCs or learning about vintage motorcycle mechanics.</p>
+            <p>I am focused on building accessible and performant full-stack web applications. In my free time I am often working on side projects, improving my skills, or experimenting with new or unfamiliar technologies. When I&apos;m not coding I usually spend my time learning about vintage motorcycle mechanics or playing video games.</p>
 
             {/* <p>My name is Ace and I am an experienced front-end software engineer. My journey began in 2013 learning to create custom plugins and websites for myself and local businesses. Since then, I&apos;ve had the privilege of building software for several startups, a <a href="https://oaksterdamuniversity.com">university</a>, and a <a href="https://plpcsanjose.com">cannabis dispensary</a>.
             </p> 
@@ -77,7 +77,7 @@ export default function Home() {
               <Card
                 img="https://dummyimage.com/600x400/000/fff"
                 href="https://purplelotus.vercel.app/"
-                title="Dispensary e-commerce"
+                title="Cannabis E-commerce"
                 body="A cannabis dispensary web app that uses the Jane Roots headless e-commerce platform and Algolia Instant Search to provide a fast, user-friendly shopping experience."
                 tags={["Next.js", "Algolia", "Sanity", "SCSS"]}
               />
@@ -104,7 +104,7 @@ export default function Home() {
               <Card
                 img="https://dummyimage.com/600x400/000/fff"
                 title="Delivery Zipcode Map"
-                href="https://acegk.github.io/"
+                href="https://purplelotus.vercel.app/delivery"
                 body="An interactive map that highlights Bay Area zipcodes for displaying delivery zones."
                 tags={["Next.js", "Leaflet.js", "SCSS"]}
               />

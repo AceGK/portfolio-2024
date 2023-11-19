@@ -90,29 +90,29 @@ $colors: (
 
 
   html.matrix {
-    --clr-text: #4af526;
-    --clr-text: #4af526;
+    --clr-text: #00FF41;
+    --clr-text: #00FF41;
 
-    --clr-heading: #4af526;
-    --clr-heading-muted: #4af526;
+    --clr-heading: #00FF41;
+    --clr-heading-muted: #00FF41;
 
-    --clr-neutral-700: #4af526;
+    --clr-neutral-700: #00FF41;
 
-    --clr-link: #4af526;
+    --clr-link: #00FF41;
 
     // new
-    --background: radial-gradient(rgba(44, 56, 44, 0.267), black 120%);
+    --background: radial-gradient(rgb(19 26 19 / 27%), black 100%);
     --clr-background: rgb(10, 10, 10);
     --clr-background-transparent: transparent;
 
-    --clr-primary-base: #4af526;
-    --clr-primary: #4af526;
-    --clr-primary-muted: #4af526;
+    --clr-primary-base: #00FF41;
+    --clr-primary: #00FF41;
+    --clr-primary-muted: #00FF41;
 
     --border-radius: 0.25rem;
 
     @each $name, $color in $colors {
-      --clr-#{$name}: #4af526;
+      --clr-#{$name}: #00FF41;
       --clr-#{$name}-muted: #48f5264a;
       --clr-#{$name}-bg: #48f5260f;
     }
