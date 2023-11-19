@@ -195,11 +195,14 @@ ul {
 footer {
   text-wrap: balance;
   position: relative;
-  padding:3rem 1rem;
+  padding:3rem 1rem 6.5rem 1rem;
   span {
     display:inline-block;
     line-height:1.5rem;
     max-width:250px;
+  }
+  @include tablet() {
+    padding:3rem 1rem 1rem;
   }
 }
 
