@@ -21,7 +21,7 @@ export default function Home() {
           <h2>About</h2>
           <div className="bio">
    
-            <p>My name is Ace and I&apos;m an experienced front-end software engineer. My journey began in 2014 building custom website themes and plugins for a <a href="https://oaksterdamuniversity.com">university</a>. I&apos;m currently building software solutions for a <a href="https://plpcsanjose.com">cannabis dispensary</a> in San Jose, CA.
+            <p>My name is Ace and I&apos;m an experienced front-end software engineer. My journey began in 2014 building custom website themes and plugins for a <a href="https://oaksterdamuniversity.com">university</a>. I&apos;m currently building software solutions for a <a href="https://purplelotus.vercel.app/">cannabis dispensary</a> in San Jose, CA.
             </p>
 
             <p>I&apos;m focused on building accessible and performant full-stack web applications. In my free time I&apos;m often working on side projects, improving my skills, or experimenting with new or unfamiliar technologies. When I&apos;m not coding, I usually spend my time playing guitar, hiking, cooking, or learning vintage motorcycle mechanics.</p>
