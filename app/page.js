@@ -3,11 +3,11 @@ import Card from "@/components/card/Card";
 import Link from "next/link";
 import Matrix from "@/components/matrix/Matrix";
 
+
 export default function Home() {
   return (
-    <>
+    <div className="home">
       <header>
-
         <Link href="#"><h1 className="fw-700 fs-800 pb-50">Ace Kisch</h1>
         <h2 className="fw-600 fs-500 pb-50">Software Engineer</h2>
         </Link>
@@ -129,6 +129,6 @@ export default function Home() {
         <div id="stars2" />
         <div id="stars3" />
       </div>
-    </>
+    </div>
   )
 }
