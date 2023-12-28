@@ -11,6 +11,15 @@ export default function Home() {
   return (
     <main className="container">
       <Ace />
+      <div className="div1">
+        <div />
+      </div>
+      <div className="div2">
+        <div />
+      </div>
+      <div className="div3">
+        <div />
+      </div>
       <Skills />
       <Projects />
       <About />

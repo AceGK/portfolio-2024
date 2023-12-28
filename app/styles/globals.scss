@@ -1,7 +1,6 @@
 @import "./variables";
 @import "./mixins";
 
-
 * {
   box-sizing: border-box;
   padding: 0;
@@ -17,7 +16,7 @@ html {
 }
 
 main {
-  color:var(--clr-text);
+  color: var(--clr-text);
 }
 
 html {
@@ -25,9 +24,8 @@ html {
   background-image: var(--background);
   // height: 100%;
   background-repeat: no-repeat; /* Prevents the background from repeating */
-  background-attachment: fixed; 
+  background-attachment: fixed;
 }
-
 
 .home {
   // background: var(--clr-background);
@@ -36,13 +34,13 @@ html {
   grid-template-columns: 1fr 1.3125fr;
   min-height: 100vh;
   max-width: 950px;
-  margin-inline:auto;
+  margin-inline: auto;
   background-repeat: no-repeat;
   background-attachment: fixed;
   -webkit-overflow-scrolling: auto;
   // overflow-y: auto;
   scrollbar-gutter: stable;
-  
+
   @include tablet() {
     display: flex;
     flex-direction: column;
@@ -61,13 +59,13 @@ html {
 }
 
 button {
-  &[data-type="primary"]{
-    background:var(--clr-primary);
-    color:black;
-    outline:none;
-    border:none;
-    border-radius:3px;
-    padding:5px 10px;
+  &[data-type="primary"] {
+    background: var(--clr-primary);
+    color: black;
+    outline: none;
+    border: none;
+    border-radius: 3px;
+    padding: 5px 10px;
   }
 }
 
@@ -79,30 +77,33 @@ header {
   position: sticky;
   top: 0;
   z-index: 1;
-  padding-left:1rem;
+  padding-left: 1rem;
   @include tablet() {
     position: relative;
     display: flex;
     flex-direction: column;
     padding: 2.5rem 1rem;
   }
-    h1, h2 {
-      background: -webkit-linear-gradient(white, #798491);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-    }
-    a {
-      background: -webkit-linear-gradient(white, #a2b1c0);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-    }
+  h1,
+  h2 {
+    background: -webkit-linear-gradient(white, #798491);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  a {
+    background: -webkit-linear-gradient(white, #a2b1c0);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
 }
-.matrix header a, .matrix header h1, .matrix  header h2 {
-  -webkit-text-fill-color: unset; 
+.matrix header a,
+.matrix header h1,
+.matrix header h2 {
+  -webkit-text-fill-color: unset;
 }
 
 .bio {
-  padding-inline:1rem;
+  padding-inline: 1rem;
 }
 
 .bottom-fade {
@@ -143,33 +144,36 @@ p {
   }
 }
 
-h1, h2, h3 {
-  font-weight:bold;
+h1,
+h2,
+h3 {
+  font-weight: bold;
 }
 
 h1 {
   color: var(--clr-heading);
 }
 
-h2, h3 {
+h2,
+h3 {
   color: var(--clr-heading-muted);
 }
 
 .code-heading {
-&:before{
-  content: "<";
-  color:var(--clr-primary);
-  padding-right:3px;
-}
-&:after{
-  content: "/>";
-  color:var(--clr-primary);
-  padding-left:8px;
-}
+  &:before {
+    content: "<";
+    color: var(--clr-primary);
+    padding-right: 3px;
+  }
+  &:after {
+    content: "/>";
+    color: var(--clr-primary);
+    padding-left: 8px;
+  }
 }
 
 section {
-  margin-bottom: 5rem;
+  margin-bottom: 20rem;
   // transition:all 0.3s;
   // ul li {
   //   transition: all 0.3s;
@@ -192,9 +196,9 @@ section {
 }
 
 .about {
-  padding-top:6rem;
+  padding-top: 6rem;
   @include tablet() {
-    padding-top:1rem;
+    padding-top: 1rem;
   }
 }
 
@@ -234,14 +238,14 @@ ul {
 footer {
   text-wrap: balance;
   position: relative;
-  padding:3rem 1rem 6.5rem 1rem;
+  padding: 3rem 1rem 6.5rem 1rem;
   span {
-    display:inline-block;
-    line-height:1.5rem;
-    max-width:250px;
+    display: inline-block;
+    line-height: 1.5rem;
+    max-width: 250px;
   }
   @include tablet() {
-    padding:3rem 1rem;
+    padding: 3rem 1rem;
   }
 }
 
@@ -512,31 +516,29 @@ footer {
 }
 
 .w-100 {
-  width:100%;
+  width: 100%;
 }
-#region scrollbar
-*::-webkit-scrollbar {
+#region scrollbar *::-webkit-scrollbar {
   -webkit-appearance: none;
 }
 
 *::-webkit-scrollbar {
   width: 8px;
-  border-radius:50px;
+  border-radius: 50px;
   @include tablet() {
     width: 3px;
   }
 }
 
 *::-webkit-scrollbar-track {
-  background:#0d0e16;
+  background: #0d0e16;
   border-radius: 50px;
-  padding:2rem;
+  padding: 2rem;
 }
 
 *::-webkit-scrollbar-thumb {
   background-color: var(--clr-text);
   border-radius: 50px;
-  
 }
 //#endregion
 
@@ -547,13 +549,12 @@ footer {
   width: 0px;
 }
 
-
 .matrix .image:has(img) {
   background-color: var(--clr-matrix);
 
   img {
     filter: grayscale(1) contrast(1) brightness(0.8);
-    mix-blend-mode:multiply;
+    mix-blend-mode: multiply;
     image-rendering: pixelated;
   }
 }
@@ -564,30 +565,86 @@ footer {
   width: 600px;
   height: 600px;
   border-radius: 50%;
-  background-image: radial-gradient( hsla(215, 59%, 35%, 0.08), transparent 75%);
+  background-image: radial-gradient(hsla(215, 59%, 35%, 0.08), transparent 75%);
   transform: translate(-50%, -50%);
   z-index: 1;
   @include smallScreen() {
-    display:none;
+    display: none;
   }
 }
-
 
 .center-text {
   text-align: center;
 }
 
 .swiper-pagination {
-  bottom:-10px!important;
-  font-size:2rem;
+  bottom: -10px !important;
+  font-size: 2rem;
 }
 .swiper-pagination-bullet {
-  width:10px!important;
-  height:10px!important;
-  border:1px solid var(--clr-primary);
-  opacity: 0.9!important;
-  background-color: transparent!important;
+  width: 10px !important;
+  height: 10px !important;
+  border: 1px solid var(--clr-primary);
+  opacity: 0.9 !important;
+  background-color: transparent !important;
 }
 .swiper-pagination-bullet-active {
-  background-color: var(--clr-primary)!important;
+  background-color: var(--clr-primary) !important;
+}
+
+.transparent-bg {
+  background: rgba(0, 0, 0, 0.33);
+}
+
+.div1 {
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: block;
+  width: 100%;
+  height: 16%;
+  display: flex;
+  justify-content: center;
+  > div {
+    height: 100%;
+    width: 1px;
+    border: 1px solid var(--clr-primary);
+  }
+}
+
+.div2 {
+  max-width: 800px;
+  margin: auto;
+  position: relative;
+  top: 0px;
+  display: block;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  > div {
+    height: 1px;
+    width: 50%;
+    border: 1px solid var(--clr-primary);
+  }
+}
+
+.div3 {
+  max-width: 800px;
+  margin: auto;
+  position: relative;
+  top: 0px;
+  display: block;
+  height: 100px;
+  display: flex;
+  justify-content: flex-start;
+  
+  > div {
+    height: 100%;
+    width: 1px;
+    border: 1px solid var(--clr-primary);
+
+  }
 }

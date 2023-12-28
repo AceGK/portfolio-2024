@@ -40,7 +40,7 @@ $colors: (
   --fs-900: 3.5rem;
 
   --clr-background: rgb(17, 23, 31);
-  --clr-background-transparent: rgba(0, 0, 0, 0.1);
+  --clr-transparent-bg:rgb(0 0 0 / 33%);
   --background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
   --border-radius: 1rem;
 }

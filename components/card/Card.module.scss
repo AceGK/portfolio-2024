@@ -11,7 +11,7 @@
   transition:all 0.3s;
   &:hover {
     transition:all 0.3s;
-    background-color: var(--clr-background-transparent);
+    background-color: var(--clr-transparent-bg);
     backdrop-filter: blur(3px);
     .title {
       color:var(--clr-primary);

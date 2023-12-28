@@ -3,6 +3,7 @@ import Github from "../../public/github.svg";
 import LinkedIn from "../../public/linkedin.svg";
 import Email from "../../public/envelope.svg";
 import styles from "./Ace.module.scss";
+import Mouse from "../../public/mouse.svg";
 
 export default function Ace() {
   return (
@@ -32,6 +33,9 @@ export default function Ace() {
           </Link>
         </li>
       </ul>
+      <div className={styles.scroll}>
+        <Mouse />
+      </div>
     </section>
   );
 }

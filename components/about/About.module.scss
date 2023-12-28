@@ -1,0 +1,30 @@
+.container {
+  max-width:900px;
+  margin:auto;
+}
+
+.about {
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:2rem;
+  margin-top:2rem;
+  
+  h3 {
+    margin-bottom:1rem;
+  }
+}
+
+.card {
+  background:var(--clr-transparent-bg);
+  padding:2rem;
+  border-radius: 5px;
+}
+
+.aboutMe {
+
+  border-left:2px solid var(--clr-primary); 
+  padding-left:1rem;
+  p:last-of-type {
+    padding-bottom:0;
+  }
+}
