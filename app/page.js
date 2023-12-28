@@ -1,5 +1,5 @@
-import Matrix from "@/components/matrix/Matrix";
 
+import Matrix from "@/components/matrix/Matrix";
 import Icon from "@/components/icon/Icon";
 import Skills from "@/components/skills/Skills";
 import Projects from "@/components/projects/Projects";
@@ -8,31 +8,38 @@ import Ace from "@/components/ace/Ace";
 import Contact from "@/components/contact/Contact";
 
 export default function Home() {
+
   return (
-    <main className="container">
-      <Ace />
-      <div className="div1">
-        <div />
-      </div>
-      <div className="div2">
-        <div />
-      </div>
-      <div className="div3">
-        <div />
-      </div>
-      <Skills />
-      <Projects />
-      <About />
-      <Contact />
+    <>
+      <header>
+        <Ace />
+      </header>
 
-      <Matrix />
+      <main className="container">
+        <div className="div1">
+          <div />
+        </div>
+        <div className="div2">
+          <div />
+        </div>
+        <div className="div3">
+          <div />
+        </div>
 
-      <div className="stars">
-        <div id="stars" />
-        <div id="stars2" />
-        <div id="stars3" />
-      </div>
+        <Skills />
+        <Projects />
+        <About />
+        <Contact />
 
-    </main>
+        <Matrix />
+
+        <div className="stars">
+          <div id="stars" />
+          <div id="stars2" />
+          <div id="stars3" />
+        </div>
+
+      </main>
+    </>
   );
 }

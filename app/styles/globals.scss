@@ -48,6 +48,8 @@ html {
 }
 
 .container {
+  max-width:900px;
+  margin-inline: auto;
   padding-inline: 2rem;
   // margin-inline: auto;
   @include tablet() {
@@ -73,11 +75,10 @@ header {
   display: flex;
   flex-direction: column;
   max-height: 100vh;
-  padding: 6rem 0rem;
-  position: sticky;
+  // padding: 6rem 0rem;
+  // position: sticky;
   top: 0;
   z-index: 1;
-  padding-left: 1rem;
   @include tablet() {
     position: relative;
     display: flex;
@@ -611,6 +612,7 @@ footer {
   > div {
     height: 100%;
     width: 1px;
+    // background: linear-gradient(0deg, rgba(255, 0, 0, 0) 50%, var(--clr-primary) 100%);
     border: 1px solid var(--clr-primary);
   }
 }
@@ -640,11 +642,10 @@ footer {
   height: 100px;
   display: flex;
   justify-content: flex-start;
-  
+
   > div {
     height: 100%;
     width: 1px;
     border: 1px solid var(--clr-primary);
-
   }
 }

@@ -12,3 +12,5 @@ https://codepen.io/agoodwin/pen/NMJoER
 
 
 https://codepen.io/alaingalvan/pen/gOoEpW
+
+https://css-tricks.com/a-trick-that-makes-drawing-svg-lines-way-easier/
