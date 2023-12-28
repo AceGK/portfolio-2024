@@ -1,4 +1,4 @@
-import { Inter, VT323 } from 'next/font/google'
+import { Inter, VT323, Rubik } from 'next/font/google'
 import '../app/styles/reset.scss'
 import '../app/styles/matrix.scss'
 import '../app/styles/stars.scss'
@@ -13,6 +13,11 @@ const vt323 = VT323({
   subsets: ['latin'],
   display: 'swap',
 })
+const rubik = Rubik({
+  style: ['normal'],
+  subsets: ['latin'],
+  display: 'swap',
+})
 
 
 export const metadata = {
@@ -23,7 +28,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body className={rubik.className}>
         {children}
         <CursorGlow />
         </body>

@@ -21,12 +21,23 @@
     }
   }
 }
-
+.image {
+  // flex-basis:40%;
+  min-width:100px;
+  height: fit-content;
+  img {
+    width:100%;
+  }
+  @include mobile() {
+    flex-basis:100%;
+  }
+}
 .content {
   flex: 1;
   width:100%;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   gap: 1rem;
   min-width:250px;
 }

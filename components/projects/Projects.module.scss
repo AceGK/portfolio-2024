@@ -1,0 +1,14 @@
+.projects {
+  margin-inline:auto;
+  max-width:600px;
+}
+
+.swiper {
+  padding:2rem;
+  overflow:visible;
+  .slide {
+    background:#0B0E15;
+    border:1px solid #1f2532;
+    border-radius:var(--border-radius);
+  }
+}

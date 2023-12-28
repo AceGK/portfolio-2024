@@ -20,7 +20,7 @@
     cursor: pointer;
   }
   @include tablet(450px) {
-    position:absolute;
+    // position:absolute;
     right:12px;
     bottom:12px;
   }
