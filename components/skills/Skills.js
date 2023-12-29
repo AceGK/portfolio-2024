@@ -6,7 +6,7 @@ export default function Skills() {
     <section id="skills" className={styles.skills}>
 
           <div>
-            <div className="pt-300">
+            <div className="pt-100">
               <h2 className="code-heading fs-600">Skills</h2>
               <span className="fs-500">My Tech Stack</span>
             </div>
