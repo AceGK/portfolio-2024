@@ -17,7 +17,7 @@ html {
 
 main {
   color: var(--clr-text);
-  margin-bottom:1000px;
+  margin-bottom: 1000px;
 }
 
 html {
@@ -49,7 +49,7 @@ html {
 }
 
 .container {
-  max-width:900px;
+  max-width: 900px;
   margin-inline: auto;
   padding-inline: 2rem;
   // margin-inline: auto;
@@ -175,26 +175,7 @@ h3 {
 }
 
 section {
-  margin: 3rem auto;
-  // transition:all 0.3s;
-  // ul li {
-  //   transition: all 0.3s;
-  // }
-  // ul:hover li {
-  //   transition: all 0.3s;
-  //   opacity: 0.5;
-  // }
-
-  // ul li:hover {
-  //   transition: all 0.3s;
-  //   opacity: initial;
-  // }
-  // @include mobile() {
-  //   margin-bottom: 3rem;
-  //   ul li {
-  //     opacity: 1 !important; // prevent hover effect on mobile
-  //   }
-  // }
+  margin: 1rem auto;
 }
 
 .about {
@@ -600,7 +581,7 @@ footer {
 
 .dividers1 {
   position: absolute;
-  bottom: -50px;
+  bottom: -150px;
   left: 0;
   right: 0;
   margin: auto;
@@ -609,7 +590,10 @@ footer {
   padding-inline: 5rem;
 }
 .dividers2 {
-
+  margin: auto;
+  width: 100%;
+  max-width: 600px;
+  padding-inline: 5rem;
 }
 .dividers3 {
   margin: auto;
@@ -622,7 +606,7 @@ footer {
   position: relative;
   top: 0px;
   display: block;
-  height: 100px;
+  height: 200px;
   display: flex;
   justify-content: center;
 
@@ -643,7 +627,6 @@ footer {
   display: flex;
   justify-content: flex-start;
   > div {
-    
     height: 5px;
     width: 50%;
     background-size: -200% -500%;
@@ -670,61 +653,61 @@ footer {
   }
 }
 
-
 .div4 {
-  max-width: 800px;
-  margin: auto;
   position: relative;
   top: 0px;
-  height: 100px;
+  width: 100%;
   display: flex;
   justify-content: flex-end;
-
+  height: 100px;
   > div {
     height: 100%;
-    width: 1px;
-    border: 1px solid var(--clr-primary);
+    width: 5px;
+    background-image: linear-gradient(
+      0deg,
+      rgba(255, 203, 66, 0) 100%,
+      var(--clr-primary) 100%
+    );
   }
 }
-
-
 .div5 {
-  max-width: 800px;
-  margin: auto;
   position: relative;
   top: 0px;
-  display: block;
   width: 100%;
   display: flex;
   justify-content: flex-end;
   > div {
-    height: 1px;
+    height: 5px;
     width: 50%;
-    border: 1px solid var(--clr-primary);
+    background-size: -200% -500%;
+    background-image: linear-gradient(
+      90deg,
+      rgba(255, 203, 66, 0) 100%,
+      var(--clr-primary) 100%
+    );
   }
 }
 
 .div6 {
-  max-width: 800px;
-  margin: auto;
-  position: relative;
-  top: 0px;
-  display: block;
+  width: 100%;
   height: 100px;
   display: flex;
   justify-content: center;
-
   > div {
     height: 100%;
-    width: 1px;
-    border: 1px solid var(--clr-primary);
+    width: 5px;
+    background-image: linear-gradient(
+      0deg,
+      rgba(255, 203, 66, 0) 100%,
+      var(--clr-primary) 100%
+    );
   }
 }
 
 .div7 {
   position: relative;
   top: 0px;
-  width:100%;
+  width: 100%;
   display: flex;
   justify-content: center;
   height: 100px;
@@ -758,7 +741,7 @@ footer {
 
 .div9 {
   width: 5px;
-  height: 150px;
+  height: 100px;
   > div {
     height: 100%;
     width: 100%;

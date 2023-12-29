@@ -11,31 +11,31 @@ import Contact from "@/components/contact/Contact";
 export default function Home() {
 
   useEffect(() => {
-    const div1Threshold = 1;
-    const div1MaxScroll = 500;
+    const div1Threshold = 0;
+    const div1MaxScroll = 200;
 
-    const div2Threshold = 500;
-    const div2MaxScroll = 400;
+    const div2Threshold = 200;
+    const div2MaxScroll = 200;
 
-    const div3Threshold = 920;
+    const div3Threshold = 400;
     const div3MaxScroll = 400;
 
-    const div4Threshold = 920;
-    const div4MaxScroll = 400;
+    const div4Threshold = 1000;
+    const div4MaxScroll = 200;
 
-    const div5Threshold = 920;
-    const div5MaxScroll = 400;
+    const div5Threshold = 1220;
+    const div5MaxScroll = 200;
 
-    const div6Threshold = 920;
+    const div6Threshold = 1400;
     const div6MaxScroll = 400;
 
-    const div7Threshold = 2000;
-    const div7MaxScroll = 500;
+    const div7Threshold = 1900;
+    const div7MaxScroll = 300;
 
-    const div8Threshold = 2500;
-    const div8MaxScroll = 400;
+    const div8Threshold = 2200;
+    const div8MaxScroll = 200;
 
-    const div9Threshold = 2900;
+    const div9Threshold = 2400;
     const div9MaxScroll = 400;
 
     // Add more thresholds and maxScrolls for additional divs if necessary
@@ -159,39 +159,11 @@ export default function Home() {
 
       <main className="container">
 
-        <div className="dividers1">
-          <div className="div1">
-            <div />
-          </div>
-          <div className="div2">
-            <div />
-          </div>
-          <div className="div3">
-            <div />
-          </div>
-        </div>
+        <Dividers1 />
         <Skills />
-        <div className="div4">
-          <div />
-        </div>
-        <div className="div5">
-          <div />
-        </div>
-        <div className="div6">
-          <div />
-        </div>
+        <Dividers2 />
         <Projects />
-        <div className="dividers3">
-          <div className="div7">
-            <div />
-          </div>
-          <div className="div8">
-            <div />
-          </div>
-          <div className="div9">
-            <div />
-          </div>
-        </div>
+        <Dividers3 />
         <About />
 
         <div className="div10">
@@ -209,5 +181,53 @@ export default function Home() {
 
       </main>
     </>
+  );
+}
+
+function Dividers1() {
+  return (
+    <div className="dividers1">
+      <div className="div1">
+        <div />
+      </div>
+      <div className="div2">
+        <div />
+      </div>
+      <div className="div3">
+        <div />
+      </div>
+    </div>
+  );
+}
+
+function Dividers2() {
+  return (
+    <div className="dividers2">
+      <div className="div4">
+        <div />
+      </div>
+      <div className="div5">
+        <div />
+      </div>
+      <div className="div6">
+        <div />
+      </div>
+    </div>
+  );
+}
+
+function Dividers3() {
+  return (
+    <div className="dividers3">
+      <div className="div7">
+        <div />
+      </div>
+      <div className="div8">
+        <div />
+      </div>
+      <div className="div9">
+        <div />
+      </div>
+    </div>
   );
 }
