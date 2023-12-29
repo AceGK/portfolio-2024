@@ -20,6 +20,24 @@ export default function Home() {
     const div3Threshold = 920;
     const div3MaxScroll = 400;
 
+    const div4Threshold = 920;
+    const div4MaxScroll = 400;
+
+    const div5Threshold = 920;
+    const div5MaxScroll = 400;
+
+    const div6Threshold = 920;
+    const div6MaxScroll = 400;
+
+    const div7Threshold = 2000;
+    const div7MaxScroll = 500;
+
+    const div8Threshold = 2500;
+    const div8MaxScroll = 400;
+
+    const div9Threshold = 2900;
+    const div9MaxScroll = 400;
+
     // Add more thresholds and maxScrolls for additional divs if necessary
 
     const handleScroll = () => {
@@ -36,8 +54,14 @@ export default function Home() {
       const scrollValueDiv1 = calculateScrollValue(div1Threshold, div1MaxScroll);
       const scrollValueDiv2 = calculateScrollValue(div2Threshold, div2MaxScroll);
       const scrollValueDiv3 = calculateScrollValue(div3Threshold, div3MaxScroll);
+      const scrollValueDiv4 = calculateScrollValue(div4Threshold, div4MaxScroll);
+      const scrollValueDiv5 = calculateScrollValue(div5Threshold, div5MaxScroll);
+      const scrollValueDiv6 = calculateScrollValue(div6Threshold, div6MaxScroll);
+      const scrollValueDiv7 = calculateScrollValue(div7Threshold, div7MaxScroll);
+      const scrollValueDiv8 = calculateScrollValue(div8Threshold, div8MaxScroll);
+      const scrollValueDiv9 = calculateScrollValue(div9Threshold, div9MaxScroll);
 
-      // Apply the background image for div1
+      // Apply the background image for divs
       const div1 = document.querySelector('.div1 > div');
       if (div1) {
         div1.style.backgroundImage = `linear-gradient(
@@ -47,7 +71,6 @@ export default function Home() {
         )`;
       }
 
-      // Apply the background image for div2
       const div2 = document.querySelector('.div2 > div');
       if (div2) {
         div2.style.backgroundImage = `linear-gradient(
@@ -57,7 +80,6 @@ export default function Home() {
         )`;
       }
 
-      // Apply the background image for div3
       const div3 = document.querySelector('.div3 > div');
       if (div3) {
         div3.style.backgroundImage = `linear-gradient(
@@ -67,7 +89,61 @@ export default function Home() {
         )`;
       }
 
-      // Repeat for additional divs if necessary
+      const div4 = document.querySelector('.div4 > div');
+      if (div4) {
+        div4.style.backgroundImage = `linear-gradient(
+          0deg,
+          rgba(255, 203, 66, 0) ${scrollValueDiv4}%,
+          var(--clr-primary) 0%
+        )`;
+      }
+
+      const div5 = document.querySelector('.div5 > div');
+      if (div5) {
+        div5.style.backgroundImage = `linear-gradient(
+          90deg,
+          rgba(255, 203, 66, 0) ${scrollValueDiv5}%,
+          var(--clr-primary) 0%
+        )`;
+      }
+
+      const div6 = document.querySelector('.div6 > div');
+      if (div6) {
+        div6.style.backgroundImage = `linear-gradient(
+          0deg,
+          rgba(255, 203, 66, 0) ${scrollValueDiv6}%,
+          var(--clr-primary) 100%
+        )`;
+      }
+
+      const div7 = document.querySelector('.div7 > div');
+      if (div7) {
+        div7.style.backgroundImage = `linear-gradient(
+          0deg,
+          rgba(255, 203, 66, 0) ${scrollValueDiv7}%,
+          var(--clr-primary) 0%
+        )`;
+      }
+
+      const div8 = document.querySelector('.div8 > div');
+      if (div8) {
+        div8.style.backgroundImage = `linear-gradient(
+          90deg,
+          rgba(255, 203, 66, 0) ${scrollValueDiv8}%,
+          var(--clr-primary) 0%
+        )`;
+      }
+
+      const div9 = document.querySelector('.div9 > div');
+      if (div9) {
+        div9.style.backgroundImage = `linear-gradient(
+          0deg,
+          rgba(255, 203, 66, 0) ${scrollValueDiv9}%,
+          var(--clr-primary) 100%
+        )`;
+      }
+
+
     };
 
     window.addEventListener('scroll', handleScroll);
@@ -83,7 +159,7 @@ export default function Home() {
 
       <main className="container">
 
-        <div className="dividers">
+        <div className="dividers1">
           <div className="div1">
             <div />
           </div>
@@ -105,16 +181,19 @@ export default function Home() {
           <div />
         </div>
         <Projects />
-        <div className="div7">
-          <div />
+        <div className="dividers3">
+          <div className="div7">
+            <div />
+          </div>
+          <div className="div8">
+            <div />
+          </div>
+          <div className="div9">
+            <div />
+          </div>
         </div>
         <About />
-        <div className="div8">
-          <div />
-        </div>
-        <div className="div9">
-          <div />
-        </div>
+
         <div className="div10">
           <div />
         </div>

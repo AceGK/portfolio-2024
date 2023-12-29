@@ -17,6 +17,7 @@ html {
 
 main {
   color: var(--clr-text);
+  margin-bottom:1000px;
 }
 
 html {
@@ -597,11 +598,20 @@ footer {
   background: rgba(0, 0, 0, 0.33);
 }
 
-.dividers {
+.dividers1 {
   position: absolute;
   bottom: -50px;
   left: 0;
   right: 0;
+  margin: auto;
+  width: 100%;
+  max-width: 900px;
+  padding-inline: 5rem;
+}
+.dividers2 {
+
+}
+.dividers3 {
   margin: auto;
   width: 100%;
   max-width: 900px;
@@ -711,19 +721,52 @@ footer {
   }
 }
 
-.div7, .div8 {
-  max-width: 800px;
-  margin: auto;
+.div7 {
   position: relative;
   top: 0px;
-  display: block;
-  height: 300px;
+  width:100%;
   display: flex;
   justify-content: center;
-
+  height: 100px;
   > div {
     height: 100%;
-    width: 1px;
-    border: 1px solid var(--clr-primary);
+    width: 5px;
+    background-image: linear-gradient(
+      0deg,
+      rgba(255, 203, 66, 0) 100%,
+      var(--clr-primary) 100%
+    );
+  }
+}
+.div8 {
+  position: relative;
+  top: 0px;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  > div {
+    height: 5px;
+    width: 50%;
+    background-size: -200% -500%;
+    background-image: linear-gradient(
+      90deg,
+      rgba(255, 203, 66, 0) 100%,
+      var(--clr-primary) 100%
+    );
+  }
+}
+
+.div9 {
+  width: 5px;
+  height: 150px;
+  > div {
+    height: 100%;
+    width: 100%;
+    // background-color: red;
+    background-image: linear-gradient(
+      0deg,
+      rgba(255, 203, 66, 0) 100%,
+      var(--clr-primary) 100%
+    );
   }
 }
