@@ -12,21 +12,21 @@ export default function Home() {
 
   useEffect(() => {
     const div1Threshold = 0;
-    const div1MaxScroll = 200;
+    const div1MaxScroll = 400;
 
-    const div2Threshold = 200;
+    const div2Threshold = 400;
     const div2MaxScroll = 200;
 
-    const div3Threshold = 400;
+    const div3Threshold = 600;
     const div3MaxScroll = 400;
 
-    const div4Threshold = 1000;
+    const div4Threshold = 1200;
     const div4MaxScroll = 200;
 
-    const div5Threshold = 1220;
+    const div5Threshold = 1400;
     const div5MaxScroll = 200;
 
-    const div6Threshold = 1400;
+    const div6Threshold = 1600;
     const div6MaxScroll = 400;
 
     const div7Threshold = 1900;
@@ -37,6 +37,15 @@ export default function Home() {
 
     const div9Threshold = 2400;
     const div9MaxScroll = 400;
+
+    const div10Threshold = 2800;
+    const div10MaxScroll = 400;
+
+    const div11Threshold = 3200;
+    const div11MaxScroll = 400;
+
+    const div12Threshold = 3600;
+    const div12MaxScroll = 400;
 
     // Add more thresholds and maxScrolls for additional divs if necessary
 
@@ -60,6 +69,9 @@ export default function Home() {
       const scrollValueDiv7 = calculateScrollValue(div7Threshold, div7MaxScroll);
       const scrollValueDiv8 = calculateScrollValue(div8Threshold, div8MaxScroll);
       const scrollValueDiv9 = calculateScrollValue(div9Threshold, div9MaxScroll);
+      const scrollValueDiv10 = calculateScrollValue(div10Threshold, div10MaxScroll);
+      const scrollValueDiv11 = calculateScrollValue(div11Threshold, div11MaxScroll);
+      const scrollValueDiv12 = calculateScrollValue(div12Threshold, div12MaxScroll);
 
       // Apply the background image for divs
       const div1 = document.querySelector('.div1 > div');
@@ -143,6 +155,31 @@ export default function Home() {
         )`;
       }
 
+      const div10 = document.querySelector('.div10 > div');
+      if (div10) {
+        div10.style.backgroundImage = `linear-gradient(
+          0deg,
+          rgba(255, 203, 66, 0) ${scrollValueDiv10}%,
+          var(--clr-primary) 0%
+        )`;
+      }
+      const div11 = document.querySelector('.div11 > div');
+      if (div11) {
+        div11.style.backgroundImage = `linear-gradient(
+          -90deg,
+          rgba(255, 203, 66, 0) ${scrollValueDiv11}%,
+          var(--clr-primary) 0%
+        )`;
+      }
+      const div12 = document.querySelector('.div12 > div');
+      if (div12) {
+        div12.style.backgroundImage = `linear-gradient(
+          0deg,
+          rgba(255, 203, 66, 0) ${scrollValueDiv12}%,
+          var(--clr-primary) 100%
+        )`;
+      }
+
 
     };
 
@@ -165,10 +202,7 @@ export default function Home() {
         <Projects />
         <Dividers3 />
         <About />
-
-        <div className="div10">
-          <div />
-        </div>
+        <Dividers4 />
         <Contact />
 
         <Matrix />
@@ -226,6 +260,22 @@ function Dividers3() {
         <div />
       </div>
       <div className="div9">
+        <div />
+      </div>
+    </div>
+  );
+}
+
+function Dividers4() {
+  return (
+    <div className="dividers4">
+      <div className="div10">
+        <div />
+      </div>
+      <div className="div11">
+        <div />
+      </div>
+      <div className="div12">
         <div />
       </div>
     </div>

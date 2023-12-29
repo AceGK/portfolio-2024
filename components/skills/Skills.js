@@ -8,7 +8,7 @@ export default function Skills() {
           <div>
             <div className="pt-100">
               <h2 className="code-heading fs-600">Skills</h2>
-              <span className="fs-500">My Tech Stack</span>
+              {/* <span className="fs-500">My Tech Stack</span> */}
             </div>
             <ul>
               <h3 className="code-heading fs-500">Dev</h3>
