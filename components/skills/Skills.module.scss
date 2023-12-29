@@ -1,7 +1,7 @@
 
 .skills {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns:repeat(auto-fill, minmax(320px, 1fr));
   gap: 3rem;
   margin-top:350px;
   h2 {
@@ -12,6 +12,7 @@
     flex-shrink: 0;
     width: 100%;
     text-align: center;
+    grid-column: span 3;
   }
   > div {
     display: flex;
@@ -21,7 +22,8 @@
   }
   ul {
     background: var(--clr-transparent-bg);
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
     gap: 1.25rem;
     flex-wrap: wrap;
     justify-content: center;

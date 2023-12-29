@@ -16,8 +16,8 @@ export default function Skills() {
               <Icon icon="css3" borderColor="#264DE4" skill><span>CSS3</span></Icon>
               <Icon icon="sass-text" borderColor="#CC6699" skill><span>Sass</span></Icon>
               <Icon icon="javascript" borderColor="#F7DF1E" skill><span>JavaScript</span></Icon>
-              {/* <Icon icon="typescript" borderColor="#007ACC" skill><span>TypeScript</span></Icon> */}
-              {/* <Icon icon="jquery" borderColor="#007ACC" skill><span>jQuery</span></Icon> */}
+              {/* <Icon icon="typescript" borderColor="#007ACC" skill><span>TypeScript</span></Icon>
+              <Icon icon="jquery" borderColor="#007ACC" skill><span>jQuery</span></Icon> */}
               <Icon icon="react" borderColor="#61DAFB" skill><span>React</span></Icon>
               <Icon icon="redux" borderColor="#764ABC" skill><span>Redux</span></Icon>
               <Icon icon="next-js" borderColor="#9c9c9c" color="#fff" skill><span>Next.js</span></Icon>

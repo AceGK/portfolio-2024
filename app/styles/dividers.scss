@@ -1,0 +1,176 @@
+
+.dividers1,
+.dividers2,
+.dividers3,
+.dividers4 {
+  --line-width:5px;
+}
+
+.dividers1 {
+  position: absolute;
+  bottom: -335px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 100%;
+  max-width: 625px;
+  padding-inline: 5rem;
+}
+.dividers2,
+.dividers3,
+.dividers4 {
+  position: relative;
+  margin: auto;
+  width: 100%;
+  max-width: 600px;
+  padding-inline: 5rem;
+}
+
+.div1 {
+  height: 350px;
+  display: flex;
+  justify-content: center;
+  > div {
+    height: 100%;
+    width:var(--line-width);
+    background-image: linear-gradient(
+      0deg,
+      rgba(255, 203, 66, 0) 100%,
+      var(--clr-primary) 0%
+    );
+  }
+}
+
+.div2 {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  > div {
+    height:var(--line-width);
+    width: 50%;
+  }
+}
+
+.div3 {
+  width:var(--line-width);
+  height: 100px;
+  > div {
+    height: 100%;
+    width: 100%;
+  }
+}
+
+.div4 {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: flex-end;
+  > div {
+    height: 100%;
+    width:var(--line-width);
+  }
+}
+
+.div4_2 {
+  position:absolute;
+  top:-150px;
+  left:80px;
+  width: 100%;
+  height: 120%;
+  display: flex;
+  justify-content: flex-start;
+  > div {
+    height: 100%;
+    width:var(--line-width);
+  }
+}
+
+.div5_2 {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  > div {
+    height:var(--line-width);
+    width: 100%;
+  }
+}
+
+.div5 {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  > div {
+    height:var(--line-width);
+    width: 100%;
+  }
+}
+
+.div6 {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  > div {
+    height: 100%;
+    width:var(--line-width);
+  }
+}
+
+.div7 {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  height: 100px;
+  > div {
+    height: 100%;
+    width:var(--line-width);
+  }
+}
+.div8 {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  > div {
+    height:var(--line-width);
+    width: 50%;
+  }
+}
+
+.div9 {
+  width:var(--line-width);
+  height: 100px;
+  > div {
+    height: 100%;
+    width: 100%;
+  }
+}
+.div10 {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  height: 100px;
+  > div {
+    height: 100%;
+    width:var(--line-width);
+  }
+}
+.div11 {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  > div {
+    height:var(--line-width);
+    width: 50%;
+  }
+}
+
+.div12 {
+  height: 100px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  > div {
+    height: 100%;
+    width:var(--line-width);
+  }
+}

@@ -23,29 +23,35 @@ export default function Home() {
     const div4Threshold = 1200;
     const div4MaxScroll = 200;
 
+    const div4_2Threshold = 1200;
+    const div4_2MaxScroll = 200;
+
     const div5Threshold = 1400;
     const div5MaxScroll = 200;
+
+    const div5_2Threshold = 1400;
+    const div5_2MaxScroll = 200;
 
     const div6Threshold = 1600;
     const div6MaxScroll = 400;
 
-    const div7Threshold = 1900;
+    const div7Threshold = 2200;
     const div7MaxScroll = 300;
 
-    const div8Threshold = 2200;
+    const div8Threshold = 2460;
     const div8MaxScroll = 200;
 
-    const div9Threshold = 2400;
+    const div9Threshold = 2700;
     const div9MaxScroll = 400;
 
-    const div10Threshold = 2800;
-    const div10MaxScroll = 400;
+    const div10Threshold = 3000;
+    const div10MaxScroll = 200;
 
     const div11Threshold = 3200;
-    const div11MaxScroll = 400;
+    const div11MaxScroll = 200;
 
-    const div12Threshold = 3600;
-    const div12MaxScroll = 400;
+    const div12Threshold = 3400;
+    const div12MaxScroll = 200;
 
     // Add more thresholds and maxScrolls for additional divs if necessary
 
@@ -65,6 +71,8 @@ export default function Home() {
       const scrollValueDiv3 = calculateScrollValue(div3Threshold, div3MaxScroll);
       const scrollValueDiv4 = calculateScrollValue(div4Threshold, div4MaxScroll);
       const scrollValueDiv5 = calculateScrollValue(div5Threshold, div5MaxScroll);
+      const scrollValueDiv4_2 = calculateScrollValue(div4_2Threshold, div4_2MaxScroll);
+      const scrollValueDiv5_2 = calculateScrollValue(div5_2Threshold, div5_2MaxScroll);
       const scrollValueDiv6 = calculateScrollValue(div6Threshold, div6MaxScroll);
       const scrollValueDiv7 = calculateScrollValue(div7Threshold, div7MaxScroll);
       const scrollValueDiv8 = calculateScrollValue(div8Threshold, div8MaxScroll);
@@ -106,6 +114,24 @@ export default function Home() {
         div4.style.backgroundImage = `linear-gradient(
           0deg,
           rgba(255, 203, 66, 0) ${scrollValueDiv4}%,
+          var(--clr-primary) 0%
+        )`;
+      }
+
+      const div4_2 = document.querySelector('.div4_2 > div');
+      if (div4_2) {
+        div4_2.style.backgroundImage = `linear-gradient(
+          0deg,
+          rgba(255, 203, 66, 0) ${scrollValueDiv4_2}%,
+          var(--clr-primary) 0%
+        )`;
+      }
+
+      const div5_2 = document.querySelector('.div5_2 > div');
+      if (div5_2) {
+        div5_2.style.backgroundImage = `linear-gradient(
+          -90deg,
+          rgba(255, 203, 66, 0) ${scrollValueDiv5_2}%,
           var(--clr-primary) 0%
         )`;
       }
@@ -240,8 +266,16 @@ function Dividers2() {
       <div className="div4">
         <div />
       </div>
-      <div className="div5">
+      <div className="div4_2">
         <div />
+      </div>
+      <div style={{display:'flex',width:"100%"}}>
+        <div className="div5_2">
+          <div />
+        </div>
+        <div className="div5">
+          <div />
+        </div>
       </div>
       <div className="div6">
         <div />

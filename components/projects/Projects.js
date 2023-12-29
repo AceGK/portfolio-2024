@@ -17,8 +17,8 @@ export default function Projects() {
 
   return (
     <section id="projects" className={styles.projects}>
-      <h2 className="code-heading fs-600 center-text mb-200">Projects</h2>
-      <div className="center-text">View my projects on <a href="#">Github</a></div>
+      <h2 className="code-heading fs-600 center-text">Projects</h2>
+      {/* <div className="center-text">View my projects on <a href="#">Github</a></div> */}
       <Swiper
         className={styles.swiper}
         effect={'cards'}
