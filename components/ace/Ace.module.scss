@@ -8,6 +8,10 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  p {
+    color:var(--clr-text);
+  }
+
   ul {
     display: flex;
     gap: 1rem;

@@ -14,7 +14,6 @@ export default function Skills() {
               <h3 className="code-heading fs-500">Dev</h3>
               <Icon icon="html5" borderColor="#E34F26" skill><span>HTML5</span></Icon>
               <Icon icon="css3" borderColor="#264DE4" skill><span>CSS3</span></Icon>
-              <Icon icon="sass-text" borderColor="#CC6699" skill><span>Sass</span></Icon>
               <Icon icon="javascript" borderColor="#F7DF1E" skill><span>JavaScript</span></Icon>
               {/* <Icon icon="typescript" borderColor="#007ACC" skill><span>TypeScript</span></Icon>
               <Icon icon="jquery" borderColor="#007ACC" skill><span>jQuery</span></Icon> */}
@@ -23,6 +22,7 @@ export default function Skills() {
               <Icon icon="next-js" borderColor="#9c9c9c" color="#fff" skill><span>Next.js</span></Icon>
               <Icon icon="node-js" borderColor="#339933" skill><span>Node.js</span></Icon>
               <Icon icon="express" borderColor="#9c9c9c" color="#fff" skill><span>Express</span></Icon>
+              <Icon icon="sass-text" borderColor="#CC6699" skill><span>Sass</span></Icon>
               {/* <Icon icon="php" borderColor="#777BB4" skill><span>PHP</span></Icon> */}
             </ul>
 

@@ -30,6 +30,7 @@
   height: 350px;
   display: flex;
   justify-content: center;
+  margin-bottom: -5px;
   > div {
     height: 100%;
     width:var(--line-width);
@@ -121,6 +122,7 @@
   display: flex;
   justify-content: center;
   height: 100px;
+  margin-bottom: -5px;
   > div {
     height: 100%;
     width:var(--line-width);
@@ -158,6 +160,7 @@
   width: 100%;
   display: flex;
   justify-content: flex-start;
+  margin-bottom: -5px;
   > div {
     height:var(--line-width);
     width: 50%;
