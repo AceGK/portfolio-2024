@@ -60,7 +60,7 @@ export default function Projects() {
             title="Tip Calculator"
             // href="https://acegk.github.io/tip-calculator/"
             body="A tip calculator that evaluates the tip and total per person based on the bill amount, tip percentage and number of people."
-            tags={["HTML", "CSS", "JavaScript"]}
+            tags={["JavaScript"]}
           />
         </SwiperSlide>
 
@@ -70,7 +70,7 @@ export default function Projects() {
             title="IP Address Tracker"
             // href="https://ip-tracker-acegk.vercel.app/"
             body="View the address, timezone, and ISP of any IP address or domain. Built using the IPify API and Leaflet.js."
-            tags={["Next.js", "Leaflet.js", "SCSS"]}
+            tags={["Next.js", "Leaflet.js"]}
           />
         </SwiperSlide>
 
