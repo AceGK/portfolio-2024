@@ -1,9 +1,9 @@
 import Link from "next/link";
-import Github from "../../public/github.svg";
-import LinkedIn from "../../public/linkedin.svg";
-import Email from "../../public/envelope.svg";
+import Github from "../../public/icons/github.svg";
+import LinkedIn from "../../public/icons/linkedin.svg";
+import Email from "../../public/icons/envelope.svg";
 import styles from "./Ace.module.scss";
-import Mouse from "../../public/mouse.svg";
+import Mouse from "../../public/icons/mouse.svg";
 
 export default function Ace() {
   return (

@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import styles from './Card.module.scss';
-import Arrow from '../../public/up-right-arrow.svg';
+import Arrow from '../../public/icons/up-right-arrow.svg';
 
 export default function Card({ href, title, body, tags, children, img, caption, subtitle }) {
   // Wrapper component conditionally set to either Link or div

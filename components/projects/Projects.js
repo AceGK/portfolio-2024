@@ -1,6 +1,5 @@
 'use client';
 
-import Icon from "@/components/icon/Icon";
 import styles from "./Projects.module.scss";
 import Card from "../card/Card";
 

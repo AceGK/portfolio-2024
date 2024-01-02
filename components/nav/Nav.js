@@ -1,12 +1,12 @@
 'use client'
 import styles from './Nav.module.scss';
 import { useState, useEffect } from 'react';
-import Github from '../../public/github.svg';
-import LinkedIn from '../../public/linkedin.svg';
-import Email from '../../public/envelope.svg';
+import Github from '../../public/icons/github.svg';
+import LinkedIn from '../../publicicons//linkedin.svg';
+import Email from '../../public/icons/envelope.svg';
 import Link from 'next/link';
-import Instagram from '../../public/instagram.svg';
-import CV from '@/public/cv.svg';
+import Instagram from '../../public/icons/instagram.svg';
+import CV from '@/public/icons/cv.svg';
 
 export default function Nav() {
 

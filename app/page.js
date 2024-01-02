@@ -1,7 +1,6 @@
 'use client';
 import React, { useEffect } from 'react';
 import Matrix from "@/components/matrix/Matrix";
-import Icon from "@/components/icon/Icon";
 import Skills from "@/components/skills/Skills";
 import Projects from "@/components/projects/Projects";
 import About from "@/components/about/About";
