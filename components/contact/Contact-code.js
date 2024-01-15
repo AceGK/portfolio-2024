@@ -1,8 +1,16 @@
 "use client";
 import { useState } from "react";
+// https://react-syntax-highlighter.github.io/react-syntax-highlighter/demo/
+import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
+import { a11yDark } from 'react-syntax-highlighter/dist/esm/styles/prism'
 import styles from "./Contact.module.scss";
 
 export default function Contact() {
+  const [sender, setSender] = useState("");
+  const [recipient, setRecipient] = useState("");
+  const [subject, setSubject] = useState("");
+  const [message, setMessage] = useState("");
+
   const [success, setSuccess] = useState(false);
   const [error, setError] = useState(false);
   const [hide, setHide] = useState(false);
@@ -36,6 +44,16 @@ export default function Contact() {
       <h2 className="code-heading fs-600 center-text">Contact</h2>
 
       <div className={styles.contact}>
+        <SyntaxHighlighter language="javascript" style={a11yDark}>
+          {`import { useState } from "react";
+
+const [sender, setSender] = useState("${sender}");
+const [recipient, setRecipient] = useState("${recipient}");
+const [subject, setSubject] = useState("${subject}");
+const [message, setMessage] = useState("${message}");
+
+`}
+        </SyntaxHighlighter>
 
         <div
           className={styles.success}
@@ -62,35 +80,30 @@ export default function Contact() {
           style={{ display: hide ? "none" : "grid" }}
         >
           <div className="honey">
-            <label htmlFor="name">Name</label>
-            <input id="name" name="name" type="text" autoComplete="off" />
-            <label htmlFor="email">Email</label>
+            <label htmlFor="email">Your Name</label>
             <input id="email" name="email" type="email" autoComplete="off" />
-            <label htmlFor="message">Message</label>
+            <label htmlFor="email">Your Email</label>
+            <input id="subject" name="subject" type="subject" autoComplete="off" />
+            <label htmlFor="subject">Your Subject</label>
+            <input id="email" name="email" type="email" autoComplete="off" />
+            <label htmlFor="message">Your Message</label>
             <textarea id="message" name="message" autoComplete="off"></textarea>
           </div>
 
           <input type="hidden" name="form-name" value="contact" />
 
-          <label htmlFor="nameTrue" hidden>
-            Name
-          </label>
-          <input type="text" name="nameTrue" placeholder="Name" required />
+          <label htmlFor="nameTrue" hidden>Name</label>
+          <input type="text" name="nameTrue" placeholder="Your Name" required value={sender} onChange={(e) => setSender(e.target.value)} />
 
-          <label htmlFor="emailTrue" hidden>
-            Email
-          </label>
-          <input type="email" name="emailTrue" placeholder="Email" required />
+          <label htmlFor="emailTrue" hidden>Email</label>
+          <input type="email" name="emailTrue" placeholder="Your Email" required value={recipient} onChange={(e) => setRecipient(e.target.value)} />
 
-          <label htmlFor="messageTrue" hidden>
-            Message
-          </label>
-          <textarea
-            name="messageTrue"
-            placeholder="Message"
-            required
-          ></textarea>
-          <button type="submit" className="btn">
+          <label htmlFor="subject" hidden>Subject</label>
+          <input type="subject" name="subjectTrue" placeholder="Your Subject" required value={subject} onChange={(e) => setSubject(e.target.value)} />
+
+          <label htmlFor="messageTrue" hidden>Message</label>
+          <textarea name="messageTrue" placeholder="Your Message" required value={message} onChange={(e) => setMessage(e.target.value)}></textarea>
+          <button type="submit" className="button">
             Send
           </button>
         </form>

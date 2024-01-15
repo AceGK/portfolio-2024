@@ -40,7 +40,7 @@ export default function Projects() {
             // href="https://purplelotus.vercel.app/"
             title="Cannabis E-commerce"
             body="A cannabis dispensary web app that uses the Jane Roots headless e-commerce platform and Algolia Instant Search to provide a fast, user-friendly shopping experience."
-            tags={["Next.js", "Algolia", "Sanity", "Leaflet.js", "SCSS"]}
+            tags={["Next.js", "Algolia", "Sanity", "Leaflet.js", "GoogleMaps API"]}
           />
         </SwiperSlide>
 
@@ -50,7 +50,7 @@ export default function Projects() {
             title="Periodic Table"
             // href="https://ace-periodic-table.vercel.app/"
             body="An interactive periodic table with detailed information on each element."
-            tags={["Next.js", "SCSS"]}
+            tags={["Next.js"]}
           />
         </SwiperSlide>
 

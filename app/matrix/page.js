@@ -31,7 +31,7 @@ const MatrixRain = () => {
         for (let i = 0; i < drops.length; i++) {
           if (drops[i] >= 0) {
             const text = symbol[Math.floor(Math.random() * symbol.length)];
-            ctx.fillText(text, i * (canvas.width / 50), drops[i] * fontSize);
+            ctx.fillText(text, i * (canvas.width / 100), drops[i] * fontSize);
           }
 
           if (drops[i] < 0 && Math.random() > 0.92) {

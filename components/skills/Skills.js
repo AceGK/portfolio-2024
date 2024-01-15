@@ -26,113 +26,117 @@ import Shopify from "../../public/icons/shopify.svg";
 
 
 export default function Skills() {
-  return ( 
+  return (
     <section id="skills" className={styles.skills}>
 
-          <div>
-            <div className="pt-100">
-              <h2 className="code-heading fs-600">Skills</h2>
-            </div>
-            <ul>
-              <h3 className="code-heading fs-500">Dev</h3>
-              <Skill color="html">
-                <span>HTML5</span>
-                <Html />
-              </Skill>
-              <Skill color="css">
-                <span>CSS3</span>
-                <Css />
-              </Skill>
-              <Skill color="js">
-                <span>JavaScript</span>
-                <Javascript />
-              </Skill>
-              <Skill color="react">
-                <span>React</span>
-                <React />
-              </Skill>
-              <Skill color="redux">
-                <span>Redux</span>
-                <Redux />
-              </Skill>
-              <Skill color="next">
-                <span>Next.js</span>
-                <Next />
-              </Skill>
-              <Skill color="node">
-                <span>Node.js</span>
-                <Node />
-              </Skill>
-              <Skill color="express">
-                <span>Express</span>
-                <Express />
-              </Skill>
-              <Skill color="sass">
-                <span>Sass</span>
-                <Sass />
-              </Skill>
-            
-            </ul>
+      <div>
+        <div className="pt-100">
+          <h2 className="code-heading fs-600">Skills</h2>
+        </div>
+        <div className={styles.skillGroup}>
+          <h3 className="code-heading fs-500">Dev</h3>
+          <ul>
+            <Skill color="html">
+              <span>HTML5</span>
+              <Html />
+            </Skill>
+            <Skill color="css">
+              <span>CSS3</span>
+              <Css />
+            </Skill>
+            <Skill color="js">
+              <span>JavaScript</span>
+              <Javascript />
+            </Skill>
+            <Skill color="react">
+              <span>React</span>
+              <React />
+            </Skill>
+            <Skill color="redux">
+              <span>Redux</span>
+              <Redux />
+            </Skill>
+            <Skill color="next">
+              <span>Next.js</span>
+              <Next />
+            </Skill>
+            <Skill color="node">
+              <span>Node.js</span>
+              <Node />
+            </Skill>
+            <Skill color="express">
+              <span>Express</span>
+              <Express />
+            </Skill>
+            <Skill color="sass">
+              <span>Sass</span>
+              <Sass />
+            </Skill>
 
-          </div>
-          <div>
-            <ul>
-              <h3 className="code-heading fs-500">Design</h3>
-              <Skill color="adobe">
-                <span>Adobe CC</span>
-                <Adobe />
-              </Skill>
-              <Skill color="sketch">
-                <span>Sketch</span>
-                <Sketch />
-              </Skill>
-              <Skill color="figma">
-                <span>Figma</span>
-                <Figma />
-              </Skill>
-            </ul>
+          </ul>
 
-            <ul>
-              <h3 className="code-heading fs-500">Data</h3>
-              <Skill color="mysql">
-                <span>MySQL</span>
-                <Mysql />
-              </Skill>
-              <Skill color="mongo">
-                <span>MongoDB</span>
-                <Mongodb />
-              </Skill>
-              <Skill color="firebase">
-                <span>Firebase</span>
-                <Firebase />
-              </Skill>
-              <Skill color="aws">
-                <span>AWS</span>
-                <Aws />
-              </Skill>
-              <Skill color="auth0">
-                <span>Auth0</span>
-                <Auth0 />
-              </Skill>
-              <Skill color="algolia">
-                <span>Algolia</span>
-                <Algolia />
-              </Skill>
-              <Skill color="sanity">
-                <span>Sanity</span>
-                <Sanity />
-              </Skill>
-              <Skill color="wordpress">
-                <span>WordPress</span>
-                <Wordpress />
-              </Skill>
-              <Skill color="shopify">
-                <span>Shopify</span>
-                <Shopify />
-              </Skill>
-            </ul>
-
-          </div>
-        </section>
-   );
+        </div>
+      </div>
+      <div>
+        <div className={styles.skillGroup}>
+          <h3 className="code-heading fs-500">Design</h3>
+          <ul>
+            <Skill color="adobe">
+              <span>Adobe CC</span>
+              <Adobe />
+            </Skill>
+            <Skill color="sketch">
+              <span>Sketch</span>
+              <Sketch />
+            </Skill>
+            <Skill color="figma">
+              <span>Figma</span>
+              <Figma />
+            </Skill>
+          </ul>
+        </div>
+        <div className={styles.skillGroup}>
+          <h3 className="code-heading fs-500">Data</h3>
+          <ul>
+            <Skill color="mysql">
+              <span>MySQL</span>
+              <Mysql />
+            </Skill>
+            <Skill color="mongo">
+              <span>MongoDB</span>
+              <Mongodb />
+            </Skill>
+            <Skill color="firebase">
+              <span>Firebase</span>
+              <Firebase />
+            </Skill>
+            <Skill color="aws">
+              <span>AWS</span>
+              <Aws />
+            </Skill>
+            <Skill color="auth0">
+              <span>Auth0</span>
+              <Auth0 />
+            </Skill>
+            <Skill color="algolia">
+              <span>Algolia</span>
+              <Algolia />
+            </Skill>
+            <Skill color="sanity">
+              <span>Sanity</span>
+              <Sanity />
+            </Skill>
+            <Skill color="wordpress">
+              <span>WordPress</span>
+              <Wordpress />
+            </Skill>
+            <Skill color="shopify">
+              <span>Shopify</span>
+              <Shopify />
+            </Skill>
+          </ul>
+        </div>
+      </div>
+    </section>
+  );
 }

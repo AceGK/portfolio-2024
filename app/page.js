@@ -34,22 +34,22 @@ export default function Home() {
     const div6Threshold = 1600;
     const div6MaxScroll = 400;
 
-    const div7Threshold = 2200;
+    const div7Threshold = 2000;
     const div7MaxScroll = 300;
 
-    const div8Threshold = 2460;
+    const div8Threshold = 2300;
     const div8MaxScroll = 200;
 
-    const div9Threshold = 2700;
-    const div9MaxScroll = 400;
+    const div9Threshold = 2500;
+    const div9MaxScroll = 200;
 
-    const div10Threshold = 3000;
+    const div10Threshold = 2700;
     const div10MaxScroll = 200;
 
-    const div11Threshold = 3200;
+    const div11Threshold = 3000;
     const div11MaxScroll = 200;
 
-    const div12Threshold = 3400;
+    const div12Threshold = 3200;
     const div12MaxScroll = 200;
 
     // Add more thresholds and maxScrolls for additional divs if necessary

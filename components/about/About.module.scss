@@ -1,12 +1,20 @@
 
+@import "@/app/styles/_mixins.scss";
+
 .about {
   display:grid;
   grid-template-columns:1fr 1fr;
+  align-items: center;
+  justify-items: center;
   gap:2rem;
   margin-top:2rem;
-  
   h3 {
     margin-bottom:1rem;
+  }
+  @include tabletSmall(){
+    grid-template-columns:1fr;
+    max-width:420px;
+    margin:auto;
   }
 }
 
@@ -16,11 +24,35 @@
   border-radius: 5px;
 }
 
-.aboutMe {
-
+.bio {
   border-left:2px solid var(--clr-primary); 
   padding-left:1rem;
   p:last-of-type {
     padding-bottom:0;
+  }
+}
+
+.photo {
+  width:100%;
+  max-width:400px;
+  border-radius: 5px;
+  background-color: red;
+  @include tabletSmall(){
+    display:none;
+  }
+}
+
+.thumbnail {
+  display:none;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100%;
+  width:100px;
+  height:100px;
+  margin:auto;
+  background-color:rgb(65, 65, 65);
+  margin-bottom:1.5rem;
+  @include tabletSmall(){
+    display:flex;
   }
 }
