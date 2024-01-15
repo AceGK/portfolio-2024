@@ -10,7 +10,7 @@
       }
     </style>
     <pattern id="img1" patternUnits="userSpaceOnUse" width="240" height="234">
-      <image xlink:href="adobe-gradient.png" x="0" y="0" width="240" height="234" />
+      <image xlink:href="/images/adobe-gradient.png" x="0" y="0" width="240" height="234" />
     </pattern>
   </defs>
   <image class="a" width="240" height="234" />

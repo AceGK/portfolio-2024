@@ -3,7 +3,6 @@
 .card {
   padding: 1.25rem;
   border: 1px solid transparent;
-  margin-bottom: 2rem;
   display: flex;
   flex-wrap:wrap;
   gap: 1.5rem;
@@ -11,7 +10,7 @@
   transition:all 0.3s;
   &:hover {
     transition:all 0.3s;
-    background-color: var(--clr-transparent-bg);
+    // background-color: var(--clr-transparent-bg);
     backdrop-filter: blur(3px);
     .title {
       color:var(--clr-primary);
@@ -76,9 +75,10 @@
 }
 
 .body {
-  font-size:0.875rem;
+  // font-size:0.875rem;
   line-height:1.438rem;
   color:var(--clr-text);
+  padding-bottom:0.5rem;
 }
 
 .tags {
@@ -94,20 +94,23 @@
   font-weight:400;
   padding: 5px 10px;
   border:1px solid;
-  border-radius: 3px;
+  border-radius:3px;
 
   $data-types: (
     "React": react,
     "Next.js": next,
     "Algolia": algolia,
     "SCSS": scss,
-    "Sanity": sanity,
+    "Sanity CMS": sanity,
     "CSS": css,
     "HTML": html,
     "PHP": php,
     "WordPress": wp,
     "JavaScript": js,
     "Leaflet.js": leaflet,
+    "Lottie": lottie,
+    "Google Places API": googleMaps,
+    "AWS Cognito": aws,
   );
   @each $type, $color-name in $data-types {
     &[data-type="#{$type}"] {
@@ -118,3 +121,7 @@
   }
 }
 
+.buttons {
+  display:flex;
+  gap:0.5rem;
+}

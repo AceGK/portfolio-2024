@@ -17,19 +17,20 @@
   left: 0;
   right: 0;
   margin: auto;
-  width: 50%;
+  width: 54%;
   max-width: 448px;
 }
 .dividers2,
-.dividers3 {
+.dividers3,
+.dividers4 {
   position: relative;
   margin: auto;
   width: 50%;
   max-width: 470px;
 }
-.dividers4{
-  padding-inline:2rem;
-}
+// .dividers4{
+//   padding-inline:2rem;
+// }
 
 .div1 {
   height: 350px;
@@ -185,7 +186,10 @@
 
 
 @include tabletSmall(){
-  .div4, .div4_2, .div5_2, .div5 {
+  .dividers1{
+    margin-bottom:4rem;
+  }
+  .div2, .div3, .div4, .div4_2, .div5_2, .div5 {
     display:none;
   }
   .div6 {

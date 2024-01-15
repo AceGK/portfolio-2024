@@ -5,6 +5,7 @@ export default function Skill(props) {
   const {
     color,
     children,
+    tabIndex,
   } = props; 
 
   // State to manage hover low effect
@@ -40,6 +41,7 @@ export default function Skill(props) {
         style={isHovered ? hoverStyle : defaultStyle}
         onMouseEnter={() => setIsHovered(true)}
         onMouseLeave={() => setIsHovered(false)}
+        tabIndex={0}
       >
         {children}
       </li>

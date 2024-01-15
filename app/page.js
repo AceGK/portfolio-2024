@@ -104,7 +104,7 @@ export default function Home() {
         div3.style.backgroundImage = `linear-gradient(
           0deg,
           rgba(255, 203, 66, 0) ${scrollValueDiv3}%,
-          var(--clr-primary) 100%
+          var(--clr-primary) 80%
         )`;
       }
 

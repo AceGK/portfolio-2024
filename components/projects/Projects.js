@@ -36,19 +36,20 @@ export default function Projects() {
       >
         <SwiperSlide className={styles.slide}>
           <Card
-            img="/purple-lotus-screenshot.jpg"
-            // href="https://purplelotus.vercel.app/"
+            img="/images/purple-lotus-screenshot.jpg"
+            href="https://purplelotus.vercel.app/"
             title="Cannabis E-commerce"
             body="A cannabis dispensary web app that uses the Jane Roots headless e-commerce platform and Algolia Instant Search to provide a fast, user-friendly shopping experience."
-            tags={["Next.js", "Algolia", "Sanity", "Leaflet.js", "GoogleMaps API"]}
+            tags={["Next.js", "Algolia", "Sanity CMS", "AWS Cognito"]}
           />
         </SwiperSlide>
 
         <SwiperSlide className={styles.slide}>
           <Card
-            img="/periodic-table-screenshot.jpg"
+            img="/images/periodic-table-screenshot.jpg"
             title="Periodic Table"
-            // href="https://ace-periodic-table.vercel.app/"
+            href="https://ace-periodic-table.vercel.app/"
+            github="https://github.com/AceGK/periodic-table"
             body="An interactive periodic table with detailed information on each element."
             tags={["Next.js"]}
           />
@@ -56,9 +57,10 @@ export default function Projects() {
 
         <SwiperSlide className={styles.slide}>
           <Card
-            img="/tipper-screenshot.jpg"
+            img="/images/tipper-screenshot.jpg"
             title="Tip Calculator"
-            // href="https://acegk.github.io/tip-calculator/"
+            href="https://acegk.github.io/tip-calculator/"
+            github="https://github.com/AceGK/tip-calculator"
             body="A tip calculator that evaluates the tip and total per person based on the bill amount, tip percentage and number of people."
             tags={["JavaScript"]}
           />
@@ -66,9 +68,10 @@ export default function Projects() {
 
         <SwiperSlide className={styles.slide}>
           <Card
-            img="/ipify-screenshot.jpg"
+            img="/images/ipify-screenshot.jpg"
             title="IP Address Tracker"
-            // href="https://ip-tracker-acegk.vercel.app/"
+            href="https://ip-tracker-acegk.vercel.app/"
+            github="https://github.com/AceGK/ip-tracker"
             body="View the address, timezone, and ISP of any IP address or domain. Built using the IPify API and Leaflet.js."
             tags={["Next.js", "Leaflet.js"]}
           />

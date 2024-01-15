@@ -23,56 +23,55 @@ import Algolia from "../../public/icons/algolia.svg";
 import Sanity from "../../public/icons/sanity.svg";
 import Wordpress from "../../public/icons/wordpress.svg";
 import Shopify from "../../public/icons/shopify.svg";
+import Php from "../../public/icons/php.svg";
 
 
 export default function Skills() {
+
+  const dev = [
+    { color: "html", name: "HTML5", Icon: Html },
+    { color: "css", name: "CSS3", Icon: Css },
+    { color: "js", name: "JavaScript", Icon: Javascript },
+    { color: "php", name: "PHP", Icon: Php },
+    { color: "react", name: "React", Icon: React },
+    { color: "next", name: "Next.js", Icon: Next },
+    { color: "node", name: "Node.js", Icon: Node },
+    { color: "redux", name: "Redux", Icon: Redux },
+    { color: "sass", name: "Sass", Icon: Sass },
+  ];
+
+  const design = [
+    { color: "adobe", name: "Adobe XD", Icon: Adobe },
+    { color: "sketch", name: "sketch", Icon: Sketch },
+    { color: "figma", name: "Figma", Icon: Figma },
+  ];
+
+  const data = [
+    { color: "mysql", name: "MySQL", Icon: Mysql },
+    { color: "mongo", name: "MongoDB", Icon: Mongodb },
+    { color: "firebase", name: "Firebase", Icon: Firebase },
+    { color: "aws", name: "AWS", Icon: Aws },
+    { color: "auth0", name: "Auth0", Icon: Auth0 },
+    { color: "algolia", name: "Algolia", Icon: Algolia },
+    { color: "sanity", name: "Sanity", Icon: Sanity },
+    { color: "wordpress", name: "WordPress", Icon: Wordpress },
+    { color: "shopify", name: "Shopify", Icon: Shopify },
+  ];
+
   return (
     <section id="skills" className={styles.skills}>
 
       <div>
-        <div className="pt-100">
-          <h2 className="code-heading fs-600">Skills</h2>
-        </div>
+        <h2 className="code-heading fs-600">Skills</h2>
         <div className={styles.skillGroup}>
           <h3 className="code-heading fs-500">Dev</h3>
           <ul>
-            <Skill color="html">
-              <span>HTML5</span>
-              <Html />
-            </Skill>
-            <Skill color="css">
-              <span>CSS3</span>
-              <Css />
-            </Skill>
-            <Skill color="js">
-              <span>JavaScript</span>
-              <Javascript />
-            </Skill>
-            <Skill color="react">
-              <span>React</span>
-              <React />
-            </Skill>
-            <Skill color="redux">
-              <span>Redux</span>
-              <Redux />
-            </Skill>
-            <Skill color="next">
-              <span>Next.js</span>
-              <Next />
-            </Skill>
-            <Skill color="node">
-              <span>Node.js</span>
-              <Node />
-            </Skill>
-            <Skill color="express">
-              <span>Express</span>
-              <Express />
-            </Skill>
-            <Skill color="sass">
-              <span>Sass</span>
-              <Sass />
-            </Skill>
-
+            {dev.map(skill => (
+              <Skill color={skill.color} key={skill.name}>
+                <span>{skill.name}</span>
+                <skill.Icon />
+              </Skill>
+            ))}
           </ul>
 
         </div>
@@ -81,59 +80,23 @@ export default function Skills() {
         <div className={styles.skillGroup}>
           <h3 className="code-heading fs-500">Design</h3>
           <ul>
-            <Skill color="adobe">
-              <span>Adobe CC</span>
-              <Adobe />
-            </Skill>
-            <Skill color="sketch">
-              <span>Sketch</span>
-              <Sketch />
-            </Skill>
-            <Skill color="figma">
-              <span>Figma</span>
-              <Figma />
-            </Skill>
+            {design.map(skill => (
+              <Skill color={skill.color} key={skill.name}>
+                <span>{skill.name}</span>
+                <skill.Icon />
+              </Skill>
+            ))}
           </ul>
         </div>
         <div className={styles.skillGroup}>
           <h3 className="code-heading fs-500">Data</h3>
           <ul>
-            <Skill color="mysql">
-              <span>MySQL</span>
-              <Mysql />
-            </Skill>
-            <Skill color="mongo">
-              <span>MongoDB</span>
-              <Mongodb />
-            </Skill>
-            <Skill color="firebase">
-              <span>Firebase</span>
-              <Firebase />
-            </Skill>
-            <Skill color="aws">
-              <span>AWS</span>
-              <Aws />
-            </Skill>
-            <Skill color="auth0">
-              <span>Auth0</span>
-              <Auth0 />
-            </Skill>
-            <Skill color="algolia">
-              <span>Algolia</span>
-              <Algolia />
-            </Skill>
-            <Skill color="sanity">
-              <span>Sanity</span>
-              <Sanity />
-            </Skill>
-            <Skill color="wordpress">
-              <span>WordPress</span>
-              <Wordpress />
-            </Skill>
-            <Skill color="shopify">
-              <span>Shopify</span>
-              <Shopify />
-            </Skill>
+            {data.map(skill => (
+              <Skill color={skill.color} key={skill.name}>
+                <span>{skill.name}</span>
+                <skill.Icon />
+              </Skill>
+            ))}
           </ul>
         </div>
       </div>

@@ -25,13 +25,15 @@ $colors: (
   sketch: #f7b500,
   figma: #0acf83,
   adobe: #ff0000,
+  lottie:#00DDB3,
+  googlePlaces: #4285F4,
 );
 
 :root {
   @each $name, $color in $colors {
     --clr-#{$name}: #{$color};
-    --clr-#{$name}-muted: #{rgba($color, 0.2)};
-    --clr-#{$name}-bg: #{rgba($color, 0.2)};
+    --clr-#{$name}-muted: #{rgba($color, 0.1)};
+    --clr-#{$name}-bg: #{rgba($color, 0.1)};
   }
 
   --clr-text: #afb7c2;
