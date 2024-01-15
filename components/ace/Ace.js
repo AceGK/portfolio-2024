@@ -4,10 +4,17 @@ import LinkedIn from "../../public/icons/linkedin.svg";
 import Email from "../../public/icons/envelope.svg";
 import styles from "./Ace.module.scss";
 import Mouse from "../../public/icons/mouse.svg";
+import Image from "next/image";
 
 export default function Ace() {
   return (
     <section id="ace" className={styles.ace}>
+      <Image
+        src={"/images/person-placeholder.jpg"}
+        width={100}
+        height={100}
+        alt="Picture of Ace"
+      />
       <h1 className="fw-700 fs-800 pb-100 code-heading">Ace</h1>
       <h2 className="fw-600 fs-500 pb-100">Software Engineer</h2>
       <p>

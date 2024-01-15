@@ -2,14 +2,19 @@
 .ace {
   text-align: center;
   height: 100vh;
-  max-width: 500px;
+  max-width: 495px;
   margin: auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  img {
+    border-radius:100%;
+    margin-bottom:1.5rem;
+  }
   p {
     color:var(--clr-text);
+    text-wrap:balance;
   }
 
   ul {

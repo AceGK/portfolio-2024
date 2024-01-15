@@ -76,7 +76,6 @@ export default function Contact() {
             Name
           </label>
           <input type="text" name="nameTrue" placeholder="Name" required />
-
           <label htmlFor="emailTrue" hidden>
             Email
           </label>
@@ -90,7 +89,7 @@ export default function Contact() {
             placeholder="Message"
             required
           ></textarea>
-          <button type="submit" className="btn">
+          <button type="submit" className={styles.button} data-type="primary">
             Send
           </button>
         </form>

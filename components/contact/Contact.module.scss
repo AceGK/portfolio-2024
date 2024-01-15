@@ -1,9 +1,13 @@
+@import "@/app/styles/_mixins.scss";
+
 .contact {
-  display:grid;
-  grid-template-columns:1fr 1fr;
+  // display:grid;
+  // grid-template-columns:1fr 1fr;
   gap:1rem;
   margin-top:3rem;
-
+ @include tabletSmall(){
+    grid-template-columns:1fr;
+ }
 }
 
 .form {
@@ -52,4 +56,9 @@
 
 .success {
 text-align: center;
+}
+
+.button {
+  width:fit-content;
+  font-size:1.25rem;
 }
