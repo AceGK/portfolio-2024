@@ -22,7 +22,6 @@ export default function About() {
     { src: "/images/mugen.jpg", alt: "Picture of Ace", caption: "Lorem Ipsum Dolor" },
     { src: "/images/person-placeholder.jpg", alt: "Picture of Ace", caption: "Lorem Ipsum Dolor" },
     { src: "/images/person-placeholder.jpg", alt: "Picture of Ace", caption: "Lorem Ipsum Dolor" },
-    { src: "/images/mugen.jpg", alt: "Picture of Ace", caption: "Mugen" },
   ]
 
   useEffect(() => {
@@ -79,7 +78,7 @@ export default function About() {
           </SwiperSlide>
           <SwiperSlide className={styles.slide}>
             <blockquote>
-              My interests include SFFPCs, art, and vintage motorcycles. When I&apos;m not at the computer, I usually spend my playing guitar, painting, hiking, cooking, or reading.
+              My interests include SFFPCs, art, and vintage motorcycles. When I&apos;m not at the computer, I usually spend my time playing guitar, painting, hiking, cooking, or reading.
             </blockquote>
 
           </SwiperSlide>
@@ -88,11 +87,7 @@ export default function About() {
               I love sci-fi, fantasy, and horror books, movies, and games. I&apos;ve left a few easter eggs of some of my favorite throughout this site.
             </blockquote>
           </SwiperSlide>
-          <SwiperSlide className={styles.slide}>
-            <blockquote>
-              Obligatory cat photo
-            </blockquote>
-          </SwiperSlide>
+
           <div className={styles.nav}>
             <div>{currentIndex + 1}<span> / {totalSlides}</span></div>
             <div className={styles.buttons}>
