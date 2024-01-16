@@ -7,6 +7,8 @@ import About from "@/components/about/About";
 import Ace from "@/components/ace/Ace";
 import Contact from "@/components/contact/Contact";
 
+import { NextSeo } from 'next-seo';
+
 export default function Home() {
 
   useEffect(() => {
@@ -215,6 +217,10 @@ export default function Home() {
 
   return (
     <>
+      <NextSeo
+        title="Ace Kisch"
+        description="Software Engineer based in San Jose, CA."
+      />
       <header>
         <Ace />
       </header>
@@ -268,7 +274,7 @@ function Dividers2() {
       <div className="div4_2">
         <div />
       </div>
-      <div style={{display:'flex',width:"100%"}}>
+      <div style={{ display: 'flex', width: "100%" }}>
         <div className="div5_2">
           <div />
         </div>
