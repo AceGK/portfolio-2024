@@ -46,6 +46,18 @@ export default function Projects() {
 
         <SwiperSlide className={styles.slide}>
           <Card
+            img="/images/tipper-screenshot.jpg"
+            title="Tip Calculator"
+            href="https://acegk.github.io/tip-calculator/"
+            github="https://github.com/AceGK/tip-calculator"
+            body="A tip calculator that evaluates the tip and total per person based on the bill amount, tip percentage and number of people."
+            tags={["JavaScript"]}
+          />
+        </SwiperSlide>
+
+        
+        <SwiperSlide className={styles.slide}>
+          <Card
             img="/images/periodic-table-screenshot.jpg"
             title="Periodic Table"
             href="https://ace-periodic-table.vercel.app/"
@@ -57,22 +69,11 @@ export default function Projects() {
 
         <SwiperSlide className={styles.slide}>
           <Card
-            img="/images/tipper-screenshot.jpg"
-            title="Tip Calculator"
-            href="https://acegk.github.io/tip-calculator/"
-            github="https://github.com/AceGK/tip-calculator"
-            body="A tip calculator that evaluates the tip and total per person based on the bill amount, tip percentage and number of people."
-            tags={["JavaScript"]}
-          />
-        </SwiperSlide>
-
-        <SwiperSlide className={styles.slide}>
-          <Card
             img="/images/ipify-screenshot.jpg"
             title="IP Address Tracker"
             href="https://ip-tracker-acegk.vercel.app/"
             github="https://github.com/AceGK/ip-tracker"
-            body="View the address, timezone, and ISP of any IP address or domain. Built using the IPify API and Leaflet.js."
+            body="View the location, address, timezone, and ISP of any IP address or domain. Built using Next.js, Leaflet.js, and the IPify API."
             tags={["Next.js", "Leaflet.js"]}
           />
         </SwiperSlide>
