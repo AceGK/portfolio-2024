@@ -8,6 +8,7 @@ import Ace from "@/components/ace/Ace";
 import Contact from "@/components/contact/Contact";
 
 import { NextSeo } from 'next-seo';
+import Nav from '@/components/nav/Nav';
 
 export default function Home() {
 
@@ -221,6 +222,7 @@ export default function Home() {
         title="Ace Kisch"
         description="Software Engineer based in San Jose, CA."
       />
+      <Nav />
       <header>
         <Ace />
       </header>

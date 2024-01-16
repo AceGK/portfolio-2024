@@ -51,8 +51,9 @@
   bottom: 10%;
   color:white;
   font-size:2rem;
+  border-radius:100px;
 
-    animation: bounce 2s ease infinite;
+  animation: bounce 2s ease infinite;
 
   @keyframes bounce {
     0%, 20%, 50%, 80%, 100% {transform: translateY(0);}

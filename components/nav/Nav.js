@@ -1,23 +1,18 @@
 'use client'
 import styles from './Nav.module.scss';
 import { useState, useEffect } from 'react';
-import Github from '../../public/icons/github.svg';
-import LinkedIn from '../../publicicons//linkedin.svg';
-import Email from '../../public/icons/envelope.svg';
-import Link from 'next/link';
-import Instagram from '../../public/icons/instagram.svg';
-import CV from '@/public/icons/cv.svg';
+
 
 export default function Nav() {
 
-  const sections = ['about', 'experience', 'projects'];
-  const [activeSection, setActiveSection] = useState('about');
+  const sections = ['ace', 'skills', 'projects', 'about', 'contact'];
+  const [activeSection, setActiveSection] = useState('ace');
 
   const handleScroll = () => {
     const scrollPosition = window.scrollY;
     const selectedSection = sections.find(sectionID => {
       const el = document.getElementById(sectionID);
-      return el && (el.offsetTop - 200) <= scrollPosition && (el.offsetTop + el.offsetHeight) > scrollPosition;
+      return el && (el.offsetTop - 500) <= scrollPosition && (el.offsetTop + el.offsetHeight) > scrollPosition;
     });
     setActiveSection(selectedSection || 'about');
   };
@@ -43,37 +38,20 @@ export default function Nav() {
     <nav className={styles.nav}>
       <ul className={styles.primary}>
         <li>
-          <a href="#about" className={activeSection === 'about' ? styles.active : ''}>about</a>
+          <a href="#ace" className={`${activeSection === 'ace' ? styles.active : styles.inactive} code-heading`}>Home</a>
         </li>
         <li>
-          <a href="#experience" className={activeSection === 'experience' ? styles.active : ''}>experience</a>
+          <a href="#skills" className={`${activeSection === 'skills' ? styles.active : styles.inactive} code-heading`}>skills</a>
         </li>
         <li>
-          <a href="#projects" className={activeSection === 'projects' ? styles.active : ''}>projects</a>
-        </li>
-      </ul>
-
-      <ul className={styles.social}>
-        <li>
-          <Link href="https://github.com/aceGK/" passHref>
-            <Github />
-          </Link>
+          <a href="#projects" className={`${activeSection === 'projects' ? styles.active : styles.inactive} code-heading`}>projects</a>
         </li>
         <li>
-          <Link href="https://www.linkedin.com/in/acekisch/" passHref>
-            <LinkedIn />
-          </Link>
+          <a href="#about" className={`${activeSection === 'about' ? styles.active : styles.inactive} code-heading`}>about</a>
         </li>
         <li>
-          <Link href="mailto:acekisch@gmail.com" passHref>
-            <Email />
-          </Link>
+          <a href="#contact" className={`${activeSection === 'contact' ? styles.active : styles.inactive} code-heading`}>contact</a>
         </li>
-        {/* <li>
-          <Link href="#" passHref>
-            <CV />
-          </Link>
-        </li> */}
       </ul>
     </nav>
   );

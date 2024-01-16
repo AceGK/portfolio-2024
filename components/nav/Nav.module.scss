@@ -1,71 +1,43 @@
 @import "@/app/styles/_mixins.scss";
 
 .nav {
-  display:flex;
-  flex-direction: column;
-  flex: 1;
+  position: fixed;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  z-index: 9999;
+  ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    padding: 1rem 2rem;
+    border-radius: 100px;
+    background: rgba(11, 14, 20, 0.813);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(2px);
+    border: 1px solid rgba(130, 130, 130, 0.3);
+    text-transform: capitalize;
+    a:hover {
+      color:white;
+    }
+  }
 }
 
-.primary {
-  margin-top:2rem;
-  li {
-    padding-bottom:2rem;
+.inactive {
+  &:before, &:after {
+    visibility: hidden;
   }
-  a {
-    display:flex;
-    align-items: center;
-    gap:1rem;
-    color:var(--clr-neutral-700);
-    text-transform: uppercase;
-    text-decoration: none;
-    font-weight:700;
-    font-size:0.875rem;
-    letter-spacing: .1em;
-    transition:all 0.3s;
-    &:before {
-      transition:all 0.3s;
-      content:"";
-      background:var(--clr-neutral-700);
-      height:1px;
-      width:2rem;
-      display: inline-block;
-    }
-    &:hover {
-      color:var(--clr-heading);
-      &:before {
-        width:4rem;
-        background:var(--clr-heading);
-      }
-    }
+  &:hover:before, 
+  &:hover:after {
+    color:rgb(156, 156, 156);
+    visibility: visible;
   }
-  .active {
-    color:var(--clr-heading);
-    transition:all 0.3s;
-    &:before {
-      transition:all 0.3s;
-      width:4rem;
-      background:var(--clr-primary);
-    }
-    &:hover {
-      &:before {
-        background:var(--clr-primary);
-      }
-  }
- }
- @include tablet(){
-  display:none;
- }
 }
- 
-.social {
-  display:flex;
-  font-size:1.75rem;
-  gap:1rem;
-  margin-top:auto;
-  svg {
-    color:var(--clr-text);
-    &:hover{
-      color:var(--clr-primary);
-    }
-  }
+
+.active:hover {
+  color:white!important;
 }
