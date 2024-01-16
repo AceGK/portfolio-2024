@@ -1,6 +1,8 @@
 import Link from 'next/link';
 import styles from './Card.module.scss';
 import Arrow from '../../public/icons/up-right-arrow.svg';
+import Github from '../../public/icons/github.svg';
+import LinkIcon from '../../public/icons/link.svg';
 
 export default function Card({ href, github, title, body, tags, children, img, caption, subtitle }) {
 
@@ -29,8 +31,10 @@ export default function Card({ href, github, title, body, tags, children, img, c
         {body && <span className={styles.body}>{body}</span>}
         {children}
         <div className={styles.buttons}>
-          {href && <Link className="button" data-type="primary" href={href}>View Site</Link>}
-          {github && <Link className="button" data-type="primary" href={github}>View on Github</Link>}
+          {href && <Link className="button" data-type="primary" href={href}>
+            <LinkIcon />Site
+            </Link>}
+          {github && <Link className="button" data-type="primary" href={github}><Github />Github</Link>}
         </div>
       </div>
     </div>
