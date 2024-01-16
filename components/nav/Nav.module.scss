@@ -21,23 +21,53 @@
     -webkit-backdrop-filter: blur(2px);
     border: 1px solid rgba(130, 130, 130, 0.3);
     text-transform: capitalize;
-    a:hover {
-      color:white;
+    a {
+      svg {
+        display: none;
+      }
+      :hover {
+        color: white;
+      }
+    }
+  }
+  @include tabletSmall() {
+    bottom: 20px;
+    font-size:1.5rem;
+    ul {
+      width:95%;
+      justify-content: space-between;
+    }
+    svg {
+      display: flex!important;
+    }
+    span {
+      display: none;
+    }
+    a:before,
+    a:after {
+      display: none;
+    }
+    .active {
+      color: var(--clr-primary);
     }
   }
 }
 
 .inactive {
-  &:before, &:after {
+  &:before,
+  &:after {
     visibility: hidden;
+    @include tabletSmall() {
+      display: none;
+    }
   }
-  &:hover:before, 
+  &:hover:before,
   &:hover:after {
-    color:rgb(156, 156, 156);
+    color: rgb(156, 156, 156);
     visibility: visible;
   }
 }
 
 .active:hover {
-  color:white!important;
+  color: white !important;
 }
