@@ -59,7 +59,7 @@ export default function Skills() {
   ];
 
   return (
-    <section id="skills" className={styles.skills}>
+    <section id="skills" className={`${styles.skills} container`}>
 
       <div>
         <h2 className="code-heading fs-600">Skills</h2>

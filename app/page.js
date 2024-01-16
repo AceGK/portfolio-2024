@@ -227,7 +227,7 @@ export default function Home() {
         <Ace />
       </header>
 
-      <main className="container">
+      <main>
 
         <Dividers1 />
         <Skills />

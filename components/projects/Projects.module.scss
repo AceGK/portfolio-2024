@@ -2,15 +2,10 @@
 
 .projects {
   margin-inline:auto;
-  max-width:600px;
-  @include tabletSmall(){
-    // display:none;
-  }
 }
 
 .swiper {
   padding:2rem 2rem 3rem 2rem;
-  overflow:visible;
   @include tabletSmall(){
     padding-inline:1rem;
   }
@@ -18,5 +13,6 @@
     background:#0B0E15;
     border:1px solid #1f2532;
     border-radius:var(--border-radius);
+    max-width: 400px;
   }
 }

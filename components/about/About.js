@@ -43,7 +43,7 @@ export default function About() {
   }, [bioSwiper]);
 
   return (
-    <section id="about" className={styles.about}>
+    <section id="about" className={`${styles.about} container`}>
 
 
       <h2 className={`${styles.title} code-heading fs-600`}>About</h2>
@@ -77,7 +77,7 @@ export default function About() {
           </SwiperSlide>
           <SwiperSlide className={styles.slide}>
             <p>
-              My interests include art, SFFPCs, and vintage motorcycles. When I&apos;m not at the computer, I usually spend my time playing guitar, painting, hiking, cooking, reading, and hanging out with my girlfriend, our dog, and 3 cats.
+              When I&apos;m not at the computer, I usually spend my time playing guitar, painting, hiking, cooking, reading, and hanging out with my girlfriend, our dog, and 3 cats.
             </p>
 
           </SwiperSlide>

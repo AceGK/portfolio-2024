@@ -32,10 +32,10 @@ export default function Contact() {
   }
 
   return (
-    <section id="contact">
+    <section id="contact" className={`${styles.contact} container`}>
       <h2 className="code-heading fs-600 center-text">Contact</h2>
 
-      <div className={styles.contact}>
+      <div className="pt-200">
 
         <div
           className={styles.success}
