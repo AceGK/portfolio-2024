@@ -3,6 +3,9 @@
 .projects {
   margin-inline:auto;
   max-width:600px;
+  @include tabletSmall(){
+    display:none;
+  }
 }
 
 .swiper {
