@@ -25,9 +25,7 @@
       svg {
         display: none;
       }
-      :hover {
-        color: white;
-      }
+   
     }
   }
   @include tabletSmall() {
@@ -36,6 +34,9 @@
     ul {
       width:95%;
       justify-content: space-between;
+    }
+    a:hover {
+      color:var(--clr-primary);
     }
     svg {
       display: flex!important;
@@ -53,6 +54,7 @@
   }
 }
 
+
 .inactive {
   &:before,
   &:after {
@@ -66,8 +68,4 @@
     color: rgb(156, 156, 156);
     visibility: visible;
   }
-}
-
-.active:hover {
-  color: white !important;
 }
