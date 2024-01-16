@@ -68,23 +68,23 @@ export default function About() {
           modules={[Navigation]}
         >
           <SwiperSlide className={styles.slide}>
-            <blockquote>
+            <p>
               My journey began in 2014 as a freelance developer building websites for local startups. Since then, I&apos;ve had the privledge of
               building software for a{" "}
               <a href="https://oaksterdamuniversity.com">university </a>and a{" "}
               <a href="https://plpcsanjose.com">cannabis dispensary</a>.
-            </blockquote>
+            </p>
           </SwiperSlide>
           <SwiperSlide className={styles.slide}>
-            <blockquote>
+            <p>
               My interests include art, SFFPCs, and vintage motorcycles. When I&apos;m not at the computer, I usually spend my time playing guitar, painting, hiking, cooking, reading, and hanging out with my girlfriend, our dog, and 3 cats.
-            </blockquote>
+            </p>
 
           </SwiperSlide>
           <SwiperSlide className={styles.slide}>
-            <blockquote>
+            <p>
               I love sci-fi, fantasy, and horror books, movies, and games. I&apos;ve left a few easter eggs of some of my favorite throughout this site.
-            </blockquote>
+            </p>
           </SwiperSlide>
 
           <div className={styles.nav}>
