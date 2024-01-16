@@ -75,16 +75,22 @@
 }
 
 .body {
-  // font-size:0.875rem;
+  font-size:1rem;
   line-height:1.438rem;
   color:var(--clr-text);
   padding-bottom:0.5rem;
+  @include tabletSmall(){
+    font-size:0.875rem;
+  }
 }
 
 .tags {
   display: flex;
   flex-wrap:wrap;
   gap: 0.5rem;
+  @include tabletSmall(){
+  gap:5px;
+  }
 }
 
 .tag {
@@ -92,7 +98,7 @@
   background-color: var(--clr-primary-muted);
   font-size:var(--fs-200);
   font-weight:400;
-  padding: 5px 10px;
+  padding: 4px 8px;
   border:1px solid;
   border-radius:3px;
 
