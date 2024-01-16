@@ -40,9 +40,9 @@ export default function Ace() {
           </Link>
         </li>
       </ul>
-      <div className={styles.scroll}>
+      <a href="#main-content" className={styles.scroll} id="main-content">
         <Mouse />
-      </div>
+      </a>
     </section>
   );
 }

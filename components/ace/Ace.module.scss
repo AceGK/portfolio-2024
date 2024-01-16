@@ -1,4 +1,6 @@
 
+@import "@/app/styles/_mixins.scss";
+
 .ace {
   text-align: center;
   height: 92svh;
@@ -58,4 +60,7 @@
     60% {transform: translateY(-5px);}
   }
   
+  @include tabletSmall(){
+    bottom: 3%;
+  }
 }

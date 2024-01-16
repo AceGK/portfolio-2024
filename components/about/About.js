@@ -20,7 +20,7 @@ export default function About() {
   const [totalSlides, setTotalSlides] = useState(0);
   const photos = [
     { src: "/images/mugen.jpg", alt: "Picture of Ace", caption: "Lorem Ipsum Dolor" },
-    { src: "/images/person-placeholder.jpg", alt: "Picture of Ace", caption: "Lorem Ipsum Dolor" },
+    { src: "/images/mugen.jpg", alt: "Picture of Ace", caption: "Mugen" },
     { src: "/images/person-placeholder.jpg", alt: "Picture of Ace", caption: "Lorem Ipsum Dolor" },
   ]
 
@@ -77,7 +77,7 @@ export default function About() {
           </SwiperSlide>
           <SwiperSlide className={styles.slide}>
             <blockquote>
-              My interests include SFFPCs, art, and vintage motorcycles. When I&apos;m not at the computer, I usually spend my time playing guitar, painting, hiking, cooking, or reading.
+              My interests include art, SFFPCs, and vintage motorcycles. When I&apos;m not at the computer, I usually spend my time playing guitar, painting, hiking, cooking, reading, and hanging out with my girlfriend, our dog, and 3 cats.
             </blockquote>
 
           </SwiperSlide>
