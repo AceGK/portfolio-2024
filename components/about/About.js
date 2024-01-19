@@ -70,7 +70,7 @@ export default function About() {
           <SwiperSlide className={styles.slide}>
             <p>
               My journey began in 2014 as a freelance developer building websites for local startups. Since then, I&apos;ve had the privledge of
-              building software for a{" "}
+              creating software for a{" "}
               <a href="https://oaksterdamuniversity.com">university </a>and a{" "}
               <a href="https://plpcsanjose.com">cannabis dispensary</a>.
             </p>

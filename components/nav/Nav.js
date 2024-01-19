@@ -13,35 +13,50 @@ export default function Nav() {
 
   const sections = ['ace', 'skills', 'projects', 'about', 'contact'];
   const [activeSection, setActiveSection] = useState('ace');
+  const [scrollPosition, setScrollPosition] = useState(0);
+  const [lastScrollTop, setLastScrollTop] = useState(0);
+  const [visible, setVisible] = useState(true);
 
   const handleScroll = () => {
+    const currentScrollPos = window.pageYOffset;
+    
+    // set active section
     const scrollPosition = window.scrollY;
     const selectedSection = sections.find(sectionID => {
       const el = document.getElementById(sectionID);
       return el && (el.offsetTop - 500) <= scrollPosition && (el.offsetTop + el.offsetHeight) > scrollPosition;
     });
     setActiveSection(selectedSection || 'about');
+    setVisible((scrollPosition > currentScrollPos) || currentScrollPos < 10);
+    setVisible(lastScrollTop > currentScrollTop || currentScrollTop < 10);
+    setLastScrollTop(currentScrollTop);
   };
 
-  useEffect(() => {
-    const checkHash = () => {
-      const hash = window.location.hash.replace('#', '');
-      if (sections.includes(hash)) {
-        setActiveSection(hash);
-      }
-    };
+  // useEffect(() => {
+  //   const checkHash = () => {
+  //     const hash = window.location.hash.replace('#', '');
+  //     if (sections.includes(hash)) {
+  //       setActiveSection(hash);
+  //     }
+  //   };
 
-    checkHash();
-    window.addEventListener('scroll', handleScroll);
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-    };
-  }, []);
+  //   checkHash();
+  //   window.addEventListener('scroll', handleScroll);
+  //   return () => {
+  //     window.removeEventListener('scroll', handleScroll);
+  //   };
+  // }, []);
 
+  // useEffect(() => {
+  //   window.addEventListener('scroll', handleScroll);
+  //   return () => {
+  //     window.removeEventListener('scroll', handleScroll);
+  //   };
+  // }, [lastScrollTop, visible, handleScroll]);
 
 
   return (
-    <nav className={styles.nav}>
+    <nav className={styles.nav} style={{ bottom: visible ? '0' : '-100px', transition: 'top 0.3s' }}>
       <ul className={styles.primary}>
         <li>
           <a href="#ace" className={`${activeSection === 'ace' ? styles.active : styles.inactive} code-heading`}>
