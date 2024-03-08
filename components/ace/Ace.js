@@ -18,10 +18,8 @@ export default function Ace() {
       <h1 className="fw-700 fs-800 pb-100 code-heading">Ace</h1>
       {/* <h2 className="fw-600 fs-500 pb-100">Software Engineer</h2> */}
       <p>
-        Hello! My name is Ace and I&apos;m a full-stack web developer.
-        I currently work at
-        <a href="https://purplelotus.vercel.app"> Purple Lotus</a> in San
-        Jose, CA.
+        Hello! My name is Ace and I&apos;m a full-stack web developer
+        <a href="https://purplelotus.vercel.app"> @Purple Lotus</a> in San Jose,  CA.
       </p>
       {/* <p>
         My name is Ace and I&apos;m an experienced software engineer.
