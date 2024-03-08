@@ -49,11 +49,14 @@ $frame-header-bg-color: rgb(214, 214, 214);
   }
 }
 
+.body, .image, .type {
+  margin-top: -4px !important;
+}
+
 .body,
 .image {
   max-width: 97%;
   margin: auto;
-  margin-top: -3px;
 }
 .body {
   background: $background-texture;
