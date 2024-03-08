@@ -238,7 +238,7 @@ export default function Home() {
         <Dividers4 />
         <Contact />
 
-        <Matrix />
+        {/* <Matrix /> */}
 
         <div className="stars">
           <div id="stars" />
