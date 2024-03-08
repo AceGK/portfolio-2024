@@ -1,6 +1,10 @@
 "use client";
 import { useState } from "react";
 import styles from "./Contact.module.scss";
+import Link from "next/link";
+import Github from "../../public/icons/github.svg";
+import LinkedIn from "../../public/icons/linkedin.svg";
+import Email from "../../public/icons/envelope.svg";
 
 export default function Contact() {
   const [success, setSuccess] = useState(false);
@@ -36,8 +40,24 @@ export default function Contact() {
       <h2 className="code-heading fs-600 center-text">Contact</h2>
 
       <div className="pt-200">
-
-        <div
+      <ul className={styles.icons}>
+        <li>
+          <Link href="https://github.com/aceGK/" passHref>
+            <Github />
+          </Link>
+        </li>
+        <li>
+          <Link href="https://www.linkedin.com/in/acekisch/" passHref>
+            <LinkedIn />
+          </Link>
+        </li>
+        <li>
+          <Link href="mailto:acekisch@gmail.com" passHref>
+            <Email />
+          </Link>
+        </li>
+      </ul>
+        {/* <div
           className={styles.success}
           style={{ display: success ? "block" : "none" }}
         >
@@ -97,7 +117,8 @@ export default function Contact() {
           .honey {
             display: none;
           }
-        `}</style>
+        `}</style> */}
+
       </div>
     </section>
   );

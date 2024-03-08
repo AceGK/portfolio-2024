@@ -56,6 +56,7 @@ export default function Skills() {
     { color: "sanity", name: "Sanity", Icon: Sanity },
     { color: "wordpress", name: "WordPress", Icon: Wordpress },
     { color: "shopify", name: "Shopify", Icon: Shopify },
+    // { color: "payload", name: "Payload", Icon: Payload },
   ];
 
   return (

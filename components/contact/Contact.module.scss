@@ -64,3 +64,16 @@ text-align: center;
   width:fit-content;
   font-size:1.25rem;
 }
+
+.icons {
+  padding-top:1rem;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  gap:2rem;
+  width:100%;
+  margin:auto;
+  svg {
+    font-size:3.5rem;
+  }
+}

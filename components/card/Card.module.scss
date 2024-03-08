@@ -13,7 +13,7 @@
     // background-color: var(--clr-transparent-bg);
     backdrop-filter: blur(3px);
     .title {
-      color:var(--clr-primary);
+      // color:var(--clr-primary);
       svg {
         transform: translate(2px, -2px); 
       }
@@ -47,9 +47,10 @@
 }
 
 .title {
-  font-weight: 700;
+  font-weight: 600;
   width:fit-content;
-  color: var(--clr-heading);
+  // color: var(--clr-heading);
+  color:var(--clr-primary);
   position: relative;
   display:flex;
   gap:4px;

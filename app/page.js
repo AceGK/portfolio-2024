@@ -222,7 +222,7 @@ export default function Home() {
         title="Ace Kisch"
         description="Software Engineer based in San Jose, CA."
       />
-      <Nav />
+      {/* <Nav /> */}
       <header>
         <Ace />
       </header>

@@ -19,9 +19,9 @@ export default function About() {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [totalSlides, setTotalSlides] = useState(0);
   const photos = [
-    { src: "/images/mugen.jpg", alt: "Picture of Ace", caption: "Lorem Ipsum Dolor" },
-    { src: "/images/mugen.jpg", alt: "Picture of Ace", caption: "Mugen" },
-    { src: "/images/person-placeholder.jpg", alt: "Picture of Ace", caption: "Lorem Ipsum Dolor" },
+    { src: "/images/mugen.jpg", alt: "Mugen, the cat", caption: "Mugen" },
+    { src: "/images/mugen.jpg", alt: "Mugen, the cat", caption: "Mugen" },
+    { src: "/images/mugen.jpg", alt: "Mugen, the cat", caption: "Mugen" },
   ]
 
   useEffect(() => {
@@ -69,15 +69,15 @@ export default function About() {
         >
           <SwiperSlide className={styles.slide}>
             <p>
-              My journey began in 2014 as a freelance developer building websites for local startups. Since then, I&apos;ve had the privledge of
+              My journey began in 2014 building websites for local startups. Since then, I&apos;ve had the privledge of
               creating software for a{" "}
-              <a href="https://oaksterdamuniversity.com">university </a>and a{" "}
-              <a href="https://plpcsanjose.com">cannabis dispensary</a>.
+              <a href="https://oaksterdamuniversity.com">university </a> a{" "}
+              <a href="https://plpcsanjose.com">cannabis dispensary</a>, and a <a href="https://quickshroom.com">mushroom dispensary</a>.
             </p>
           </SwiperSlide>
           <SwiperSlide className={styles.slide}>
             <p>
-              When I&apos;m not at the computer, I usually spend my time playing guitar, painting, hiking, cooking, reading, and hanging out with my girlfriend, our dog, and 3 cats.
+              When I&apos;m not at the computer I usually spend my time playing guitar, painting, hiking, cooking, or reading. 
             </p>
 
           </SwiperSlide>
@@ -105,7 +105,18 @@ export default function About() {
 
 
       <div className={styles.photoWrapper}>
-        <Swiper
+          
+        {/* <div style={{ position: 'relative', width: '100%', height: '100%' }}>
+          <Image
+            src="/images/mugen.jpg"
+            fill
+            objectFit="cover"
+            alt="Mugen the cat"
+          />
+        </div> */}
+
+
+         <Swiper
           onSwiper={(swiper) => (photoSwiper.current = swiper)}
           onSlideChange={() => bioSwiper.current.slideTo(photoSwiper.current.activeIndex)}
           className={styles.photoSwiper}
@@ -123,11 +134,11 @@ export default function About() {
                   height={300}
                   alt={slide.alt}
                 />
-                <figcaption>{slide.caption}</figcaption>
+                {/* <figcaption>{slide.caption}</figcaption> */}
               </figure>
             </SwiperSlide>
           ))}
-        </Swiper>
+        </Swiper> 
       </div>
 
 
