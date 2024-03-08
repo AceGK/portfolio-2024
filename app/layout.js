@@ -6,6 +6,7 @@ import '../app/styles/swiper.scss'
 import '../app/styles/utility.scss'
 import '../app/styles/dividers.scss'
 import '../app/styles/globals.scss'
+import '../app/styles/mtg.scss'
 
 import CursorGlow from '../components/cursor';
 

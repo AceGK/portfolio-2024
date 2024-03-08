@@ -9,6 +9,7 @@ import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 import 'swiper/css/effect-coverflow';
 import { EffectCoverflow, EffectCards, Pagination, Navigation } from 'swiper/modules';
+import Mtg from "../mtg/Mtg";
 
 
 export default function Projects() {
@@ -85,6 +86,10 @@ export default function Projects() {
             body="View the location, address, timezone, and ISP of any IP address or domain. Built using Next.js, Leaflet.js, and the IPify API."
             tags={["Next.js", "Leaflet.js"]}
           />
+        </SwiperSlide>
+
+        <SwiperSlide className={styles.slide}>
+          {/* <Mtg /> */}
         </SwiperSlide>
 
       </Swiper>

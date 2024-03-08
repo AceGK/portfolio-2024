@@ -7,6 +7,10 @@
   }
 }
 
+.mana-font {
+  font-family: 'Mana', sans-serif; /* Fallback to sans-serif in case Mana doesn't load */
+}
+
 body {
   overflow-x: hidden;
 }
@@ -96,12 +100,12 @@ h3 {
   font-weight: 600;
 }
 
-h1 {
+h1.code-heading {
   color: var(--clr-heading);
 }
 
-h2,
-h3 {
+h2.code-heading,
+h3.code-heading {
   color: var(--clr-heading-muted);
 }
 
