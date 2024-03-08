@@ -18,7 +18,7 @@ export default function MagicCard({ card }) {
         </div>
         <div className={styles.body}>
           <div className={styles.description}>
-            When Mugen enters the battlefield, Each player discards all the cards in their hand.
+            When Mugen enters the battlefield, each player discards all the cards in their hand.
           </div>
           <div className={styles.description}>
             Sacrafice a Food: Return Mugen to the top of its owner's library
