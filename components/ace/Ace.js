@@ -10,7 +10,7 @@ export default function Ace() {
   return (
     <section id="ace" className={styles.ace}>
       <Image
-        src={"/images/person-placeholder.jpg"}
+        src={"/images/headshot.jpg"}
         width={100}
         height={100}
         alt="Picture of Ace"
