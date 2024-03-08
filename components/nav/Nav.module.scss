@@ -1,71 +1,72 @@
 @import "@/app/styles/_mixins.scss";
 
 .nav {
-  display:flex;
-  flex-direction: column;
-  flex: 1;
-}
-
-.primary {
-  margin-top:2rem;
-  li {
-    padding-bottom:2rem;
-  }
-  a {
-    display:flex;
+  position: fixed;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top:1rem;
+  width: 100%;
+  z-index: 9999;
+  ul {
+    display: flex;
     align-items: center;
-    gap:1rem;
-    color:var(--clr-neutral-700);
-    text-transform: uppercase;
-    text-decoration: none;
-    font-weight:700;
-    font-size:0.875rem;
-    letter-spacing: .1em;
-    transition:all 0.3s;
-    &:before {
-      transition:all 0.3s;
-      content:"";
-      background:var(--clr-neutral-700);
-      height:1px;
-      width:2rem;
-      display: inline-block;
-    }
-    &:hover {
-      color:var(--clr-heading);
-      &:before {
-        width:4rem;
-        background:var(--clr-heading);
+    justify-content: center;
+    gap: 1rem;
+    padding: 1rem 2rem;
+    border-radius: 100px;
+    background: rgba(11, 14, 20, 0.813);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(2px);
+    border: 1px solid rgba(130, 130, 130, 0.3);
+    text-transform: capitalize;
+    a {
+      svg {
+        display: none;
       }
+   
     }
   }
-  .active {
-    color:var(--clr-heading);
-    transition:all 0.3s;
-    &:before {
-      transition:all 0.3s;
-      width:4rem;
-      background:var(--clr-primary);
+  @include tabletSmall() {
+    bottom: 20px;
+    font-size:1.5rem;
+    ul {
+      width:95%;
+      justify-content: space-between;
     }
-    &:hover {
-      &:before {
-        background:var(--clr-primary);
-      }
-  }
- }
- @include tablet(){
-  display:none;
- }
-}
- 
-.social {
-  display:flex;
-  font-size:1.75rem;
-  gap:1rem;
-  margin-top:auto;
-  svg {
-    color:var(--clr-text);
-    &:hover{
+    a:hover {
       color:var(--clr-primary);
     }
+    svg {
+      display: flex!important;
+    }
+    span {
+      display: none;
+    }
+    a:before,
+    a:after {
+      display: none;
+    }
+    .active {
+      color: var(--clr-primary);
+    }
+  }
+}
+
+
+.inactive {
+  &:before,
+  &:after {
+    visibility: hidden;
+    @include tabletSmall() {
+      display: none;
+    }
+  }
+  &:hover:before,
+  &:hover:after {
+    color: rgb(156, 156, 156);
+    visibility: visible;
   }
 }

@@ -1,5 +1,21 @@
 @import "@/app/styles/_mixins.scss";
 
+.matrix .image:has(img) {
+  background-color: var(--clr-matrix);
+
+  img {
+    filter: grayscale(1) contrast(1) brightness(0.8);
+    mix-blend-mode: multiply;
+    image-rendering: pixelated;
+  }
+}
+
+.matrix header a,
+.matrix header h1,
+.matrix header h2 {
+  -webkit-text-fill-color: unset;
+}
+
 
 .wake-up {
   background: none;
@@ -20,7 +36,7 @@
     cursor: pointer;
   }
   @include tablet(450px) {
-    position:absolute;
+    // position:absolute;
     right:12px;
     bottom:12px;
   }

@@ -1,9 +1,9 @@
 'use client';
 
 import { useState, useEffect, useRef } from 'react';
-import Rabbit from '../../public/rabbit.svg';
-import Cards from '../../public/cards.svg';
-import Card from '../../public/card-spade.svg';
+import Rabbit from '../../public/icons/rabbit.svg';
+import Cards from '../../public/icons/cards.svg';
+import Card from '../../public/icons/card-spade.svg';
 
 export default function Matrix() {
   const [matrix, setMatrix] = useState(false);

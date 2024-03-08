@@ -11,13 +11,29 @@ $colors: (
   php: rgb(123, 135, 193),
   wp: rgb(129, 169, 249),
   leaflet: rgb(175, 220, 89),
+  redux: rgb(118,74,188),
+  express: white,
+  node: #339933,
+  sass: #cc6699,
+  mongo: #4db33d,
+  mysql: #00758f,
+  auth0: #eb5424,
+  shopify: #7ab55c,
+  wordpress: #21759b,
+  aws: #ff9900,
+  firebase: #ffcb2b,
+  sketch: #f7b500,
+  figma: #0acf83,
+  adobe: #ff0000,
+  lottie:#00DDB3,
+  googlePlaces: #4285F4,
 );
 
 :root {
   @each $name, $color in $colors {
     --clr-#{$name}: #{$color};
-    --clr-#{$name}-muted: #{rgba($color, 0.2)};
-    --clr-#{$name}-bg: #{rgba($color, 0.2)};
+    --clr-#{$name}-muted: #{rgba($color, 0.1)};
+    --clr-#{$name}-bg: #{rgba($color, 0.1)};
   }
 
   --clr-text: #afb7c2;
@@ -33,16 +49,16 @@ $colors: (
   --fs-200: 0.75rem;
   --fs-300: 0.875rem;
   --fs-400: 1rem;
-  --fs-500: 1.5rem;
-  --fs-600: 2rem;
+  --fs-500: 1.3125rem;
+  --fs-600: 1.75rem;
   --fs-700: 2.5rem;
   --fs-800: 3rem;
   --fs-900: 3.5rem;
 
   --clr-background: rgb(17, 23, 31);
-  --clr-background-transparent: rgba(0, 0, 0, 0.1);
+  --clr-transparent-bg:rgb(0 0 0 / 33%);
   --background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
-  --border-radius: 0.25rem;
+  --border-radius: 1rem;
 }
 
 html.matrix {

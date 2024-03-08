@@ -1,0 +1,18 @@
+@import "@/app/styles/_mixins.scss";
+
+.projects {
+  margin-inline:auto;
+}
+
+.swiper {
+  padding:2rem 2rem 3rem 2rem;
+  @include tabletSmall(){
+    padding-inline:1rem;
+  }
+  .slide {
+    background:#0B0E15;
+    border:1px solid #1f2532;
+    border-radius:var(--border-radius);
+    max-width: 400px;
+  }
+}

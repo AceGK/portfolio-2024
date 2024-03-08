@@ -1,134 +1,324 @@
-import Nav from "@/components/nav/Nav";
-import Card from "@/components/card/Card";
-import Link from "next/link";
+'use client';
+import React, { useEffect } from 'react';
 import Matrix from "@/components/matrix/Matrix";
+import Skills from "@/components/skills/Skills";
+import Projects from "@/components/projects/Projects";
+import About from "@/components/about/About";
+import Ace from "@/components/ace/Ace";
+import Contact from "@/components/contact/Contact";
+
+import { NextSeo } from 'next-seo';
+import Nav from '@/components/nav/Nav';
 
 export default function Home() {
+
+  useEffect(() => {
+    const div1Threshold = 0;
+    const div1MaxScroll = 400;
+
+    const div2Threshold = 400;
+    const div2MaxScroll = 200;
+
+    const div3Threshold = 600;
+    const div3MaxScroll = 400;
+
+    const div4Threshold = 1200;
+    const div4MaxScroll = 200;
+
+    const div4_2Threshold = 1200;
+    const div4_2MaxScroll = 200;
+
+    const div5Threshold = 1400;
+    const div5MaxScroll = 200;
+
+    const div5_2Threshold = 1400;
+    const div5_2MaxScroll = 200;
+
+    const div6Threshold = 1600;
+    const div6MaxScroll = 400;
+
+    const div7Threshold = 2000;
+    const div7MaxScroll = 300;
+
+    const div8Threshold = 2300;
+    const div8MaxScroll = 200;
+
+    const div9Threshold = 2500;
+    const div9MaxScroll = 200;
+
+    const div10Threshold = 2700;
+    const div10MaxScroll = 200;
+
+    const div11Threshold = 3000;
+    const div11MaxScroll = 200;
+
+    const div12Threshold = 3200;
+    const div12MaxScroll = 200;
+
+    // Add more thresholds and maxScrolls for additional divs if necessary
+
+    const handleScroll = () => {
+      const calculateScrollValue = (threshold, maxScroll) => {
+        if (window.scrollY > threshold) {
+          const scrollBeyondThreshold = window.scrollY - threshold;
+          const gradientPercent = Math.min(1, scrollBeyondThreshold / maxScroll);
+          return 100 - Math.floor(gradientPercent * 100); // invert the value
+        }
+        return 100;
+      };
+
+      // Calculating scroll values for each div
+      const scrollValueDiv1 = calculateScrollValue(div1Threshold, div1MaxScroll);
+      const scrollValueDiv2 = calculateScrollValue(div2Threshold, div2MaxScroll);
+      const scrollValueDiv3 = calculateScrollValue(div3Threshold, div3MaxScroll);
+      const scrollValueDiv4 = calculateScrollValue(div4Threshold, div4MaxScroll);
+      const scrollValueDiv5 = calculateScrollValue(div5Threshold, div5MaxScroll);
+      const scrollValueDiv4_2 = calculateScrollValue(div4_2Threshold, div4_2MaxScroll);
+      const scrollValueDiv5_2 = calculateScrollValue(div5_2Threshold, div5_2MaxScroll);
+      const scrollValueDiv6 = calculateScrollValue(div6Threshold, div6MaxScroll);
+      const scrollValueDiv7 = calculateScrollValue(div7Threshold, div7MaxScroll);
+      const scrollValueDiv8 = calculateScrollValue(div8Threshold, div8MaxScroll);
+      const scrollValueDiv9 = calculateScrollValue(div9Threshold, div9MaxScroll);
+      const scrollValueDiv10 = calculateScrollValue(div10Threshold, div10MaxScroll);
+      const scrollValueDiv11 = calculateScrollValue(div11Threshold, div11MaxScroll);
+      const scrollValueDiv12 = calculateScrollValue(div12Threshold, div12MaxScroll);
+
+      // Apply the background image for divs
+      const div1 = document.querySelector('.div1 > div');
+      if (div1) {
+        div1.style.backgroundImage = `linear-gradient(
+          0deg,
+          rgba(255, 203, 66, 0) ${scrollValueDiv1}%,
+          var(--clr-primary) 0%
+        )`;
+      }
+
+      const div2 = document.querySelector('.div2 > div');
+      if (div2) {
+        div2.style.backgroundImage = `linear-gradient(
+          90deg,
+          rgba(255, 203, 66, 0) ${scrollValueDiv2}%,
+          var(--clr-primary) 0%
+        )`;
+      }
+
+      const div3 = document.querySelector('.div3 > div');
+      if (div3) {
+        div3.style.backgroundImage = `linear-gradient(
+          0deg,
+          rgba(255, 203, 66, 0) ${scrollValueDiv3}%,
+          var(--clr-primary) 80%
+        )`;
+      }
+
+      const div4 = document.querySelector('.div4 > div');
+      if (div4) {
+        div4.style.backgroundImage = `linear-gradient(
+          0deg,
+          rgba(255, 203, 66, 0) ${scrollValueDiv4}%,
+          var(--clr-primary) 0%
+        )`;
+      }
+
+      const div4_2 = document.querySelector('.div4_2 > div');
+      if (div4_2) {
+        div4_2.style.backgroundImage = `linear-gradient(
+          0deg,
+          rgba(255, 203, 66, 0) ${scrollValueDiv4_2}%,
+          var(--clr-primary) 0%
+        )`;
+      }
+
+      const div5_2 = document.querySelector('.div5_2 > div');
+      if (div5_2) {
+        div5_2.style.backgroundImage = `linear-gradient(
+          -90deg,
+          rgba(255, 203, 66, 0) ${scrollValueDiv5_2}%,
+          var(--clr-primary) 0%
+        )`;
+      }
+
+      const div5 = document.querySelector('.div5 > div');
+      if (div5) {
+        div5.style.backgroundImage = `linear-gradient(
+          90deg,
+          rgba(255, 203, 66, 0) ${scrollValueDiv5}%,
+          var(--clr-primary) 0%
+        )`;
+      }
+
+      const div6 = document.querySelector('.div6 > div');
+      if (div6) {
+        div6.style.backgroundImage = `linear-gradient(
+          0deg,
+          rgba(255, 203, 66, 0) ${scrollValueDiv6}%,
+          var(--clr-primary) 100%
+        )`;
+      }
+
+      const div7 = document.querySelector('.div7 > div');
+      if (div7) {
+        div7.style.backgroundImage = `linear-gradient(
+          0deg,
+          rgba(255, 203, 66, 0) ${scrollValueDiv7}%,
+          var(--clr-primary) 0%
+        )`;
+      }
+
+      const div8 = document.querySelector('.div8 > div');
+      if (div8) {
+        div8.style.backgroundImage = `linear-gradient(
+          90deg,
+          rgba(255, 203, 66, 0) ${scrollValueDiv8}%,
+          var(--clr-primary) 0%
+        )`;
+      }
+
+      const div9 = document.querySelector('.div9 > div');
+      if (div9) {
+        div9.style.backgroundImage = `linear-gradient(
+          0deg,
+          rgba(255, 203, 66, 0) ${scrollValueDiv9}%,
+          var(--clr-primary) 100%
+        )`;
+      }
+
+      const div10 = document.querySelector('.div10 > div');
+      if (div10) {
+        div10.style.backgroundImage = `linear-gradient(
+          0deg,
+          rgba(255, 203, 66, 0) ${scrollValueDiv10}%,
+          var(--clr-primary) 0%
+        )`;
+      }
+      const div11 = document.querySelector('.div11 > div');
+      if (div11) {
+        div11.style.backgroundImage = `linear-gradient(
+          -90deg,
+          rgba(255, 203, 66, 0) ${scrollValueDiv11}%,
+          var(--clr-primary) 0%
+        )`;
+      }
+      const div12 = document.querySelector('.div12 > div');
+      if (div12) {
+        div12.style.backgroundImage = `linear-gradient(
+          0deg,
+          rgba(255, 203, 66, 0) ${scrollValueDiv12}%,
+          var(--clr-primary) 100%
+        )`;
+      }
+
+
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
   return (
     <>
+      <NextSeo
+        title="Ace Kisch"
+        description="Software Engineer based in San Jose, CA."
+      />
+      {/* <Nav /> */}
       <header>
-
-        <Link href="#"><h1 className="fw-700 fs-800 pb-50">Ace Kisch</h1>
-        <h2 className="fw-600 fs-500 pb-50">Software Engineer</h2>
-        </Link>
-        <Nav />
+        <Ace />
       </header>
 
-      <main
-      // className="bottom-fade" //broken w stars bg
-      >
-        <section id="about" className="about">
-          <h2>About</h2>
-          <div className="bio">
-   
-            <p>My name is Ace and I&apos;m an experienced front-end software engineer. My journey began in 2014 building custom website themes and plugins for a <a href="https://oaksterdamuniversity.com">university</a>. I&apos;m currently building software solutions for a <a href="https://purplelotus.vercel.app/">cannabis dispensary</a> in San Jose, CA.
-            </p>
+      <main>
 
-            <p>I&apos;m focused on building accessible and performant full-stack web applications. In my free time I&apos;m often working on side projects, improving my skills, or experimenting with new or unfamiliar technologies. When I&apos;m not coding, I usually spend my time playing guitar, hiking, cooking, or learning vintage motorcycle mechanics.</p>
+        <Dividers1 />
+        <Skills />
+        <Dividers2 />
+        <Projects />
+        <Dividers3 />
+        <About />
+        <Dividers4 />
+        <Contact />
 
-          </div>
-        </section>
-
-        <section id="experience">
-          <h2>Experience</h2>
-          <ul>
-            <li>
-              <Card
-                caption="2022 — Present"
-                title="Purple Lotus"
-                subtitle="Senior Software Engineer"
-                href="https://purplelotus.vercel.app/"
-                body="Built a cannabis dispensary e-commerce web app using Next.js, Algolia Instant Search, Sanity CMS, and several third party APIs. Improved SEO, performance, PageSpeed Insight scores, and UI/UX."
-                tags={["React", "Next.js", "Algolia", "Sanity", "SCSS"]}
-              />
-            </li>
-            <li>
-              <Card
-                caption="2019 — 2022"
-                title="Purple Lotus"
-                subtitle="Contracted Web Developer"
-                href="https://plpcsanjose.com"
-                body="Rebuilt, redesigned, and helped maintain a cannabis dispensary WordPress site. Developed a custom theme, plugins and integrations with third-party services."
-                tags={["WordPress", "PHP", "JavaScript", "HTML", "CSS"]}
-              />
-            </li>
-            <li>
-              <Card
-                caption="2014 — 2022"
-                title="Oaksterdam University"
-                subtitle="Software Engineer & IT Manager"
-                href="https://oaksterdamuniversity.com"
-                body="Developed a suite of web services including a CMS, LMS, e-commerce, user authentication and SSO, marketing and support automation, SEO tracking and tools, VoIP, live chat, an improved hosting platform and site version control. I also managed the IT department and provided technical support for staff and students."
-                tags={["WordPress", "PHP", "JavaScript", "HTML", "CSS"]}
-              />
-            </li>
-          </ul>
-        </section>
-
-        <section id="projects">
-          <h2>Projects</h2>
-          <ul>
-            <li>
-              <Card
-                img="/purple-lotus-screenshot.jpg"
-                href="https://purplelotus.vercel.app/"
-                title="Cannabis E-commerce"
-                body="A cannabis dispensary web app that uses the Jane Roots headless e-commerce platform and Algolia Instant Search to provide a fast, user-friendly shopping experience."
-                tags={["Next.js", "Algolia", "Sanity", "SCSS"]}
-              />
-            </li>
-            <li>
-              <Card
-                img="/periodic-table-screenshot.jpg"
-                title="Periodic Table"
-                href="https://ace-periodic-table.vercel.app/"
-                body="An interactive periodic table with detailed information on each element."
-                tags={["Next.js", "SCSS"]}
-              />
-            </li>
-            <li>
-              <Card
-                img="/tipper-screenshot.jpg"
-                title="Tip Calculator"
-                href="https://acegk.github.io/tip-calculator/"
-                body="A tip calculator that evaluates the tip and total per person based on the bill amount, tip percentage and number of people."
-                tags={["HTML", "CSS", "JavaScript"]}
-              />
-            </li>
-            <li>
-              <Card
-                img="/ipify-screenshot.jpg"
-                title="IP Address Tracker"
-                href="https://ip-tracker-acegk.vercel.app/"
-                body="View the address, timezone, and ISP of any IP address or domain. Built using the IPify API and Leaflet.js."
-                tags={["Next.js", "Leaflet.js", "SCSS"]}
-              />
-            </li>
-            <li>
-              <Card
-                img="/leaflet-screenshot.jpg"
-                title="Delivery Zipcode Map"
-                href="https://purplelotus.vercel.app/delivery"
-                body="An interactive map that highlights Bay Area zipcodes for displaying delivery zones."
-                tags={["Next.js", "Leaflet.js", "SCSS"]}
-              />
-            </li>
-
-          </ul>
-        </section>
-
-        <footer>
-          <span>Built with <a href="https://nextjs.org/">Next.js</a> & hosted on <a href="https://vercel.com/">Vercel</a>. View this site on <a href="https://github.com/AceGK/portfolio-2024">Github</a></span>
-          
         <Matrix />
 
-        </footer>
+        <div className="stars">
+          <div id="stars" />
+          <div id="stars2" />
+          <div id="stars3" />
+        </div>
+
       </main>
-      <div className="stars">
-        <div id="stars" />
-        <div id="stars2" />
-        <div id="stars3" />
-      </div>
     </>
-  )
+  );
+}
+
+function Dividers1() {
+  return (
+    <div className="dividers1">
+      <div className="div1">
+        <div />
+      </div>
+      <div className="div2">
+        <div />
+      </div>
+      <div className="div3">
+        <div />
+      </div>
+    </div>
+  );
+}
+
+function Dividers2() {
+  return (
+    <div className="dividers2">
+      <div className="div4">
+        <div />
+      </div>
+      <div className="div4_2">
+        <div />
+      </div>
+      <div style={{ display: 'flex', width: "100%" }}>
+        <div className="div5_2">
+          <div />
+        </div>
+        <div className="div5">
+          <div />
+        </div>
+      </div>
+      <div className="div6">
+        <div />
+      </div>
+    </div>
+  );
+}
+
+function Dividers3() {
+  return (
+    <div className="dividers3">
+      <div className="div7">
+        <div />
+      </div>
+      <div className="div8">
+        <div />
+      </div>
+      <div className="div9">
+        <div />
+      </div>
+    </div>
+  );
+}
+
+function Dividers4() {
+  return (
+    <div className="dividers4">
+      <div className="div10">
+        <div />
+      </div>
+      <div className="div11">
+        <div />
+      </div>
+      <div className="div12">
+        <div />
+      </div>
+    </div>
+  );
 }
