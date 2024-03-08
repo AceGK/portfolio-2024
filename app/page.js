@@ -1,5 +1,5 @@
 'use client';
-import React, { useEffect } from 'react';
+import { useEffect } from 'react';
 import Matrix from "@/components/matrix/Matrix";
 import Skills from "@/components/skills/Skills";
 import Projects from "@/components/projects/Projects";
