@@ -7,8 +7,12 @@ import About from "@/components/about/About";
 import Ace from "@/components/ace/Ace";
 import Contact from "@/components/contact/Contact";
 
-import { NextSeo } from 'next-seo';
 import Nav from '@/components/nav/Nav';
+
+export const metadata = {
+  title:"Ace Kisch",
+  description:"Software Engineer based in San Jose, CA."
+}
 
 export default function Home() {
 
@@ -218,10 +222,7 @@ export default function Home() {
 
   return (
     <>
-      <NextSeo
-        title="Ace Kisch"
-        description="Software Engineer based in San Jose, CA."
-      />
+
       {/* <Nav /> */}
       <header>
         <Ace />
