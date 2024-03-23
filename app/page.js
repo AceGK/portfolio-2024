@@ -6,7 +6,6 @@ import Projects from "@/components/projects/Projects";
 import About from "@/components/about/About";
 import Ace from "@/components/ace/Ace";
 import Contact from "@/components/contact/Contact";
-import Head from 'next/head';
 import Nav from '@/components/nav/Nav';
 
 export default function Home() {
@@ -217,10 +216,6 @@ export default function Home() {
 
   return (
     <>
-      <Head>
-        <title>Ace Kisch</title>
-        <meta name="description" content="Full-stack web developer based in San Jose, CA" />
-      </Head>
       {/* <Nav /> */}
       <header>
         <Ace />

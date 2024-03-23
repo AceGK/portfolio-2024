@@ -20,7 +20,7 @@ const rubik = Rubik({
 
 export const metadata = {
   title: 'Ace Kisch',
-  description: 'Portfolio Site',
+  description: 'Full-stack web developer based in San Jose, CA',
 }
 
 export default function RootLayout({ children }) {
