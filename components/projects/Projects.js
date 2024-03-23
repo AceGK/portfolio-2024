@@ -9,7 +9,7 @@ import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 import 'swiper/css/effect-coverflow';
 import { EffectCoverflow, EffectCards, Pagination, Navigation } from 'swiper/modules';
-import Mtg from "../mtg/Mtg";
+
 
 
 export default function Projects() {
@@ -89,7 +89,7 @@ export default function Projects() {
         </SwiperSlide>
 
         <SwiperSlide className={styles.slide}>
-          {/* <Mtg /> */}
+
         </SwiperSlide>
 
       </Swiper>

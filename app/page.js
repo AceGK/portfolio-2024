@@ -6,7 +6,7 @@ import Projects from "@/components/projects/Projects";
 import About from "@/components/about/About";
 import Ace from "@/components/ace/Ace";
 import Contact from "@/components/contact/Contact";
-
+import Head from 'next/head';
 import Nav from '@/components/nav/Nav';
 
 export default function Home() {
