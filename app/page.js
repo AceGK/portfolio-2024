@@ -9,11 +9,6 @@ import Contact from "@/components/contact/Contact";
 
 import Nav from '@/components/nav/Nav';
 
-export const metadata = {
-  title:"Ace Kisch",
-  description:"Software Engineer based in San Jose, CA."
-}
-
 export default function Home() {
 
   useEffect(() => {
@@ -222,7 +217,10 @@ export default function Home() {
 
   return (
     <>
-
+      <Head>
+        <title>Ace Kisch</title>
+        <meta name="description" content="Full-stack web developer based in San Jose, CA" />
+      </Head>
       {/* <Nav /> */}
       <header>
         <Ace />
