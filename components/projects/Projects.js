@@ -40,12 +40,12 @@ export default function Projects() {
             img="/images/purple-lotus-screenshot.jpg"
             href="https://plpcsanjose.com"
             title="Purple Lotus"
-            body="A cannabis dispensary web app that utilizes Algolia Instant Search to provide a fast, user-friendly shopping experience."
+            body="A cannabis dispensary web app that utilizes Next.js & Algolia Instant Search to provide a fast, user-friendly shopping experience."
             tags={["Next.js", "Algolia", "Sanity CMS", "AWS Cognito"]}
           />
         </SwiperSlide>
         
-        <SwiperSlide className={styles.slide}>
+        {/* <SwiperSlide className={styles.slide}>
           <Card
             img="/images/quickshroom-screenshot.jpg"
             href="https://quickshroom.com"
@@ -53,7 +53,7 @@ export default function Projects() {
             body="(Work in progress) A mushroom dispensary ecommerce web app built with Next, Sanity, and Algolia."
             tags={["Next.js", "Algolia", "Sanity CMS"]}
           />
-        </SwiperSlide>
+        </SwiperSlide> */}
 
         <SwiperSlide className={styles.slide}>
           <Card
@@ -63,17 +63,6 @@ export default function Projects() {
             github="https://github.com/AceGK/periodic-table"
             body="(Work in progress) An interactive periodic table with detailed information on each element."
             tags={["Next.js"]}
-          />
-        </SwiperSlide>
-
-        <SwiperSlide className={styles.slide}>
-          <Card
-            img="/images/tipper-screenshot.jpg"
-            title="Tipper"
-            href="https://acegk.github.io/tip-calculator/"
-            github="https://github.com/AceGK/tip-calculator"
-            body="Calculate tip and total per person based on bill amount, tip %, and # of people."
-            tags={["JavaScript"]}
           />
         </SwiperSlide>
 
@@ -89,8 +78,16 @@ export default function Projects() {
         </SwiperSlide>
 
         <SwiperSlide className={styles.slide}>
-
+          <Card
+            img="/images/tipper-screenshot.jpg"
+            title="Tipper"
+            href="https://acegk.github.io/tip-calculator/"
+            github="https://github.com/AceGK/tip-calculator"
+            body="Calculate tip and total per person based on bill amount, tip %, and # of people."
+            tags={["JavaScript"]}
+          />
         </SwiperSlide>
+    
 
       </Swiper>
     

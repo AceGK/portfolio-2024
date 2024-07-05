@@ -71,13 +71,13 @@ export default function About() {
             <p>
               My journey began in 2014 building websites for local startups. Since then, I&apos;ve had the privledge of
               creating software for a{" "}
-              <a href="https://oaksterdamuniversity.com">university </a> a{" "}
-              <a href="https://plpcsanjose.com">cannabis dispensary</a>, and a <a href="https://quickshroom.com">mushroom dispensary</a>.
+              <a href="https://oaksterdamuniversity.com">university </a> and a{" "}
+              <a href="https://plpcsanjose.com">cannabis dispensary</a>.
             </p>
           </SwiperSlide>
           <SwiperSlide className={styles.slide}>
             <p>
-              When I&apos;m not at the computer I usually spend my time playing guitar, painting, hiking, cooking, or reading. 
+              My hobbies outside computers include photography, guitar, hiking, vintage motorcyles, and spending time with my cats and dog. 
             </p>
 
           </SwiperSlide>

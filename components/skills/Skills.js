@@ -24,25 +24,26 @@ import Sanity from "../../public/icons/sanity.svg";
 import Wordpress from "../../public/icons/wordpress.svg";
 import Shopify from "../../public/icons/shopify.svg";
 import Php from "../../public/icons/php.svg";
-
+import Typescript from "../../public/icons/typescript.svg";
 
 export default function Skills() {
 
   const dev = [
     { color: "html", name: "HTML5", Icon: Html },
     { color: "css", name: "CSS3", Icon: Css },
+    { color: "sass", name: "Sass", Icon: Sass },
     { color: "js", name: "JavaScript", Icon: Javascript },
-    { color: "php", name: "PHP", Icon: Php },
+    { color: "ts", name: "TypeScript", Icon: Typescript },
+    // { color: "php", name: "PHP", Icon: Php },
     { color: "react", name: "React", Icon: React },
     { color: "next", name: "Next.js", Icon: Next },
     { color: "node", name: "Node.js", Icon: Node },
     { color: "redux", name: "Redux", Icon: Redux },
-    { color: "sass", name: "Sass", Icon: Sass },
   ];
 
   const design = [
-    { color: "adobe", name: "Adobe XD", Icon: Adobe },
-    { color: "sketch", name: "sketch", Icon: Sketch },
+    { color: "adobe", name: "Adobe CC", Icon: Adobe },
+    { color: "sketch", name: "Sketch", Icon: Sketch },
     { color: "figma", name: "Figma", Icon: Figma },
   ];
 
