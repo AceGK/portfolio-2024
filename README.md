@@ -1,5 +1,4 @@
-- This design was heavily inspired by/taken from [Brittany Chiang's portfolio site](https://brittanychiang.com/)
-- [Stars](https://codepen.io/sarazond/pen/LYGbwj)
+Inspiration and ideas 
 
 https://codepen.io/vitor-siqueira/pen/xNBExN
 
