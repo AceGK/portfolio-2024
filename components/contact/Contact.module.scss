@@ -68,13 +68,14 @@ text-align: center;
 .icons {
   padding-top:1rem;
   display:flex;
+  flex-wrap:wrap;
   justify-content: center;
   align-items: center;
   gap:2rem;
   width:100%;
   margin:auto;
   svg {
-    width: clamp(2rem, 5vw, 4rem);
+    width: 3rem;
     height: auto;
   }
 }

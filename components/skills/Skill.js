@@ -17,7 +17,7 @@ export default function Skill(props) {
     borderStyle: "solid",
     borderColor: `var(--clr-${color})`,
     boxShadow: `0 0 0 0rem var(--clr-${color})`,
-    cursor: "pointer",
+    cursor: "default",
     color: `var(--clr-${color})`,
     // transition: "all 0s"
   };

@@ -70,8 +70,8 @@
         transition: opacity 0.3s;
         height: 100%;
         width: 100%;
-        max-width: 100%; // Ensure content doesn't overflow
-      height: auto;
+        max-width: 100%;
+        height: auto;
       }
       &:hover {
         svg {
