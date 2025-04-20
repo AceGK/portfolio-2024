@@ -5,6 +5,7 @@ import Link from "next/link";
 import Github from "../../public/icons/github.svg";
 import LinkedIn from "../../public/icons/linkedin.svg";
 import Email from "../../public/icons/envelope.svg";
+import CV from "../../public/icons/cv.svg";
 
 export default function Contact() {
   const [success, setSuccess] = useState(false);
@@ -42,20 +43,25 @@ export default function Contact() {
       <div className="pt-200">
       <ul className={styles.icons}>
         <li>
-          <Link href="https://github.com/aceGK/" passHref>
+          <Link href="https://github.com/aceGK/" target="_blank" rel="noopener noreferrer">
             <Github />
           </Link>
         </li>
         <li>
-          <Link href="https://www.linkedin.com/in/acekisch/" passHref>
+          <Link href="https://www.linkedin.com/in/acekisch/" target="_blank" rel="noopener noreferrer">
             <LinkedIn />
           </Link>
         </li>
         <li>
+          <Link href="/resume.pdf" target="_blank" rel="noopener noreferrer">
+            <CV />
+          </Link>
+        </li>
+        {/* <li>
           <Link href="mailto:acekisch@gmail.com" passHref>
             <Email />
           </Link>
-        </li>
+        </li> */}
       </ul>
         {/* <div
           className={styles.success}

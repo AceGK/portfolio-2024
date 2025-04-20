@@ -8,17 +8,13 @@ import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 import 'swiper/css/effect-coverflow';
-import { EffectCoverflow, EffectCards, Pagination, Navigation } from 'swiper/modules';
-
-
+import { EffectCards, Pagination, Navigation } from 'swiper/modules';
 
 export default function Projects() {
-
 
   return (
     <section id="projects" className={styles.projects}>
       <h2 className="code-heading fs-600 center-text">Projects</h2>
-      {/* <div className="center-text">View my projects on <a href="#">Github</a></div> */}
       <Swiper
         className={styles.swiper}
         effect={'cards'}
@@ -44,16 +40,6 @@ export default function Projects() {
             tags={["Next.js", "Algolia", "Sanity CMS", "AWS Cognito"]}
           />
         </SwiperSlide>
-        
-        {/* <SwiperSlide className={styles.slide}>
-          <Card
-            img="/images/quickshroom-screenshot.jpg"
-            href="https://quickshroom.com"
-            title="Quick Shroom"
-            body="(Work in progress) A mushroom dispensary ecommerce web app built with Next, Sanity, and Algolia."
-            tags={["Next.js", "Algolia", "Sanity CMS"]}
-          />
-        </SwiperSlide> */}
 
         <SwiperSlide className={styles.slide}>
           <Card
@@ -87,7 +73,6 @@ export default function Projects() {
             tags={["JavaScript"]}
           />
         </SwiperSlide>
-    
 
       </Swiper>
     

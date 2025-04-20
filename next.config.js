@@ -14,16 +14,6 @@ const nextConfig = {
 
     return config;
   },
-
-  async redirects() {
-    return [
-      {
-        source: '/rico-pearson',
-        destination: 'https://photos.acekisch.com/-ricopearson/gallery',
-        permanent: true,
-      },
-    ];
-  },
 };
 
 module.exports = nextConfig;

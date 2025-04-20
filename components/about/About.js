@@ -18,10 +18,16 @@ export default function About() {
   const photoSwiper = useRef(null);
   const [currentIndex, setCurrentIndex] = useState(0);
   const [totalSlides, setTotalSlides] = useState(0);
+  const bioSlides = [
+    "My career began in 2014 building web applications for local businesses and non-profits. However, my interest in computers began in my early childhood.",
+    "My interests outside computers include photography, painting, design, reading, guitar, cooking, hiking/camping, and motorcycle mechanics.",
+    "I love fantasy, sci-fi, and horror books, movies, and games. Some of my favorite authors include J.R.R Tolkien, H.P. Lovecraft, and Dan Abnett.",
+    // "I love fantasy, sci-fi, and horror books, movies, and games. I&apos;ve left a few easter eggs of some of my favorite throughout this site! Can you find them?"
+  ];
   const photos = [
-    { src: "/images/mugen.jpg", alt: "Mugen, the cat", caption: "Mugen" },
-    { src: "/images/mugen.jpg", alt: "Mugen, the cat", caption: "Mugen" },
-    { src: "/images/mugen.jpg", alt: "Mugen, the cat", caption: "Mugen" },
+    { src: "/images/ace-and-dad.jpg", alt: "Ace and dad", caption: "My dad introducing me to computers" },
+    { src: "/images/mugen.jpg", alt: "Mugen, the cat", caption: "My cat, Mugen" },
+    { src: "/images/sci-fi-portrait.jpg", alt: "Sci-fi portrait of Ace", caption: "AI generated with Stable Diffusion/A1111" },
   ]
 
   useEffect(() => {
@@ -67,25 +73,12 @@ export default function About() {
           spaceBetween={40}
           modules={[Navigation]}
         >
-          <SwiperSlide className={styles.slide}>
-            <p>
-              My journey began in 2014 building websites for local startups. Since then, I&apos;ve had the privledge of
-              creating software for a{" "}
-              <a href="https://oaksterdamuniversity.com">university </a> and a{" "}
-              <a href="https://plpcsanjose.com">cannabis dispensary</a>.
-            </p>
-          </SwiperSlide>
-          <SwiperSlide className={styles.slide}>
-            <p>
-              My hobbies outside computers include photography, guitar, hiking, vintage motorcyles, and spending time with my cats and dog. 
-            </p>
+          {bioSlides.map((text, index) => (
+            <SwiperSlide className={styles.slide} key={index}>
+              <p>{text}</p>
+            </SwiperSlide>
+          ))}
 
-          </SwiperSlide>
-          <SwiperSlide className={styles.slide}>
-            <p>
-              I love sci-fi, fantasy, and horror books, movies, and games. I&apos;ve left a few easter eggs of some of my favorite throughout this site.
-            </p>
-          </SwiperSlide>
 
           <div className={styles.nav}>
             <div>{currentIndex + 1}<span> / {totalSlides}</span></div>
@@ -103,20 +96,8 @@ export default function About() {
         </Swiper>
       </div>
 
-
       <div className={styles.photoWrapper}>
-          
-        {/* <div style={{ position: 'relative', width: '100%', height: '100%' }}>
-          <Image
-            src="/images/mugen.jpg"
-            fill
-            objectFit="cover"
-            alt="Mugen the cat"
-          />
-        </div> */}
-
-
-         <Swiper
+        <Swiper
           onSwiper={(swiper) => (photoSwiper.current = swiper)}
           onSlideChange={() => bioSwiper.current.slideTo(photoSwiper.current.activeIndex)}
           className={styles.photoSwiper}
@@ -127,22 +108,22 @@ export default function About() {
         >
           {photos.map((slide, index) => (
             <SwiperSlide key={index}>
-              <figure>
-                <Image
-                  src={slide.src}
-                  width={300}
-                  height={300}
-                  alt={slide.alt}
-                />
-                {/* <figcaption>{slide.caption}</figcaption> */}
+              <figure className={styles.figure}>
+                <div className={styles.imageWrapper}>
+                  <Image
+                    src={slide.src}
+                    alt={slide.alt}
+                    fill
+                    sizes="(max-width: 600px) 100vw, 300px"
+                    style={{ objectFit: 'cover' }}
+                  />
+                </div>
+                <figcaption>{slide.caption}</figcaption>
               </figure>
             </SwiperSlide>
           ))}
-        </Swiper> 
+        </Swiper>
       </div>
-
-
-
 
     </section>
   );
