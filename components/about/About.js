@@ -21,7 +21,7 @@ export default function About() {
   const bioSlides = [
     "My career began in 2014 building web applications for local businesses and non-profits. However, my interest in computers began in my early childhood.",
     "My interests outside computers include photography, painting, design, reading, guitar, cooking, hiking/camping, and motorcycle mechanics.",
-    "I love fantasy, sci-fi, and horror books, movies, and games. Some of my favorite authors include J.R.R Tolkien, H.P. Lovecraft, and Dan Abnett.",
+    "I love fantasy, sci-fi, and horror books, movies, and games. Some of my favorite authors include J.R.R. Tolkien, H.P. Lovecraft, and Dan Abnett.",
     // "I love fantasy, sci-fi, and horror books, movies, and games. I&apos;ve left a few easter eggs of some of my favorite throughout this site! Can you find them?"
   ];
   const photos = [
