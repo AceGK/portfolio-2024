@@ -47,11 +47,11 @@ export default function Projects() {
     },
     {
       img: '/images/tipper-screenshot.jpg',
-      href: 'https://acegk.github.io/tip-calculator/',
+      href: 'https://tipper-ace.vercel.app/',
       github: 'https://github.com/AceGK/tip-calculator',
       title: 'Tipper',
       body: 'Calculate tip and total per person based on bill amount, tip %, and # of people.',
-      tags: ['JavaScript'],
+      tags: ['Next.js','TypeScript']
     },
   ];
 
