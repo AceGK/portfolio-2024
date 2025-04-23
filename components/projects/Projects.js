@@ -38,20 +38,20 @@ export default function Projects() {
       tags: ['Next.js'],
     },
     {
-      img: '/images/ipify-screenshot.jpg',
-      href: 'https://ip-tracker-acegk.vercel.app/',
-      github: 'https://github.com/AceGK/ip-tracker',
-      title: 'IP Address Tracker',
-      body: 'View the location, address, timezone, and ISP of any IP address or domain. Built using Next.js, Leaflet.js, and the IPify API.',
-      tags: ['Next.js', 'Leaflet.js'],
-    },
-    {
       img: '/images/tipper-screenshot.jpg',
       href: 'https://tipper-ace.vercel.app/',
       github: 'https://github.com/AceGK/tip-calculator',
       title: 'Tipper',
       body: 'Calculate tip and total per person based on bill amount, tip %, and # of people.',
       tags: ['Next.js','TypeScript']
+    },
+    {
+      img: '/images/ipify-screenshot.jpg',
+      href: 'https://ip-tracker-acegk.vercel.app/',
+      github: 'https://github.com/AceGK/ip-tracker',
+      title: 'IP Address Tracker',
+      body: 'View the location, address, timezone, and ISP of any IP address or domain. Built using Next.js, Leaflet.js, and the IPify API.',
+      tags: ['Next.js', 'Leaflet.js'],
     },
   ];
 
