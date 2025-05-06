@@ -38,20 +38,20 @@ export default function Projects() {
       tags: ['Next.js', 'TypeScript'],
     },
     {
-      img: '/images/tipper-screenshot.jpg',
-      href: 'https://tipper-ace.vercel.app/',
-      github: 'https://github.com/AceGK/tip-calculator',
-      title: 'Tipper',
-      body: 'Calculate tip and total per person based on bill amount, tip %, and # of people.',
-      tags: ['Next.js','TypeScript']
-    },
-    {
       img: '/images/elementable-screenshot.jpg',
       href: 'https://www.elementable.app/',
       github: 'https://github.com/AceGK/periodic-table',
       title: 'Elementable',
       body: '(Work in progress) An interactive periodic table with detailed information on each element.',
       tags: ['Next.js'],
+    },
+    {
+      img: '/images/tipper-screenshot.jpg',
+      href: 'https://tipper-ace.vercel.app/',
+      github: 'https://github.com/AceGK/tip-calculator',
+      title: 'Tipper',
+      body: 'Calculate tip and total per person based on bill amount, tip %, and # of people.',
+      tags: ['Next.js','TypeScript']
     },
     {
       img: '/images/ipify-screenshot.jpg',
