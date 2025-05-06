@@ -13,11 +13,11 @@ import { EffectCards, Pagination, Navigation } from 'swiper/modules';
 
 export default function Projects() {
   const [swiperInstance, setSwiperInstance] = useState(null);
-  const [isReady, setIsReady] = useState(false); // ✨ Delay render
+  const [isReady, setIsReady] = useState(false);
 
   useEffect(() => {
     if (typeof window !== 'undefined') {
-      setIsReady(true); // Swiper is client-side only
+      setIsReady(true); 
     }
   }, []);
 
@@ -30,12 +30,12 @@ export default function Projects() {
       tags: ['Next.js', 'Algolia', 'Sanity CMS', 'AWS Cognito'],
     },
     {
-      img: '/images/elementable-screenshot.jpg',
-      href: 'https://www.elementable.app/',
-      github: 'https://github.com/AceGK/periodic-table',
-      title: 'Elementable',
-      body: '(Work in progress) An interactive periodic table with detailed information on each element.',
-      tags: ['Next.js'],
+      img: '/images/weyland-yutani-screenshot.jpg',
+      href: 'https://weyland-yutani.vercel.app/',
+      github: 'https://github.com/AceGK/weyland-yutani',
+      title: 'Weyland-Yutani Corp',
+      body: 'A corporate communications page for Weyland-Yutani, the galaxy’s leader in off-world expansion. Inspired by the Alien franchise.',
+      tags: ['Next.js', 'TypeScript'],
     },
     {
       img: '/images/tipper-screenshot.jpg',
@@ -44,6 +44,14 @@ export default function Projects() {
       title: 'Tipper',
       body: 'Calculate tip and total per person based on bill amount, tip %, and # of people.',
       tags: ['Next.js','TypeScript']
+    },
+    {
+      img: '/images/elementable-screenshot.jpg',
+      href: 'https://www.elementable.app/',
+      github: 'https://github.com/AceGK/periodic-table',
+      title: 'Elementable',
+      body: '(Work in progress) An interactive periodic table with detailed information on each element.',
+      tags: ['Next.js'],
     },
     {
       img: '/images/ipify-screenshot.jpg',
