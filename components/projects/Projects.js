@@ -30,6 +30,14 @@ export default function Projects() {
       tags: ['Next.js', 'Algolia', 'Sanity CMS', 'AWS Cognito'],
     },
     {
+      img: '/images/black-mesa-screenshot.jpg',
+      href: 'https://blackmesa.acekisch.com/',
+      github: 'https://github.com/AceGK/black-mesa',
+      title: 'Black Mesa Research Facility',
+      body: 'A fictional corporate website for the Black Mesa Research Facility. Inspired by Valve’s Half-Life series.',
+      tags: ['Next.js', 'TypeScript'],
+    },
+    {
       img: '/images/weyland-yutani-screenshot.jpg',
       href: 'https://weyland-yutani.vercel.app/',
       github: 'https://github.com/AceGK/weyland-yutani',
