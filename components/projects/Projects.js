@@ -34,7 +34,7 @@ export default function Projects() {
       href: 'https://blackmesa.acekisch.com/',
       github: 'https://github.com/AceGK/black-mesa',
       title: 'Black Mesa Research Facility',
-      body: 'A fictional corporate website for the Black Mesa Research Facility. Inspired by Valve’s Half-Life series.',
+      body: 'A fictional corporate website for the Black Mesa Research Facility. Inspired by Valve Software’s Half-Life series.',
       tags: ['Next.js', 'TypeScript'],
     },
     {
@@ -42,7 +42,7 @@ export default function Projects() {
       href: 'https://weyland-yutani.vercel.app/',
       github: 'https://github.com/AceGK/weyland-yutani',
       title: 'Weyland-Yutani Corp',
-      body: 'A corporate communications page for Weyland-Yutani, the galaxy’s leader in off-world expansion. Inspired by the Alien franchise.',
+      body: 'A fictional corporate website for Weyland-Yutani, the galaxy’s leader in off-world expansion. Inspired by the Alien franchise.',
       tags: ['Next.js', 'TypeScript'],
     },
     {
